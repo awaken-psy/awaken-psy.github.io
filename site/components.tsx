@@ -306,10 +306,94 @@ export const SiteBehavior: QuartzComponent = () => null
 SiteBehavior.afterDOMLoaded = `
 document.addEventListener("nav", () => {
   const media = window.matchMedia("(min-width: 1100px)")
-  const update = () => document.querySelectorAll(".rail-disclosure").forEach(node => { node.open = media.matches })
+  const menus = document.querySelectorAll(".rail-disclosure")
+  const syncMenu = event => {
+    const menu = event.currentTarget
+    menu.querySelector("summary").setAttribute("aria-expanded", String(menu.open))
+    if (menu.open) menu.querySelector(".explorer-ul a.active")?.scrollIntoView({ block: "nearest" })
+  }
+  menus.forEach(menu => menu.addEventListener("toggle", syncMenu))
+  const update = () => menus.forEach(menu => {
+    menu.open = media.matches
+    menu.querySelector("summary").setAttribute("aria-expanded", String(menu.open))
+  })
   update()
   media.addEventListener("change", update)
-  window.addCleanup(() => media.removeEventListener("change", update))
+  window.addCleanup(() => {
+    media.removeEventListener("change", update)
+    menus.forEach(menu => menu.removeEventListener("toggle", syncMenu))
+  })
+
+  const directory = document.querySelector(".site-rail-left .explorer-content")
+  if (directory) {
+    const updateDirectory = () => {
+      directory.querySelectorAll("a").forEach(link => {
+        link.title = link.textContent.trim()
+        if (link.classList.contains("active")) link.setAttribute("aria-current", "page")
+        else link.removeAttribute("aria-current")
+      })
+      directory.querySelectorAll(".folder-icon").forEach(icon => {
+        const folder = icon.closest(".folder-container")
+        const open = folder.nextElementSibling?.classList.contains("open") ?? false
+        const title = folder.querySelector(".folder-title")?.textContent ?? "目录"
+        icon.setAttribute("role", "button")
+        icon.setAttribute("tabindex", "0")
+        icon.setAttribute("aria-expanded", String(open))
+        icon.setAttribute("aria-label", (open ? "收起 " : "展开 ") + title)
+      })
+    }
+    const onDirectoryKey = event => {
+      if (event.key !== "Enter" && event.key !== " ") return
+      const icon = event.target.closest(".folder-icon")
+      if (!icon) return
+      event.preventDefault()
+      icon.dispatchEvent(new MouseEvent("click", { bubbles: true }))
+    }
+    const observer = new MutationObserver(updateDirectory)
+    observer.observe(directory, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] })
+    directory.addEventListener("keydown", onDirectoryKey)
+    updateDirectory()
+    window.addCleanup(() => {
+      observer.disconnect()
+      directory.removeEventListener("keydown", onDirectoryKey)
+    })
+  }
+
+  const sections = Array.from(document.querySelectorAll(".site-rail-right .toc-content a[data-for]"))
+    .map(link => {
+      link.title = link.textContent.trim()
+      return { link, heading: document.getElementById(link.dataset.for) }
+    })
+    .filter(section => section.heading)
+  if (sections.length === 0) return
+  let frame
+  const updateOutline = () => {
+    frame = undefined
+    const offset = document.querySelector(".site-topbar").getBoundingClientRect().bottom + 26
+    let active = sections[0]
+    for (const section of sections) {
+      if (section.heading.getBoundingClientRect().top > offset) break
+      active = section
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+      active = sections[sections.length - 1]
+    }
+    sections.forEach(section => {
+      if (section === active) section.link.setAttribute("aria-current", "location")
+      else section.link.removeAttribute("aria-current")
+    })
+  }
+  const onScroll = () => {
+    if (frame === undefined) frame = requestAnimationFrame(updateOutline)
+  }
+  document.addEventListener("scroll", onScroll, { passive: true })
+  window.addEventListener("resize", onScroll)
+  updateOutline()
+  window.addCleanup(() => {
+    document.removeEventListener("scroll", onScroll)
+    window.removeEventListener("resize", onScroll)
+    if (frame !== undefined) cancelAnimationFrame(frame)
+  })
 })
 `
 
@@ -339,7 +423,15 @@ export const AwakenFrame: PageFrame = {
           )
       : undefined
     return (
-      <div class={home ? "awaken-shell is-home" : "awaken-shell"}>
+      <div
+        class={
+          home
+            ? "awaken-shell is-home"
+            : kind === "topics"
+              ? "awaken-shell"
+              : "awaken-shell is-reading"
+        }
+      >
         <a class="skip-link" href="#main-content">
           跳转到正文
         </a>
@@ -393,7 +485,9 @@ export const AwakenFrame: PageFrame = {
           <div class="reading-layout">
             <aside class="site-rail site-rail-left" aria-label="笔记分类">
               <details class="rail-disclosure" open>
-                <summary>笔记目录</summary>
+                <summary role="button" aria-expanded="true">
+                  笔记目录
+                </summary>
                 <div class="rail-content">
                   {left.map((Component) => (
                     <Component {...props} />
@@ -425,7 +519,9 @@ export const AwakenFrame: PageFrame = {
             </main>
             <aside class="site-rail site-rail-right" aria-label="文章导航">
               <details class="rail-disclosure" open>
-                <summary>本页导航</summary>
+                <summary role="button" aria-expanded="true">
+                  本页大纲
+                </summary>
                 <div class="rail-content">
                   {right.map((Component) => (
                     <Component {...props} />
