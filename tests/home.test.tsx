@@ -78,7 +78,7 @@ test("顶部导航按首页、专题、笔记、关于排列", () => {
   assert.match(navigation, /aria-current="page">专题<\/a>/)
 })
 
-test("专题按领域与直属文件夹生成，合并深层笔记并排除隐藏内容", () => {
+test("专题按领域统计公开笔记，目录列表逐层浏览并排除隐藏内容", () => {
   const input = props([
     { ...note(1), relativePath: "学习笔记/cg/cuda/入门/hello.md" },
     { ...note(2), relativePath: "学习笔记/cg/cuda/world.md" },
@@ -87,11 +87,13 @@ test("专题按领域与直属文件夹生成，合并深层笔记并排除隐�
     { ...note(5, false), relativePath: "学习笔记/cg/私人专题/secret.md" },
     { ...note(6), relativePath: "学习笔记/cg/overview.md" },
     { ...note(7, false), relativePath: "学习笔记/cg/cuda/hidden.md" },
+    { ...note(8), relativePath: "学习笔记/cg/cuda/入门/进阶/deep.md" },
+    { ...note(9), relativePath: "学习笔记/cg/cuda/入门/index.md" },
   ])
   const html = render(<TopicList {...input} />)
   assert.match(html, /图形学与渲染<\/h2><p>2 个专题/)
   assert.match(html, /算法<\/h2><p>1 个专题/)
-  assert.match(html, /CUDA<\/h3>.*?2 篇笔记/)
+  assert.match(html, /CUDA<\/h3>.*?4 篇笔记/)
   assert.match(html, /href="[^"]*学习笔记\/cg\/new-topic\/"/)
   assert.match(html, /href="[^"]*学习笔记\/算法\/hot100\/"/)
   assert.doesNotMatch(html, /私人专题|overview|计算机基础|入门<\/h3>/)
@@ -104,8 +106,33 @@ test("专题按领域与直属文件夹生成，合并深层笔记并排除隐�
     />,
   )
   assert.equal((listing.match(/class="note-row internal"/gu) ?? []).length, 2)
-  assert.match(listing, /入门\/hello/)
-  assert.doesNotMatch(listing, /笔记3|笔记4|笔记5|笔记6|笔记7/)
+  assert.match(listing, /href="[^"]*学习笔记\/cg\/cuda\/入门\/"/)
+  assert.doesNotMatch(
+    listing,
+    /入门\/hello|笔记1|笔记3|笔记4|笔记5|笔记6|笔记7|笔记8/,
+  )
+  const nested = render(
+    <TopicNotes
+      {...input}
+      folder="学习笔记/cg/cuda/入门"
+      tree={{ type: "root", children: [] } as QuartzComponentProps["tree"]}
+    />,
+  )
+  assert.equal((nested.match(/class="note-row internal"/gu) ?? []).length, 2)
+  assert.match(nested, /入门\/hello/)
+  assert.match(nested, /href="[^"]*入门\/进阶\/"/)
+  assert.doesNotMatch(nested, /deep|笔记2|笔记7|笔记8|笔记9/)
+  const domain = render(
+    <TopicNotes
+      {...input}
+      folder="学习笔记/cg"
+      domain="学习笔记/cg"
+      tree={{ type: "root", children: [] } as QuartzComponentProps["tree"]}
+    />,
+  )
+  assert.match(domain, /topic-grid domain-topic-grid/)
+  assert.match(domain, /笔记6/)
+  assert.doesNotMatch(domain, /hot100|class="topic-domain-heading"/)
 })
 
 test("空精选省略，已隐藏精选排除，最多展示六篇", () => {

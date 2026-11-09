@@ -118,17 +118,23 @@ function topicDomains(props: QuartzComponentProps) {
     .filter((domain) => domain.topics.length > 0)
 }
 
-export function TopicList(props: QuartzComponentProps) {
-  const domains = topicDomains(props)
+export function TopicList(props: QuartzComponentProps & { domain?: string }) {
+  const domains = topicDomains(props).filter(
+    (domain) => !props.domain || domain.path === props.domain,
+  )
   return (
     <div class="topic-groups">
       {domains.map((domain, index) => (
-        <section class="topic-domain" aria-labelledby={`topic-domain-${index}`}>
-          <div class="topic-domain-heading">
-            <h2 id={`topic-domain-${index}`}>{domain.title}</h2>
-            <p>{domain.topics.length} 个专题</p>
-          </div>
-          <div class="topic-grid">
+        <section class="topic-domain" aria-label={domain.title}>
+          {!props.domain && (
+            <div class="topic-domain-heading">
+              <h2 id={`topic-domain-${index}`}>{domain.title}</h2>
+              <p>{domain.topics.length} 个专题</p>
+            </div>
+          )}
+          <div
+            class={props.domain ? "topic-grid domain-topic-grid" : "topic-grid"}
+          >
             {domain.topics.map((topic) => (
               <a
                 class="topic-item internal"
@@ -150,31 +156,76 @@ export function TopicList(props: QuartzComponentProps) {
   )
 }
 
-export function TopicNotes(props: QuartzComponentProps & { folder: string }) {
-  const notes = publicNotes(props)
-    .filter((file) => inFolder(file, props.folder))
-    .sort((a, b) =>
-      String(a.relativePath).localeCompare(String(b.relativePath), "zh-CN", {
-        numeric: true,
-      }),
-    )
+export function TopicNotes(
+  props: QuartzComponentProps & { folder: string; domain?: string },
+) {
+  const notes = publicNotes(props).filter((file) =>
+    inFolder(file, props.folder),
+  )
+  const currentIndex = slugifyFilePath(`${props.folder}/index.md` as FilePath)
+  const children = new Map<
+    string,
+    { path: string; title: string; isFolder: boolean }
+  >()
+  for (const file of notes) {
+    const source = String(file.relativePath)
+    if (slugifyFilePath(source as FilePath) === currentIndex) continue
+    const parts = source.slice(props.folder.length + 1).split("/")
+    if (parts.length > 1) {
+      const path = `${props.folder}/${parts[0]}/index.md`
+      if (children.has(path)) continue
+      const folderIndex = slugifyFilePath(path as FilePath)
+      const indexNote = notes.find(
+        (note) =>
+          slugifyFilePath(String(note.relativePath) as FilePath) ===
+          folderIndex,
+      )
+      children.set(path, {
+        path,
+        title: indexNote?.frontmatter?.title ?? parts[0],
+        isFolder: true,
+      })
+    } else {
+      children.set(source, {
+        path: source,
+        title: file.frontmatter?.title ?? parts[0],
+        isFolder: false,
+      })
+    }
+  }
+  const entries = [...children.values()]
+    .filter((entry) => !props.domain || !entry.isFolder)
+    .sort((a, b) => {
+      if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+      return a.title.localeCompare(b.title, "zh-CN", { numeric: true })
+    })
+  const folderCount = entries.filter((entry) => entry.isFolder).length
+  const noteCount = entries.length - folderCount
   return (
     <div class="topic-notes">
       <article>{htmlToJsx(props.fileData.filePath!, props.tree)}</article>
-      <p class="topic-notes-count">共 {notes.length} 篇公开笔记</p>
-      <div class="note-list">
-        {notes.map((file) => (
-          <a
-            class="note-row internal"
-            href={link(props, String(file.relativePath))}
-          >
-            <span>{file.frontmatter?.title}</span>
-            <span class="note-arrow" aria-hidden="true">
-              ↗
-            </span>
-          </a>
-        ))}
-      </div>
+      {props.domain && <TopicList {...props} domain={props.domain} />}
+      {(!props.domain || entries.length > 0) && (
+        <>
+          <p class="topic-notes-count">
+            共 {folderCount > 0 && <>{folderCount} 个文件夹，</>}
+            {noteCount} 篇公开笔记
+          </p>
+          <div class="note-list">
+            {entries.map((entry) => (
+              <a class="note-row internal" href={link(props, entry.path)}>
+                <span>
+                  {entry.title}
+                  {entry.isFolder && <span class="note-location">文件夹</span>}
+                </span>
+                <span class="note-arrow" aria-hidden="true">
+                  {entry.isFolder ? "→" : "↗"}
+                </span>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   )
 }
@@ -419,14 +470,26 @@ export const AwakenFrame: PageFrame = {
       ? { ...tree, children: tree.children.filter((node) => node !== heading) }
       : tree
     const current = String(props.fileData.slug ?? "index")
-    const topic = current.endsWith("/index")
-      ? topicDomains(props)
-          .flatMap((domain) => domain.topics)
-          .find(
-            (entry) =>
-              current === slugifyFilePath(`${entry.path}/index.md` as FilePath),
-          )
+    const domain = site.categories.find(
+      (category) =>
+        current === slugifyFilePath(`${category.path}/index.md` as FilePath),
+    )
+    const folderNote = current.endsWith("/index")
+      ? publicNotes(props).find((note) =>
+          slugifyFilePath(String(note.relativePath) as FilePath).startsWith(
+            current.slice(0, -"index".length),
+          ),
+        )
       : undefined
+    const folder =
+      domain?.path ??
+      (folderNote
+        ? String(folderNote.relativePath)
+            .split("/")
+            .slice(0, current.split("/").length - 1)
+            .join("/")
+        : undefined)
+    const topic = site.topics.find((entry) => entry.path === folder)
     return (
       <div
         class={
@@ -501,7 +564,9 @@ export const AwakenFrame: PageFrame = {
                   htmlToJsx(props.fileData.filePath!, heading)
                 ) : (
                   <h1 class="document-title">
-                    {topic?.title ?? props.fileData.frontmatter?.title}
+                    {domain?.title ??
+                      topic?.title ??
+                      props.fileData.frontmatter?.title}
                   </h1>
                 )}
                 <div class="document-meta">
@@ -510,8 +575,13 @@ export const AwakenFrame: PageFrame = {
                   ))}
                 </div>
               </header>
-              {topic ? (
-                <TopicNotes {...props} tree={bodyTree} folder={topic.path} />
+              {folder ? (
+                <TopicNotes
+                  {...props}
+                  tree={bodyTree}
+                  folder={folder}
+                  domain={domain?.path}
+                />
               ) : (
                 <Content {...props} tree={bodyTree} />
               )}
@@ -521,18 +591,20 @@ export const AwakenFrame: PageFrame = {
                 ))}
               </div>
             </main>
-            <aside class="site-rail site-rail-right" aria-label="文章导航">
-              <details class="rail-disclosure" open>
-                <summary role="button" aria-expanded="true">
-                  本页大纲
-                </summary>
-                <div class="rail-content">
-                  {right.map((Component) => (
-                    <Component {...props} />
-                  ))}
-                </div>
-              </details>
-            </aside>
+            {right.length > 0 && (
+              <aside class="site-rail site-rail-right" aria-label="文章导航">
+                <details class="rail-disclosure" open>
+                  <summary role="button" aria-expanded="true">
+                    本页大纲
+                  </summary>
+                  <div class="rail-content">
+                    {right.map((Component) => (
+                      <Component {...props} />
+                    ))}
+                  </div>
+                </details>
+              </aside>
+            )}
           </div>
         )}
         <footer class="site-footer">
