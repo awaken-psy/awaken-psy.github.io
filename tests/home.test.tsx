@@ -49,7 +49,7 @@ test("首页文案、四类入口与五条稳定的最近更新", () => {
   assert.equal(render(<Home {...input} />), first)
 })
 
-test("顶部导航按首页、专题、笔记、关于排列", () => {
+test("顶部导航按首页、专题排列", () => {
   const html = render(
     AwakenFrame.render({
       componentData: {
@@ -73,7 +73,7 @@ test("顶部导航按首页、专题、笔记、关于排列", () => {
     [...navigation.matchAll(/>(首页|专题|笔记|关于)<\/a>/gu)].map(
       (match) => match[1],
     ),
-    ["首页", "专题", "笔记", "关于"],
+    ["首页", "专题"],
   )
   assert.match(navigation, /aria-current="page">专题<\/a>/)
 })

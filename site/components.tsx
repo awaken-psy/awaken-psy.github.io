@@ -264,11 +264,8 @@ export function Home(props: QuartzComponentProps) {
           </h1>
           <p class="hero-description">{site.description}</p>
           <div class="hero-actions">
-            <a class="primary-link internal" href={link(props, "notes.md")}>
+            <a class="primary-link internal" href={link(props, "topics.md")}>
               浏览笔记 <span aria-hidden="true">↗</span>
-            </a>
-            <a class="quiet-link internal" href={link(props, "topics.md")}>
-              探索专题 <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -678,8 +675,6 @@ export const AwakenFrame: PageFrame = {
             {[
               ["index", "首页"],
               ["topics", "专题"],
-              ["notes", "笔记"],
-              ["about", "关于"],
             ].map(([slug, label]) => (
               <a
                 class="internal"
