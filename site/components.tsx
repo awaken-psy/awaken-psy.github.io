@@ -356,8 +356,21 @@ export function Home(props: QuartzComponentProps) {
 
 export const SiteBehavior: QuartzComponent = () => null
 SiteBehavior.afterDOMLoaded = `
+let pendingDirectoryToggle
+const readingSidebarPreference = {}
+try {
+  const saved = JSON.parse(localStorage.getItem("awaken.readingSidebar") || "{}")
+  if (Number.isFinite(saved?.width)) readingSidebarPreference.width = saved.width
+  if (typeof saved?.collapsed === "boolean") readingSidebarPreference.collapsed = saved.collapsed
+} catch {}
+
 document.addEventListener("nav", () => {
   const media = window.matchMedia("(min-width: 1100px)")
+  const folderOverrides = new Map()
+  if (pendingDirectoryToggle?.target === location.pathname) {
+    folderOverrides.set(pendingDirectoryToggle.path, pendingDirectoryToggle.open)
+  }
+  pendingDirectoryToggle = undefined
   const menus = document.querySelectorAll(".rail-disclosure")
   const syncMenu = event => {
     const menu = event.currentTarget
@@ -376,6 +389,121 @@ document.addEventListener("nav", () => {
     menus.forEach(menu => menu.removeEventListener("toggle", syncMenu))
   })
 
+  const layout = document.querySelector(".reading-layout")
+  const panel = layout?.querySelector(".site-rail-left")
+  const collapseButton = panel?.querySelector(".directory-collapse")
+  const shell = layout?.closest(".awaken-shell")
+  const restoreButton = shell?.querySelector(".directory-restore")
+  const separator = layout?.querySelector(".directory-resizer")
+  if (panel && collapseButton && restoreButton && separator) {
+    let drag
+    const savePreference = () => {
+      try { localStorage.setItem("awaken.readingSidebar", JSON.stringify(readingSidebarPreference)) } catch {}
+    }
+    const widthRange = () => {
+      const style = getComputedStyle(layout)
+      const outline = parseFloat(style.getPropertyValue("--outline-width")) || 0
+      const gap = parseFloat(style.getPropertyValue("--reading-gap")) || 0
+      const available = Math.floor(layout.getBoundingClientRect().width - outline - gap * 2 - 480)
+      return { min: 200, max: Math.max(200, Math.min(520, available)) }
+    }
+    const clampWidth = width => {
+      const range = widthRange()
+      return Math.round(Math.max(range.min, Math.min(range.max, width)))
+    }
+    const applySidebar = () => {
+      const desktop = media.matches
+      const collapsed = desktop && readingSidebarPreference.collapsed === true
+      const fallback = parseFloat(getComputedStyle(layout).getPropertyValue("--directory-default-width")) || 260
+      const width = clampWidth(readingSidebarPreference.width ?? fallback)
+      layout.style.setProperty("--directory-width", width + "px")
+      shell.classList.toggle("is-directory-collapsed", collapsed)
+      panel.inert = collapsed
+      if (collapsed) panel.setAttribute("aria-hidden", "true")
+      else panel.removeAttribute("aria-hidden")
+      collapseButton.setAttribute("aria-expanded", String(!collapsed))
+      restoreButton.setAttribute("aria-expanded", String(!collapsed))
+      const range = widthRange()
+      separator.setAttribute("aria-valuemin", String(range.min))
+      separator.setAttribute("aria-valuemax", String(range.max))
+      separator.setAttribute("aria-valuenow", String(width))
+      document.dispatchEvent(new Event("reading-layout-change"))
+    }
+    const finishDrag = event => {
+      if (!drag || (event?.pointerId !== undefined && event.pointerId !== drag.id)) return
+      const id = drag.id
+      drag = undefined
+      if (separator.hasPointerCapture(id)) separator.releasePointerCapture(id)
+      document.documentElement.classList.remove("is-resizing-directory")
+      savePreference()
+    }
+    const onPointerDown = event => {
+      if (!media.matches || event.button !== 0 || drag) return
+      event.preventDefault()
+      drag = { id: event.pointerId, x: event.clientX, width: panel.getBoundingClientRect().width }
+      separator.setPointerCapture(event.pointerId)
+      document.documentElement.classList.add("is-resizing-directory")
+    }
+    const onPointerMove = event => {
+      if (!drag || event.pointerId !== drag.id) return
+      readingSidebarPreference.width = clampWidth(drag.width + event.clientX - drag.x)
+      applySidebar()
+    }
+    const onSeparatorKey = event => {
+      if (!media.matches) return
+      const range = widthRange()
+      const width = panel.getBoundingClientRect().width
+      const next = { ArrowLeft: width - 16, ArrowRight: width + 16, Home: range.min, End: range.max }[event.key]
+      if (typeof next !== "number") return
+      event.preventDefault()
+      finishDrag()
+      readingSidebarPreference.width = clampWidth(next)
+      applySidebar()
+      savePreference()
+    }
+    const onCollapse = () => {
+      finishDrag()
+      readingSidebarPreference.collapsed = true
+      applySidebar()
+      savePreference()
+      restoreButton.focus({ preventScroll: true })
+    }
+    const onRestore = () => {
+      readingSidebarPreference.collapsed = false
+      applySidebar()
+      savePreference()
+      collapseButton.focus({ preventScroll: true })
+    }
+    const onViewportChange = () => {
+      finishDrag()
+      applySidebar()
+    }
+    separator.addEventListener("pointerdown", onPointerDown)
+    separator.addEventListener("pointermove", onPointerMove)
+    separator.addEventListener("pointerup", finishDrag)
+    separator.addEventListener("pointercancel", finishDrag)
+    separator.addEventListener("lostpointercapture", finishDrag)
+    separator.addEventListener("keydown", onSeparatorKey)
+    collapseButton.addEventListener("click", onCollapse)
+    restoreButton.addEventListener("click", onRestore)
+    window.addEventListener("resize", onViewportChange)
+    window.addEventListener("blur", finishDrag)
+    applySidebar()
+    window.addCleanup(() => {
+      finishDrag()
+      separator.removeEventListener("pointerdown", onPointerDown)
+      separator.removeEventListener("pointermove", onPointerMove)
+      separator.removeEventListener("pointerup", finishDrag)
+      separator.removeEventListener("pointercancel", finishDrag)
+      separator.removeEventListener("lostpointercapture", finishDrag)
+      separator.removeEventListener("keydown", onSeparatorKey)
+      collapseButton.removeEventListener("click", onCollapse)
+      restoreButton.removeEventListener("click", onRestore)
+      window.removeEventListener("resize", onViewportChange)
+      window.removeEventListener("blur", finishDrag)
+    })
+  }
+
   const directory = document.querySelector(".site-rail-left .explorer-content")
   if (directory) {
     const updateDirectory = () => {
@@ -386,13 +514,38 @@ document.addEventListener("nav", () => {
       })
       directory.querySelectorAll(".folder-icon").forEach(icon => {
         const folder = icon.closest(".folder-container")
-        const open = folder.nextElementSibling?.classList.contains("open") ?? false
+        const contents = folder.nextElementSibling
+        const preferred = folderOverrides.get(folder.dataset.folderpath)
+        if (preferred !== undefined && contents.classList.contains("open") !== preferred) {
+          contents.classList.toggle("open", preferred)
+        }
+        const open = contents.classList.contains("open")
+        contents.inert = !open
+        folder.querySelector(".folder-button")?.setAttribute("aria-expanded", String(open))
         const title = folder.querySelector(".folder-title")?.textContent ?? "目录"
         icon.setAttribute("role", "button")
         icon.setAttribute("tabindex", "0")
         icon.setAttribute("aria-expanded", String(open))
         icon.setAttribute("aria-label", (open ? "收起 " : "展开 ") + title)
       })
+    }
+    const onDirectoryClick = event => {
+      const icon = event.target.closest(".folder-icon")
+      const link = event.target.closest("a.folder-button")
+      if (!icon && !link) return
+      if (link && (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey)) return
+      const folder = event.target.closest(".folder-container")
+      const open = !folder.nextElementSibling.classList.contains("open")
+      folderOverrides.set(folder.dataset.folderpath, open)
+      if (link) {
+        if (link.pathname === location.pathname) {
+          event.preventDefault()
+          event.stopPropagation()
+        } else {
+          pendingDirectoryToggle = { path: folder.dataset.folderpath, target: link.pathname, open }
+        }
+        folder.querySelector(".folder-icon").dispatchEvent(new MouseEvent("click", { bubbles: true }))
+      }
     }
     const onDirectoryKey = event => {
       if (event.key !== "Enter" && event.key !== " ") return
@@ -404,10 +557,12 @@ document.addEventListener("nav", () => {
     const observer = new MutationObserver(updateDirectory)
     observer.observe(directory, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] })
     directory.addEventListener("keydown", onDirectoryKey)
+    directory.addEventListener("click", onDirectoryClick, true)
     updateDirectory()
     window.addCleanup(() => {
       observer.disconnect()
       directory.removeEventListener("keydown", onDirectoryKey)
+      directory.removeEventListener("click", onDirectoryClick, true)
     })
   }
 
@@ -439,10 +594,12 @@ document.addEventListener("nav", () => {
     if (frame === undefined) frame = requestAnimationFrame(updateOutline)
   }
   document.addEventListener("scroll", onScroll, { passive: true })
+  document.addEventListener("reading-layout-change", onScroll)
   window.addEventListener("resize", onScroll)
   updateOutline()
   window.addCleanup(() => {
     document.removeEventListener("scroll", onScroll)
+    document.removeEventListener("reading-layout-change", onScroll)
     window.removeEventListener("resize", onScroll)
     if (frame !== undefined) cancelAnimationFrame(frame)
   })
@@ -534,6 +691,27 @@ export const AwakenFrame: PageFrame = {
             ))}
           </nav>
           <div class="site-tools">
+            {!home && kind !== "topics" && left.length > 0 && (
+              <button
+                type="button"
+                class="directory-toggle directory-restore"
+                aria-label="展开目录"
+                title="展开目录"
+                aria-controls="awaken-directory-panel"
+                aria-expanded="true"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M9 4v16m4-11 3 3-3 3" />
+                </svg>
+              </button>
+            )}
             {header.map((Component) => (
               <Component {...props} />
             ))}
@@ -551,13 +729,53 @@ export const AwakenFrame: PageFrame = {
           </main>
         ) : (
           <div class="reading-layout">
-            <aside class="site-rail site-rail-left" aria-label="笔记分类">
+            <aside
+              class="site-rail site-rail-left"
+              aria-label="笔记分类"
+              id="awaken-directory-panel"
+            >
+              {left.length > 0 && (
+                <div class="directory-toolbar">
+                  <button
+                    type="button"
+                    class="directory-toggle directory-collapse"
+                    aria-label="收起目录"
+                    title="收起目录"
+                    aria-controls="awaken-directory-panel"
+                    aria-expanded="true"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="4" width="18" height="16" rx="2" />
+                      <path d="M9 4v16m7-11-3 3 3 3" />
+                    </svg>
+                  </button>
+                </div>
+              )}
               <nav class="rail-content" aria-label="领域目录">
                 {left.map((Component) => (
                   <Component {...props} />
                 ))}
               </nav>
             </aside>
+            {left.length > 0 && (
+              <div
+                class="directory-resizer"
+                role="separator"
+                aria-label="调整目录宽度"
+                aria-orientation="vertical"
+                aria-controls="awaken-directory-panel"
+                aria-valuemin={200}
+                aria-valuemax={520}
+                aria-valuenow={260}
+                tabIndex={0}
+              />
+            )}
             <main class="site-document" id="main-content">
               <header class="document-heading">
                 {heading ? (
