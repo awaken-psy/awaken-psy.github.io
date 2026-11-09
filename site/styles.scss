@@ -399,58 +399,100 @@ summary:focus-visible {
   font: 12px var(--bodyFont);
   color: var(--site-muted);
 }
+.site-topics {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 44px;
+}
+.topics-intro {
+  margin-bottom: 36px;
+}
+.topics-intro h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.topics-intro p {
+  margin: 12px 0 0;
+  color: var(--site-muted);
+}
+.topic-domain + .topic-domain {
+  margin-top: 40px;
+}
+.topic-domain-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--site-line);
+  padding-top: 24px;
+  margin-bottom: 20px;
+}
+.topic-domain-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.333333;
+  font-weight: 600;
+}
+.topic-domain-heading p {
+  margin: 0;
+  color: var(--site-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
 .topic-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--site-line);
-  border-bottom: 1px solid var(--site-line);
+  gap: 16px;
 }
 .topic-item {
   display: flex;
-  align-items: center;
-  gap: 13px;
-  padding: 23px 20px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  min-height: 132px;
   color: var(--dark);
   min-width: 0;
-}
-.topic-item + .topic-item {
-  border-left: 1px solid var(--site-line);
-}
-.topic-item:first-child {
-  padding-left: 2px;
-}
-.topic-item:last-child {
-  padding-right: 2px;
+  border: 1px solid var(--site-line);
+  border-radius: 8px;
+  background: var(--site-panel);
 }
 .topic-item:hover {
-  background: var(--site-soft-hover);
+  border-color: var(--site-accent);
   color: var(--site-accent-hover);
 }
-.topic-glyph {
-  color: var(--site-accent);
-  font-size: 27px;
-  width: 30px;
-  text-align: center;
-  flex-shrink: 0;
-}
 .topic-item h3 {
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: 600;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 .topic-item p {
-  font-size: 12px;
-  margin: 2px 0 0;
+  font-size: 14px;
+  margin: 0;
   color: var(--site-muted);
 }
 .topic-count {
-  font: 12px var(--bodyFont);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
   color: var(--site-muted);
-  white-space: nowrap;
-  margin-left: auto;
+  margin-top: auto;
 }
-.topic-count > span {
-  margin-left: 5px;
+.topic-count > span:last-child {
+  color: var(--site-accent);
+}
+.topics-empty {
+  color: var(--site-muted);
+}
+.topic-notes-count {
+  color: var(--site-muted);
+  font-size: 14px;
+  margin: 20px 0 16px;
 }
 .note-list {
   border-top: 1px solid var(--site-line);
@@ -636,15 +678,6 @@ summary:focus-visible {
 .document-after {
   margin-top: 36px;
 }
-.site-document > .topic-grid {
-  grid-template-columns: 1fr;
-  margin-top: 28px;
-}
-.site-document > .topic-grid .topic-item {
-  border-left: none;
-  border-bottom: 1px solid var(--site-line);
-  padding: 20px 0;
-}
 .site-document .section-li {
   padding: 10px 0;
 }
@@ -662,14 +695,6 @@ summary:focus-visible {
   .reading-layout {
     grid-template-columns: 195px minmax(0, 1fr) 165px;
     column-gap: 25px;
-  }
-  .topic-item {
-    padding-left: 14px;
-    padding-right: 14px;
-    gap: 9px;
-  }
-  .topic-item p {
-    max-width: 150px;
   }
 }
 @media (max-width: 1099px) {
@@ -723,22 +748,24 @@ summary:focus-visible {
     line-height: 1.714286;
   }
   .topic-grid {
-    grid-template-columns: 1fr;
-  }
-  .topic-item + .topic-item {
-    border-left: none;
-    border-top: 1px solid var(--site-line);
-  }
-  .topic-item,
-  .topic-item:first-child,
-  .topic-item:last-child {
-    padding: 20px 4px;
-  }
-  .topic-item p {
-    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 700px) {
+  .site-topics {
+    padding-top: 32px;
+  }
+  .topics-intro h1 {
+    font-size: 28px;
+    line-height: 1.428571;
+  }
+  .topic-domain-heading h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
   .awaken-shell {
     padding: 0 20px;
   }

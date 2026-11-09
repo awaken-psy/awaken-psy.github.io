@@ -10,6 +10,7 @@ import {
   type FilePath,
 } from "../quartz/util/path"
 import site from "../site.config.mjs"
+import { htmlToJsx } from "../quartz/util/jsx"
 
 function link(props: QuartzComponentProps, target: string) {
   return resolveRelative(
@@ -86,36 +87,93 @@ function SectionTitle({
   )
 }
 
-export function TopicList(props: QuartzComponentProps) {
+function topicDomains(props: QuartzComponentProps) {
   const notes = publicNotes(props)
+  return site.categories
+    .map((category) => {
+      const counts = new Map<string, number>()
+      for (const file of notes.filter((note) =>
+        inFolder(note, category.path),
+      )) {
+        const parts = String(file.relativePath)
+          .slice(category.path.length + 1)
+          .split("/")
+        if (parts.length < 2) continue
+        const path = `${category.path}/${parts[0]}`
+        counts.set(path, (counts.get(path) ?? 0) + 1)
+      }
+      const topics = [...counts].map(([path, count]) => {
+        const configured = site.topics.find((topic) => topic.path === path)
+        return {
+          path,
+          count,
+          title: configured?.title ?? path.split("/").at(-1)!,
+          description: configured?.description,
+        }
+      })
+      topics.sort((a, b) => a.title.localeCompare(b.title, "zh-CN"))
+      return { ...category, topics }
+    })
+    .filter((domain) => domain.topics.length > 0)
+}
+
+export function TopicList(props: QuartzComponentProps) {
+  const domains = topicDomains(props)
   return (
-    <div class="topic-grid">
-      {site.topics.map((topic) => {
-        const count = notes.filter((file) => inFolder(file, topic.path)).length
-        return (
-          count > 0 && (
-            <a
-              class="topic-item internal"
-              href={link(props, `${topic.path}/index.md`)}
-            >
-              <span class="topic-glyph" aria-hidden="true">
-                {topic.title === "CUDA"
-                  ? "⌘"
-                  : topic.title === "LearnOpenGL"
-                    ? "◇"
-                    : "◈"}
-              </span>
-              <div>
+    <div class="topic-groups">
+      {domains.map((domain, index) => (
+        <section class="topic-domain" aria-labelledby={`topic-domain-${index}`}>
+          <div class="topic-domain-heading">
+            <h2 id={`topic-domain-${index}`}>{domain.title}</h2>
+            <p>{domain.topics.length} 个专题</p>
+          </div>
+          <div class="topic-grid">
+            {domain.topics.map((topic) => (
+              <a
+                class="topic-item internal"
+                href={link(props, `${topic.path}/index.md`)}
+              >
                 <h3>{topic.title}</h3>
-                <p>{topic.description}</p>
-              </div>
-              <span class="topic-count">
-                {count} 篇 <span aria-hidden="true">↗</span>
-              </span>
-            </a>
-          )
-        )
-      })}
+                {topic.description && <p>{topic.description}</p>}
+                <div class="topic-count">
+                  <span>{topic.count} 篇笔记</span>
+                  <span aria-hidden="true">↗</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+      {domains.length === 0 && <p class="topics-empty">暂无公开专题。</p>}
+    </div>
+  )
+}
+
+export function TopicNotes(props: QuartzComponentProps & { folder: string }) {
+  const notes = publicNotes(props)
+    .filter((file) => inFolder(file, props.folder))
+    .sort((a, b) =>
+      String(a.relativePath).localeCompare(String(b.relativePath), "zh-CN", {
+        numeric: true,
+      }),
+    )
+  return (
+    <div class="topic-notes">
+      <article>{htmlToJsx(props.fileData.filePath!, props.tree)}</article>
+      <p class="topic-notes-count">共 {notes.length} 篇公开笔记</p>
+      <div class="note-list">
+        {notes.map((file) => (
+          <a
+            class="note-row internal"
+            href={link(props, String(file.relativePath))}
+          >
+            <span>{file.frontmatter?.title}</span>
+            <span class="note-arrow" aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
@@ -279,6 +337,14 @@ export const AwakenFrame: PageFrame = {
       props.tree as { children?: { type: string; tagName?: string }[] }
     ).children?.some((node) => node.type === "element" && node.tagName === "h1")
     const current = String(props.fileData.slug ?? "index")
+    const topic = current.endsWith("/index")
+      ? topicDomains(props)
+          .flatMap((domain) => domain.topics)
+          .find(
+            (entry) =>
+              current === slugifyFilePath(`${entry.path}/index.md` as FilePath),
+          )
+      : undefined
     return (
       <div class={home ? "awaken-shell is-home" : "awaken-shell"}>
         <a class="skip-link" href="#main-content">
@@ -322,6 +388,14 @@ export const AwakenFrame: PageFrame = {
         </header>
         {home ? (
           <Home {...props} />
+        ) : kind === "topics" ? (
+          <main class="site-topics" id="main-content">
+            <header class="topics-intro">
+              <h1>{props.fileData.frontmatter?.title}</h1>
+              <Content {...props} />
+            </header>
+            <TopicList {...props} />
+          </main>
         ) : (
           <div class="reading-layout">
             <aside class="site-rail site-rail-left" aria-label="笔记分类">
@@ -342,11 +416,14 @@ export const AwakenFrame: PageFrame = {
               </div>
               {!hasHeading && (
                 <h1 class="document-title">
-                  {props.fileData.frontmatter?.title}
+                  {topic?.title ?? props.fileData.frontmatter?.title}
                 </h1>
               )}
-              <Content {...props} />
-              {kind === "topics" && <TopicList {...props} />}
+              {topic ? (
+                <TopicNotes {...props} folder={topic.path} />
+              ) : (
+                <Content {...props} />
+              )}
               <div class="document-after">
                 {afterBody.map((Component) => (
                   <Component {...props} />
