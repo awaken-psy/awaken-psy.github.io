@@ -663,7 +663,7 @@ html:has(.is-reading) {
   visibility: visible;
 }
 .site-rail-left .explorer-ul {
-  max-height: calc(100dvh - 184px);
+  max-height: calc(100dvh - 136px);
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 0 8px 12px 0;

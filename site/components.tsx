@@ -484,16 +484,11 @@ export const AwakenFrame: PageFrame = {
         ) : (
           <div class="reading-layout">
             <aside class="site-rail site-rail-left" aria-label="笔记分类">
-              <details class="rail-disclosure" open>
-                <summary role="button" aria-expanded="true">
-                  笔记目录
-                </summary>
-                <div class="rail-content">
-                  {left.map((Component) => (
-                    <Component {...props} />
-                  ))}
-                </div>
-              </details>
+              <nav class="rail-content" aria-label="领域目录">
+                {left.map((Component) => (
+                  <Component {...props} />
+                ))}
+              </nav>
             </aside>
             <main class="site-document" id="main-content">
               <div class="document-meta">
