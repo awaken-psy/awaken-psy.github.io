@@ -1,6 +1,8 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 import { parse, parseFragment } from "parse5"
+import postcss from "postcss"
+import valueParser from "postcss-value-parser"
 import { parseArgs } from "node:util"
 import { pathToFileURL } from "node:url"
 import { slugifyFilePath } from "@quartz-community/utils/path"
@@ -32,11 +34,8 @@ export async function validateBuild({
   for (const file of files) {
     if (file.endsWith(".md") || file.includes(".publish-manifest"))
       errors.push(`构建产物含有源文件 ${file}`)
-    if (!/\.(?:html?|svg)$/iu.test(file)) continue
-    const html = await fs.readFile(path.join(output, file), "utf8")
-    if (html.includes('class="katex-error"'))
-      errors.push(`${file} 存在公式渲染错误`)
-    const document = file.endsWith(".svg") ? parseFragment(html) : parse(html)
+    if (!/\.(?:html?|svg|css)$/iu.test(file)) continue
+    const source = await fs.readFile(path.join(output, file), "utf8")
     function check(raw) {
       if (!raw || /^(?:[a-z][a-z\d+.-]*:|\/\/|#|\?)/iu.test(raw)) return
       let target
@@ -69,6 +68,30 @@ export async function validateBuild({
       if (!candidates.some((candidate) => files.has(candidate)))
         errors.push(`${file} 缺少本地引用 ${raw}`)
     }
+    if (file.endsWith(".css")) {
+      const css = postcss.parse(source)
+      function checkUrls(value) {
+        valueParser(value).walk((node) => {
+          if (node.type !== "function" || node.value.toLowerCase() !== "url")
+            return
+          const address = valueParser.stringify(node.nodes).trim()
+          check(address.replace(/^(['"])([\s\S]*)\1$/u, "$2"))
+          return false
+        })
+      }
+      css.walkDecls((declaration) => checkUrls(declaration.value))
+      css.walkAtRules("import", (rule) => {
+        const address = valueParser(rule.params).nodes[0]
+        if (address?.type === "string") check(address.value)
+        else checkUrls(rule.params)
+      })
+      continue
+    }
+    if (source.includes('class="katex-error"'))
+      errors.push(`${file} 存在公式渲染错误`)
+    const document = file.endsWith(".svg")
+      ? parseFragment(source)
+      : parse(source)
     function walk(node) {
       for (const attribute of node.attrs ?? []) {
         if (["href", "src", "poster", "data"].includes(attribute.name))

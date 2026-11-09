@@ -23,20 +23,20 @@ configuration:
     fontOrigin: local
     cdnCaching: false
     typography:
-      header: Segoe UI
-      body: Microsoft YaHei
-      code: Cascadia Code
+      header: Inter Core
+      body: Inter Core
+      code: Consolas
     colors:
       lightMode: &a1
-        light: "#0D1117"
-        lightgray: "#27313D"
-        gray: "#8B97A8"
-        darkgray: "#C8D1DC"
-        dark: "#E6EDF3"
-        secondary: "#79B8FF"
-        tertiary: "#A8D1FF"
-        highlight: "#58A6FF16"
-        textHighlight: "#58A6FF35"
+        light: "#1b1b1f"
+        lightgray: "#2e2e32"
+        gray: "#98989f"
+        darkgray: "#dfdfd6"
+        dark: "#dfdfd6"
+        secondary: "#a8b1ff"
+        tertiary: "#c4caff"
+        highlight: "#646cff29"
+        textHighlight: "#646cff40"
       darkMode: *a1
 plugins:
   - source: "@quartz-community/created-modified-date"

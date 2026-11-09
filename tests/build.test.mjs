@@ -116,6 +116,18 @@ test(
       await fs.readFile(path.join(output, "static/contentIndex.json"), "utf8"),
       /PUBLIC_MAIN/,
     )
+    const font = "static/fonts/inter-roman-latin.woff2"
+    assert.ok(names.includes(font))
+    await fs.unlink(path.join(output, font))
+    await assert.rejects(
+      validateBuild({
+        output,
+        content: path.join(project, "content"),
+        url: "https://awaken-psy.github.io/notes",
+      }),
+      /缺少本地引用.*inter-roman-latin\.woff2/,
+    )
+    await fs.copyFile(path.resolve("quartz", font), path.join(output, font))
     await fs.unlink(path.join(output, "attachments/shared.svg"))
     await assert.rejects(
       validateBuild({
