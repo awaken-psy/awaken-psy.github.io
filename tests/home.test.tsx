@@ -154,7 +154,6 @@ test("不足五篇时按实际数量呈现，空公开集保持首页可用", ()
     2,
   )
   const empty = render(<Home {...props([])} />)
-  assert.match(empty, /0 篇公开笔记/)
   assert.doesNotMatch(empty, /class="note-row internal"/)
 })
 

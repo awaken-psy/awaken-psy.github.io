@@ -221,13 +221,6 @@ export function Home(props: QuartzComponentProps) {
           </div>
         </div>
         <Sphere />
-        <div class="hero-baseline">
-          <span>学习 · 推演 · 实践</span>
-          <span>
-            {notes.length} 篇公开笔记 <span class="baseline-divider">/</span> 4
-            个学习方向
-          </span>
-        </div>
       </section>
       <section class="home-section">
         <SectionTitle
