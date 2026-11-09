@@ -764,12 +764,6 @@
       "updated": "2026-11-09T00:00:00.000Z"
     },
     {
-      "path": "notes.md",
-      "sha256": "a0019ced4d641f9936b542d597d14049aae6f83fb54292d25640bd18d3fa9889",
-      "type": "note",
-      "updated": "2026-11-09T00:00:00.000Z"
-    },
-    {
       "path": "topics.md",
       "sha256": "50deafab07c4591310fbba2e4264847ddf4a8f700201f9792654ad3550acb657",
       "type": "note",

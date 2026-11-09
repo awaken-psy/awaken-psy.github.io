@@ -275,7 +275,7 @@ export function Home(props: QuartzComponentProps) {
         <SectionTitle
           number="01"
           title="探索笔记"
-          href={link(props, "notes.md")}
+          href={link(props, "topics.md")}
         />
         <div class="category-grid">
           {site.categories.map((category, index) => (
@@ -318,7 +318,7 @@ export function Home(props: QuartzComponentProps) {
         <SectionTitle
           number={featured.length > 0 ? "03" : "02"}
           title="最近更新"
-          href={link(props, "notes.md")}
+          href={link(props, "topics.md")}
         />
         <div class="note-list">
           {recent.map((file) => (
