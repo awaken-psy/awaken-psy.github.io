@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+.quartz/
+public/
+prof/
+*.log
+*.tsbuildinfo
+.env.local
+!quartz.lock.json

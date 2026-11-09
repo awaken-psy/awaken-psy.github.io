@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3D12 HelloWindow 整体流程</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper: #2d3142;
+      --color-paper-2: #393e53;
+      --color-ink: #f5f5f5;
+      --color-muted: #bfc0c0;
+      --color-soft: #8e98ac;
+      --color-accent: #f08a59;
+      --font-sans: 'Geist', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+      --font-serif: 'Instrument Serif', 'Noto Serif SC', 'SimSun', serif;
+      --font-mono: 'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background: var(--color-paper);
+      color: var(--color-ink);
+      font-family: var(--font-sans);
+    }
+    .frame { width: 100%; max-width: 1280px; }
+    .eyebrow {
+      margin-bottom: 8px;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+      font-size: 8px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin-bottom: 24px;
+      color: var(--color-ink);
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    svg { width: 100%; min-width: 960px; display: block; }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <p class="eyebrow">SWIMLANE · HELLOWINDOW LIFECYCLE</p>
+    <h1>D3D12 HelloWindow 整体流程</h1>
+
+    <svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hello-window-flow-dark-title hello-window-flow-dark-desc">
+      <title id="hello-window-flow-dark-title">D3D12 HelloWindow 整体流程</title>
+      <desc id="hello-window-flow-dark-desc">展示 HelloWindow 从 WinMain 和窗口创建，经 D3D12 初始化、逐帧命令录制、GPU 提交、交换链呈现、Fence 同步，到退出清理的完整流程。</desc>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#bfc0c0"/>
+        </marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#f08a59"/>
+        </marker>
+        <marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#6a95d8"/>
+        </marker>
+      </defs>
+
+      <rect width="1280" height="720" fill="#2d3142"/>
+
+      
+      <line x1="40" y1="80" x2="1240" y2="80" stroke="rgba(245,245,245,0.22)" stroke-width="1"/>
+      <line x1="40" y1="656" x2="1240" y2="656" stroke="rgba(245,245,245,0.22)" stroke-width="1"/>
+      <line x1="40" y1="80" x2="40" y2="656" stroke="rgba(245,245,245,0.22)" stroke-width="1"/>
+      <line x1="340" y1="80" x2="340" y2="656" stroke="rgba(245,245,245,0.12)" stroke-width="1"/>
+      <line x1="680" y1="80" x2="680" y2="656" stroke="rgba(245,245,245,0.12)" stroke-width="1"/>
+      <line x1="960" y1="80" x2="960" y2="656" stroke="rgba(245,245,245,0.12)" stroke-width="1"/>
+      <line x1="1240" y1="80" x2="1240" y2="656" stroke="rgba(245,245,245,0.22)" stroke-width="1"/>
+
+      <text x="188" y="64" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.16em">APP CPU / WIN32</text>
+      <text x="508" y="64" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.16em">D3D12 / DXGI API</text>
+      <text x="820" y="64" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.16em">GPU QUEUE</text>
+      <text x="1100" y="64" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.16em">WINDOW / DISPLAY</text>
+
+      
+      <path d="M 296 128 H 344 Q 352 128 352 136 V 200 Q 352 208 360 208 H 392" fill="none" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="512" y1="240" x2="512" y2="264" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 392 296 H 344 Q 336 296 336 304 V 364 Q 336 372 328 372 H 296" fill="none" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+      
+      <line x1="184" y1="416" x2="184" y2="440" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <line x1="296" y1="472" x2="720" y2="472" stroke="#f08a59" stroke-width="1.4" marker-end="url(#arrow-accent)"/>
+      <path d="M 920 472 H 952 Q 960 472 960 480 V 544 Q 960 552 968 552 H 992" fill="none" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 992 552 H 944 Q 936 552 936 560 V 616 Q 936 624 928 624 H 632" fill="none" stroke="#bfc0c0" stroke-width="1.2" marker-end="url(#arrow)"/>
+      <path d="M 392 624 H 376 Q 368 624 368 616 V 404 Q 368 396 360 396 H 296" fill="none" stroke="#bfc0c0" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+
+      
+      <path d="M 72 396 H 56 Q 48 396 48 404 V 616 Q 48 624 56 624 H 72" fill="none" stroke="#bfc0c0" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+
+      
+      <rect x="476" y="448" width="64" height="12" rx="2" fill="#2d3142"/>
+      <text x="508" y="456" fill="#f08a59" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">SUBMIT</text>
+
+      <rect x="384" y="512" width="88" height="16" rx="2" fill="#2d3142"/>
+      <text x="428" y="524" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">NEXT FRAME</text>
+
+      <rect x="64" y="512" width="88" height="16" rx="2" fill="#2d3142"/>
+      <text x="108" y="524" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">WM_DESTROY</text>
+
+      
+      <rect x="72" y="96" width="224" height="64" rx="6" fill="#2d3142"/>
+      <rect x="72" y="96" width="224" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="80" y="104" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="92" y="112" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">01</text>
+      <text x="184" y="120" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">启动与创建窗口</text>
+      <text x="184" y="136" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">WinMain → sample → Run</text>
+      <text x="184" y="148" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">CreateWindow → OnInit</text>
+
+      
+      <rect x="392" y="176" width="240" height="64" rx="6" fill="#2d3142"/>
+      <rect x="392" y="176" width="240" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="400" y="184" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="412" y="192" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">02</text>
+      <text x="512" y="200" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">建立基础图形环境</text>
+      <text x="512" y="216" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Factory → Adapter → Device → Queue</text>
+      <text x="512" y="228" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Swap Chain → RTV → Allocator</text>
+
+      
+      <rect x="392" y="264" width="240" height="64" rx="6" fill="#2d3142"/>
+      <rect x="392" y="264" width="240" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="400" y="272" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="412" y="280" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">03</text>
+      <text x="512" y="288" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">准备运行与同步对象</text>
+      <text x="512" y="304" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Command List → Close</text>
+      <text x="512" y="316" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Fence(0) · Event · next value(1)</text>
+
+      
+      <rect x="72" y="352" width="224" height="64" rx="6" fill="#2d3142"/>
+      <rect x="72" y="352" width="224" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="80" y="360" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="92" y="368" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">04</text>
+      <text x="184" y="376" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">窗口消息分派</text>
+      <text x="184" y="392" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">WM_PAINT → OnUpdate / OnRender</text>
+      <text x="184" y="404" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">WM_DESTROY → quit</text>
+
+      
+      <rect x="72" y="440" width="224" height="64" rx="6" fill="#2d3142"/>
+      <rect x="72" y="440" width="224" height="64" rx="6" fill="rgba(240,138,89,0.10)" stroke="#f08a59" stroke-width="1.2"/>
+      <rect x="80" y="448" width="24" height="12" rx="2" fill="transparent" stroke="rgba(240,138,89,0.56)" stroke-width="0.8"/>
+      <text x="92" y="456" fill="#f08a59" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">05</text>
+      <text x="184" y="464" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">录制一帧命令</text>
+      <text x="184" y="480" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Reset → PRESENT → RT → Clear</text>
+      <text x="184" y="492" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">RT → PRESENT → Close</text>
+
+      
+      <rect x="720" y="440" width="200" height="64" rx="6" fill="#2d3142"/>
+      <rect x="720" y="440" width="200" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="728" y="448" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="740" y="456" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">06</text>
+      <text x="820" y="464" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">执行已录制命令</text>
+      <text x="820" y="480" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">ExecuteCommandLists</text>
+      <text x="820" y="492" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Queue executes in order</text>
+
+      
+      <rect x="992" y="520" width="216" height="64" rx="6" fill="#2d3142"/>
+      <rect x="992" y="520" width="216" height="64" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="1000" y="528" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="1012" y="536" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">07</text>
+      <text x="1100" y="544" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">呈现当前 Back Buffer</text>
+      <text x="1100" y="560" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Present(1, 0)</text>
+      <text x="1100" y="572" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Swap Chain → window</text>
+
+      
+      <rect x="392" y="600" width="240" height="48" rx="6" fill="#2d3142"/>
+      <rect x="392" y="600" width="240" height="48" rx="6" fill="rgba(240,138,89,0.10)" stroke="#f08a59" stroke-width="1.2"/>
+      <rect x="400" y="608" width="24" height="12" rx="2" fill="transparent" stroke="rgba(240,138,89,0.56)" stroke-width="0.8"/>
+      <text x="412" y="616" fill="#f08a59" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">08</text>
+      <text x="512" y="620" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">等待 GPU 并推进下一帧</text>
+      <text x="512" y="636" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Signal → Event wait → buffer index</text>
+
+      
+      <rect x="72" y="600" width="224" height="48" rx="6" fill="#2d3142"/>
+      <rect x="72" y="600" width="224" height="48" rx="6" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <rect x="80" y="608" width="24" height="12" rx="2" fill="transparent" stroke="rgba(245,245,245,0.32)" stroke-width="0.8"/>
+      <text x="92" y="616" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">09</text>
+      <text x="184" y="620" fill="#f5f5f5" font-size="12" font-weight="600" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">退出与资源释放</text>
+      <text x="184" y="636" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle">Wait → CloseHandle → ComPtr Release</text>
+
+      
+      <line x1="40" y1="668" x2="1240" y2="668" stroke="rgba(245,245,245,0.12)" stroke-width="0.8"/>
+      <text x="40" y="688" fill="#bfc0c0" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.16em">LEGEND</text>
+
+      <rect x="128" y="680" width="16" height="12" rx="2" fill="#393e53" stroke="rgba(245,245,245,0.50)" stroke-width="1"/>
+      <text x="152" y="688" fill="#bfc0c0" font-size="8" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif">生命周期阶段</text>
+
+      <rect x="280" y="680" width="16" height="12" rx="2" fill="rgba(240,138,89,0.10)" stroke="#f08a59" stroke-width="1"/>
+      <text x="304" y="688" fill="#bfc0c0" font-size="8" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif">帧工作焦点</text>
+
+      <line x1="432" y1="688" x2="468" y2="688" stroke="#f08a59" stroke-width="1.4" marker-end="url(#arrow-accent)"/>
+      <text x="480" y="692" fill="#bfc0c0" font-size="8" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif">CPU 提交到 GPU</text>
+
+      <line x1="640" y1="688" x2="676" y2="688" stroke="#bfc0c0" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+      <text x="688" y="692" fill="#bfc0c0" font-size="8" font-family="'Geist','Noto Sans SC','Microsoft YaHei',sans-serif">下一帧或退出分支</text>
+    </svg>
+  </main>
+</body>
+</html>

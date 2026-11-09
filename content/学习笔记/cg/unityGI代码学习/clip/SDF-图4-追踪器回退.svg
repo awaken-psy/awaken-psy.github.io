@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sdf-fallback-title sdf-fallback-desc">
+  <title id="sdf-fallback-title">追踪器回退策略</title>
+  <desc id="sdf-fallback-desc">流程图展示 TuanjieGI 追踪器的级联回退：ScreenTracer → SDFTracer → CascadedSDFTracer → 硬件光追踪（可选）。</desc>
+  <defs>
+    <marker id="fb-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#4f5d75"/>
+    </marker>
+    <marker id="fb-arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#eb6c36"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+  
+  <line x1="200" y1="64" x2="232" y2="64" stroke="#4f5d75" stroke-width="1.5" marker-end="url(#fb-arrow)"/>
+  <line x1="424" y1="64" x2="456" y2="64" stroke="#4f5d75" stroke-width="1.5" marker-end="url(#fb-arrow)"/>
+  <line x1="648" y1="64" x2="680" y2="64" stroke="#4f5d75" stroke-width="1.5" marker-end="url(#fb-arrow)"/>
+
+  
+  <rect x="188" y="44" width="56" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="216" y="56" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">没命中</text>
+
+  <rect x="412" y="44" width="56" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="440" y="56" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">没命中</text>
+
+  <rect x="636" y="44" width="56" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="664" y="56" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">没命中</text>
+
+  
+  <rect x="48" y="32" width="152" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="48" y="32" width="152" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.3"/>
+  <rect x="56" y="40" width="36" height="16" rx="2" fill="transparent" stroke="rgba(235,108,54,0.55)" stroke-width="1"/>
+  <text x="74" y="52" fill="#eb6c36" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">T1</text>
+  <text x="124" y="70" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">ScreenTracer</text>
+  <text x="124" y="88" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">屏幕空间 · 最快</text>
+
+  
+  <rect x="232" y="32" width="192" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="232" y="32" width="192" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1.3"/>
+  <rect x="240" y="40" width="36" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.45)" stroke-width="1"/>
+  <text x="258" y="52" fill="#2d3142" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">T2</text>
+  <text x="328" y="70" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">SDFTracer</text>
+  <text x="328" y="88" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">基础 SDF · 屏幕外</text>
+
+  
+  <rect x="456" y="32" width="192" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="456" y="32" width="192" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1.3"/>
+  <rect x="464" y="40" width="36" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.45)" stroke-width="1"/>
+  <text x="482" y="52" fill="#2d3142" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">T3</text>
+  <text x="552" y="70" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">CascadedSDFTracer</text>
+  <text x="552" y="88" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">级联 SDF · 远距离</text>
+
+  
+  <rect x="680" y="32" width="192" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="680" y="32" width="192" height="64" rx="6" fill="rgba(45,49,66,0.02)" stroke="rgba(45,49,66,0.20)" stroke-width="1.3" stroke-dasharray="5,3"/>
+  <rect x="688" y="40" width="44" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.25)" stroke-width="1"/>
+  <text x="710" y="52" fill="#7a8399" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">RT</text>
+  <text x="776" y="70" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">硬件光追踪</text>
+  <text x="776" y="88" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">RTX · 可选 · 最精确</text>
+
+  
+  <line x1="48" y1="120" x2="952" y2="120" stroke="rgba(45,49,66,0.12)" stroke-width="1"/>
+  <text x="48" y="140" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" letter-spacing="0.18em">LEGEND</text>
+
+  <rect x="148" y="130" width="16" height="12" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.3"/>
+  <text x="172" y="140" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">首选追踪器</text>
+
+  <rect x="300" y="130" width="16" height="12" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1.3"/>
+  <text x="324" y="140" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">回退追踪器</text>
+
+  <rect x="460" y="130" width="16" height="12" rx="2" fill="rgba(45,49,66,0.02)" stroke="rgba(45,49,66,0.20)" stroke-width="1.3" stroke-dasharray="5,3"/>
+  <text x="484" y="140" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">可选（需硬件支持）</text>
+</svg>

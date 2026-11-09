@@ -1,0 +1,128 @@
+configuration:
+  pageTitle: awaken
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  analytics: null
+  locale: zh-CN
+  baseUrl: awaken-psy.github.io
+  ignorePatterns:
+    - .publish-manifest.json
+    - .obsidian
+    - .git
+  drafts: false
+  publishAssets: all
+  links:
+    markdownLinkResolution: absolute
+    prettyLinks: false
+    lazyLoad: true
+  contentIndex:
+    enableSiteMap: true
+    enableRSS: true
+  theme:
+    fontOrigin: local
+    cdnCaching: false
+    typography:
+      header: Segoe UI
+      body: Microsoft YaHei
+      code: Cascadia Code
+    colors:
+      lightMode: &a1
+        light: "#0D1117"
+        lightgray: "#27313D"
+        gray: "#8B97A8"
+        darkgray: "#C8D1DC"
+        dark: "#E6EDF3"
+        secondary: "#79B8FF"
+        tertiary: "#A8D1FF"
+        highlight: "#58A6FF16"
+        textHighlight: "#58A6FF35"
+      darkMode: *a1
+plugins:
+  - source: "@quartz-community/created-modified-date"
+    options:
+      priority:
+        - frontmatter
+    order: 10
+    enabled: true
+  - source: "@quartz-community/syntax-highlighting"
+    options:
+      theme:
+        light: github-dark
+        dark: github-dark
+      keepBackground: false
+    order: 20
+    enabled: true
+  - source: "@quartz-community/github-flavored-markdown"
+    order: 30
+    enabled: true
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 40
+    enabled: true
+  - source: "@quartz-community/table-of-contents"
+    order: 50
+    layout:
+      position: right
+      priority: 10
+    enabled: true
+  - source: "@quartz-community/description"
+    order: 70
+    enabled: true
+  - source: "@quartz-community/latex"
+    options:
+      renderEngine: katex
+    order: 80
+    enabled: true
+  - source: "@quartz-community/favicon"
+    enabled: true
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/folder-page"
+    enabled: true
+  - source: "@quartz-community/tag-page"
+    enabled: true
+  - source: "@quartz-community/explorer"
+    options:
+      folderClickBehavior: link
+    layout:
+      position: left
+      priority: 10
+    enabled: true
+  - source: "@quartz-community/search"
+    layout:
+      position: header
+      priority: 10
+    enabled: true
+  - source: "@quartz-community/backlinks"
+    layout:
+      position: right
+      priority: 20
+    enabled: true
+  - source: "@quartz-community/content-meta"
+    layout:
+      position: beforeBody
+      priority: 20
+    enabled: true
+  - source: "@quartz-community/breadcrumbs"
+    layout:
+      position: beforeBody
+      priority: 10
+      condition: not-index
+    enabled: true
+layout:
+  byPageType:
+    "404":
+      positions:
+        left: []
+        right: []
+        beforeBody: []
+    content: {}
+    folder:
+      positions:
+        right: []
+    tag:
+      positions:
+        right: []

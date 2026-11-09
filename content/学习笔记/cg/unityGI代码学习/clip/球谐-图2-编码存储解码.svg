@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sh-flow-title sh-flow-desc">
+  <title id="sh-flow-title">球谐编码-存储-解码数据流</title>
+  <desc id="sh-flow-desc">数据流图展示从射线命中到编码、存储到 Facet 纹理、再到解码输出间接光颜色的完整流程。</desc>
+  <defs>
+    <marker id="df-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#4f5d75"/>
+    </marker>
+    <marker id="df-arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#eb6c36"/>
+    </marker>
+    <style>
+      .sans  { font-family: 'Segoe UI', 'Microsoft YaHei', system-ui, sans-serif; }
+      .mono  { font-family: 'Consolas', 'Microsoft YaHei', ui-monospace, monospace; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+  
+  <line x1="232" y1="108" x2="280" y2="108" stroke="#4f5d75" stroke-width="1.5" marker-end="url(#df-arrow)"/>
+  <line x1="464" y1="108" x2="512" y2="108" stroke="#4f5d75" stroke-width="1.5" marker-end="url(#df-arrow)"/>
+  <line x1="696" y1="108" x2="744" y2="108" stroke="#eb6c36" stroke-width="1.8" marker-end="url(#df-arrow-accent)"/>
+
+  
+  <rect x="234" y="88" width="44" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="256" y="100" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">PROJECT</text>
+
+  <rect x="470" y="88" width="36" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="488" y="100" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">STORE</text>
+
+  <rect x="696" y="88" width="48" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="720" y="100" fill="#eb6c36" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">EVALUATE</text>
+
+  
+  <path d="M 604,140 V 176 Q 604,184 596,184 H 380 Q 372,184 372,176 V 140"
+        fill="none" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#df-arrow)"/>
+  <rect x="440" y="170" width="92" height="16" rx="2" fill="#f5f5f5"/>
+  <text x="486" y="182" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.06em">ACCUMULATE</text>
+
+  
+  <rect x="48" y="76" width="184" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="48" y="76" width="184" height="64" rx="6" fill="rgba(79,93,117,0.10)" stroke="#7a8399" stroke-width="1.3"/>
+  <rect x="56" y="84" width="36" height="16" rx="2" fill="transparent" stroke="rgba(122,131,153,0.45)" stroke-width="1"/>
+  <text x="74" y="96" fill="#7a8399" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">RAY</text>
+  <text x="140" y="114" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">Ray Hit</text>
+  <text x="140" y="132" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">color + direction</text>
+
+  
+  <rect x="280" y="76" width="184" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="280" y="76" width="184" height="64" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1.3"/>
+  <rect x="288" y="84" width="44" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.45)" stroke-width="1"/>
+  <text x="310" y="96" fill="#2d3142" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">ENC</text>
+  <text x="372" y="114" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">Encode</text>
+  <text x="372" y="132" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">project to 9 SH coef</text>
+
+  
+  <rect x="512" y="76" width="184" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="512" y="76" width="184" height="64" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1.3"/>
+  <rect x="520" y="84" width="36" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,0.55)" stroke-width="1"/>
+  <text x="538" y="96" fill="#4f5d75" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">TEX</text>
+  <text x="604" y="114" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">Facet Texture</text>
+  <text x="604" y="132" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">IndIrradiance · 9 coef</text>
+
+  
+  <rect x="744" y="76" width="208" height="64" rx="6" fill="#f5f5f5"/>
+  <rect x="744" y="76" width="208" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.3"/>
+  <rect x="752" y="84" width="44" height="16" rx="2" fill="transparent" stroke="rgba(235,108,54,0.55)" stroke-width="1"/>
+  <text x="774" y="96" fill="#eb6c36" font-size="10" font-weight="600" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle" letter-spacing="0.08em">DEC</text>
+  <text x="848" y="114" fill="#2d3142" font-size="16" font-weight="600" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" text-anchor="middle">Decode</text>
+  <text x="848" y="132" fill="#4f5d75" font-size="12" font-family="'Consolas', 'Microsoft YaHei', monospace" text-anchor="middle">SH.Evaluate(normal) → color</text>
+
+  
+  <line x1="48" y1="220" x2="952" y2="220" stroke="rgba(45,49,66,0.12)" stroke-width="1"/>
+  <text x="48" y="240" fill="#4f5d75" font-size="11" font-weight="500" font-family="'Consolas', 'Microsoft YaHei', monospace" letter-spacing="0.18em">LEGEND</text>
+
+  <rect x="148" y="230" width="16" height="12" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.3"/>
+  <text x="172" y="240" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">Decode (focal)</text>
+
+  <rect x="300" y="230" width="16" height="12" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1.3"/>
+  <text x="324" y="240" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">Process</text>
+
+  <rect x="412" y="230" width="16" height="12" rx="2" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1.3"/>
+  <text x="436" y="240" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">Storage</text>
+
+  <rect x="516" y="230" width="16" height="12" rx="2" fill="rgba(79,93,117,0.10)" stroke="#7a8399" stroke-width="1.3"/>
+  <text x="540" y="240" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">Input</text>
+
+  <line x1="616" y1="238" x2="648" y2="238" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#df-arrow)"/>
+  <text x="656" y="240" fill="#4f5d75" font-size="11" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">Multi-frame accumulation</text>
+</svg>

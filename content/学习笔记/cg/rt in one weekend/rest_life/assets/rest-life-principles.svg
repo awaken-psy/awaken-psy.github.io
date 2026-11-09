@@ -1,0 +1,127 @@
+
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rest-life-principles-title rest-life-principles-desc">
+  <title id="rest-life-principles-title">The Rest of Your Life 全书原理树</title>
+  <desc id="rest-life-principles-desc">以统一路径追踪估计公式为根，展示数学地基、物理被积函数和架构落地三条主线如何覆盖第二至第十二章。</desc>
+  <defs>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap");</style>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/>
+    </marker>
+    <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#eb6c36"/>
+    </marker>
+    <marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2e5aa8"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="720" fill="#f5f5f5"/>
+
+  <path d="M640 160 V220 H220 M640 220 H1060 M220 220 V272 M640 220 V272 M1060 220 V272"
+        fill="none" stroke="#4f5d75" stroke-width="1"/>
+  <path d="M220 392 V472 M640 392 V472 M1060 392 V472"
+        fill="none" stroke="#4f5d75" stroke-width="1"/>
+
+  <rect x="480" y="48" width="320" height="112" rx="6" fill="#f5f5f5"/>
+  <rect x="480" y="48" width="320" height="112" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
+  <rect x="496" y="64" width="112" height="16" rx="2" fill="transparent" stroke="rgba(235,108,54,0.55)" stroke-width="0.8"/>
+  <text x="552" y="76" fill="#eb6c36" font-size="8" font-weight="500"
+        font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">MASTER ESTIMATOR</text>
+  <text x="640" y="104" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">路径追踪 = 蒙特卡洛光照积分</text>
+  <text x="640" y="132" fill="#4f5d75" font-size="12"
+        font-family="'Geist Mono','Noto Sans Mono CJK SC',monospace" text-anchor="middle">Lo = Le + A · pScatter(ω) · Li(ω) / q(ω)</text>
+
+  <rect x="100" y="272" width="240" height="120" rx="6" fill="#f5f5f5"/>
+  <rect x="100" y="272" width="240" height="120" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+  <rect x="116" y="288" width="64" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.35)" stroke-width="0.8"/>
+  <text x="148" y="300" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 02–04</text>
+  <text x="220" y="328" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">数学地基</text>
+  <text x="220" y="352" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">随机平均 → 期望 → 积分</text>
+  <text x="220" y="372" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">f / q 补偿 · 方向 = 单位球面</text>
+
+  <rect x="520" y="272" width="240" height="120" rx="6" fill="#f5f5f5"/>
+  <rect x="520" y="272" width="240" height="120" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+  <rect x="536" y="288" width="64" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.35)" stroke-width="0.8"/>
+  <text x="568" y="300" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 05–06</text>
+  <text x="640" y="328" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">物理被积函数</text>
+  <text x="640" y="352" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">albedo · scattering PDF · Li</text>
+  <text x="640" y="372" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">材质决定答案 · 采样决定方差</text>
+
+  <rect x="940" y="272" width="240" height="120" rx="6" fill="#f5f5f5"/>
+  <rect x="940" y="272" width="240" height="120" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+  <rect x="956" y="288" width="48" height="16" rx="2" fill="transparent" stroke="rgba(45,49,66,0.35)" stroke-width="0.8"/>
+  <text x="980" y="300" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 11</text>
+  <text x="1060" y="328" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">架构取舍</text>
+  <text x="1060" y="352" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">shadow rays vs mixture</text>
+  <text x="1060" y="372" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">连续分布 vs Delta 事件</text>
+
+  <rect x="100" y="472" width="240" height="144" rx="6" fill="#f5f5f5"/>
+  <rect x="100" y="472" width="240" height="144" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="0.8"/>
+  <rect x="116" y="488" width="64" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,0.35)" stroke-width="0.8"/>
+  <text x="148" y="500" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 07–08</text>
+  <text x="220" y="528" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">方向构造</text>
+  <text x="220" y="552" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">逆 CDF · 余弦半球</text>
+  <text x="220" y="572" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">ONB：局部 +z → 表面法线</text>
+
+  <rect x="520" y="472" width="240" height="144" rx="6" fill="#f5f5f5"/>
+  <rect x="520" y="472" width="240" height="144" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="0.8"/>
+  <rect x="536" y="488" width="64" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,0.35)" stroke-width="0.8"/>
+  <text x="568" y="500" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 09–10</text>
+  <text x="640" y="528" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">重要方向</text>
+  <text x="640" y="552" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">灯面 → 立体角 PDF</text>
+  <text x="640" y="572" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">几何 + 材质 → mixture PDF</text>
+
+  <rect x="940" y="472" width="240" height="144" rx="6" fill="#f5f5f5"/>
+  <rect x="940" y="472" width="240" height="144" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="0.8"/>
+  <rect x="956" y="488" width="48" height="16" rx="2" fill="transparent" stroke="rgba(79,93,117,0.35)" stroke-width="0.8"/>
+  <text x="980" y="500" fill="#4f5d75" font-size="8" font-weight="500"
+        font-family="'Geist Mono',monospace" text-anchor="middle" letter-spacing="0.08em">CH 12</text>
+  <text x="1060" y="528" fill="#2d3142" font-size="16" font-weight="600"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">最终积分器</text>
+  <text x="1060" y="552" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">scatter_record 分流</text>
+  <text x="1060" y="572" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">generate / value 共用 q</text>
+  <text x="1060" y="592" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif" text-anchor="middle">ray_color 完成 Le + f / q</text>
+
+  <line x1="40" y1="640" x2="1240" y2="640" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+  <text x="40" y="660" fill="#4f5d75" font-size="8"
+        font-family="'Geist Mono',monospace" letter-spacing="0.18em">LEGEND</text>
+
+  <rect x="40" y="676" width="16" height="12" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1"/>
+  <text x="64" y="688" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif">统一估计公式</text>
+
+  <rect x="220" y="676" width="16" height="12" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+  <text x="244" y="688" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif">原理主线</text>
+
+  <rect x="360" y="676" width="16" height="12" rx="2" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="0.8"/>
+  <text x="384" y="688" fill="#4f5d75" font-size="12"
+        font-family="'Geist','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif">采样与实现落点</text>
+
+  <text x="1240" y="688" fill="#7a8399" font-size="12" font-style="italic"
+        font-family="'Instrument Serif','Noto Serif SC','Songti SC',serif" text-anchor="end">Correctness lives in the integrand; efficiency lives in q.</text>
+</svg>

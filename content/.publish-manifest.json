@@ -1,0 +1,3746 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "about.md",
+      "sha256": "0ccd10bf40026c20170a2d4a857df1b5cdde6257ea8608890301e4d5fd59b24b",
+      "type": "note",
+      "updated": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "path": "Attachments/comparison.png",
+      "sha256": "70c7bc023e80b0b8095507b108f8f732539bf191f7aa0815a2a4ff293e54c9e0",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec11-page51-memory-hierarchy.png",
+      "sha256": "082fd12c888eabc1eed16c9ed08d49ac23e6826fa6459d746421a34d13318317",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec11-page66-cpu-clock-rates.png",
+      "sha256": "7c12057b56dbeeebdae6df301c6137a8d0ad5e0aa8e7c22623c5055e198c0c92",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-06.png",
+      "sha256": "603a0cbd4c8eeb388a4ce6c5745ffcdf4fc4d00dbe90cd6d77d25f2e2f09ff9b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-07.png",
+      "sha256": "da2be0ea79cd57951857e5f5b9d66b628adbf91d30adf81a5540b9a4f4b2ea7b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-11.png",
+      "sha256": "d5a5a64ad23903588af7b99639fb26b9c3daf9cb410734679952b54fb1f573cb",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-12.png",
+      "sha256": "fbdbab459ec866cae3340419e5a773791d4279afa41ae66404a2b57bf512be90",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-14.png",
+      "sha256": "bb8a6afc3c34401d1052db1ff6b86df1099930a28d899e81ffb5f4663c856c3b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-15.png",
+      "sha256": "8d01e795f50ebdb7b12245554b99a5274395becaae7af95ac01ef3dea3ae5331",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-17.png",
+      "sha256": "97065f2a98a4f9536325df2248c2f57a708e86fd053efa64d77bebfa2ad729c1",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-24.png",
+      "sha256": "32e078d69ea342d99c3427b28096aadd1f0ac720dba3e9f5eca34a7a97c661ba",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-27.png",
+      "sha256": "5ff269869d51a07f0a960c1ebcfedefe34bb10f838688c2f099f0a2c25977f5a",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-36.png",
+      "sha256": "82134dc3f27bfa7e69a1499f0620778b619eb0d98167b0fcd7e06d5e1a3141fb",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-39.png",
+      "sha256": "49e74e9cd6e704161b89bff00b11216525cf81dadb686f7518b1a89bcd1d0442",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec12-cache-memories/page-42.png",
+      "sha256": "1e23d7f6d088b87b7c094e9e777ea71bbebc064dd1bac9283bcc2e2cbf613f31",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-04.png",
+      "sha256": "f0ade4b455e61738179fad2afe9640b1b91c87ed57c32ef718cd3f03d3cb11c2",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-11.png",
+      "sha256": "f2284c4e70287c8f7828370b3fcf30d6adc85818ba28ef695c87d1efdcb28622",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-12.png",
+      "sha256": "46a99d84706ebbbf2ea57b96fa27da2f1ea7d57035d635ede7d433d8a60e68b4",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-14.png",
+      "sha256": "6a71a7e9e7da59e012fadf285980af47bcf0b9ecad3c48ff804490140be59f3b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-15.png",
+      "sha256": "d46672f9070571a7a96a217489df325ae3870c4190f5ec8132ef980ca1f22aff",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-16.png",
+      "sha256": "d2a95eb3449a77b0e085fff5c9cd783539e0d9b69cb3d26bd0f0442f6f841665",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-18.png",
+      "sha256": "c2d3d33ec077104a282c0ac975b01ca375ca704b55605477cda5fb6153717259",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-20.png",
+      "sha256": "f8ff2a6742e13f5029744d49930211ff5efea847b554f4a4c56639628b9dd1f7",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-21.png",
+      "sha256": "3b0ab8c48d4f06416ae7cce36ef47ce1f3dfcdcad222605cfd2d0ae2c348601b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-22.png",
+      "sha256": "c5ff4b0069c860f4cbf121df8a81ca6d249328120e337fd56c3ec4eb1860a63e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-23.png",
+      "sha256": "b16f125b9662cc2506d62c0bd9ec08ab0a148b2729feb02065a674e3eea75430",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-26.png",
+      "sha256": "13c0b10c0a69cd8fe02d271ca7ab166c9591a9abcb95dc1913778aaedb4d9aec",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-28.png",
+      "sha256": "516dfbb91f462d8ff10054754376a77e5d48dba0df42a4c74dfb787e96d0baff",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-29.png",
+      "sha256": "151b23282861827cb207a059e29cf412f80dc7a77b0dcd0beb5ba58593090eea",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-33.png",
+      "sha256": "4d2701d1a014cf3ece22b92e8fa792d3bf7ea18f010adb0013ef65e4de8e360d",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-34.png",
+      "sha256": "ea33c1fdb198d533f3974a509dcc0dde6c8c6c8272e66476e9cbb53910b0f78c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-35.png",
+      "sha256": "8f98944461103859277391156344e39657e52ea3086823c72823801989f51b4e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-42.png",
+      "sha256": "ec053496cfdf3d9509539966cc489988b6c09b25dadab4405cc95841c1f8dcda",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-43.png",
+      "sha256": "fcbb99848573e202d218f373c83d16c654bdcefd2bfcf3025291ba0b3a6a5f56",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-44.png",
+      "sha256": "cefbcffcb4a15a6772db917ca7b95d65019d82cf91e0754c01312c4371087297",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-45.png",
+      "sha256": "228c4d0c972c94e2d59a6678f91f09114ff80d6b0479e2eb41c4d39bc3c59cca",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-46.png",
+      "sha256": "142147e4f5b4cf2ff5dd047662b34d0e3ebfb81be638be534148ebbbb68690ce",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-47.png",
+      "sha256": "7925af81b1ce9fb5cc1120fdbdb59ca101c52929db94f6490c78b5c79581db11",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec13-linking/page-48.png",
+      "sha256": "9f1f9ed4808bc65cb4e708551020f1d1acb2c3a3874c4f33cff2fcdaf82183c3",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-07.png",
+      "sha256": "79113463b37c78b53a8f5a8c6f0a591886c866c5ce2d695a82350bb219d7b8b7",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-08.png",
+      "sha256": "66d90ab302515ffa600a81a17501c6fe94cf862df28c096443916bd991c9b2df",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-12.png",
+      "sha256": "c3314ec6feb1595c6ba52e453657ba4be276cbb8ead0d1f2da931cdcb46d5f0b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-13.png",
+      "sha256": "eb97d4b0893ef6b497c581e9ab44410eb8045bf28260a2f2de113e6e41836e44",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-14.png",
+      "sha256": "36ea668bdb0739d1f12f34946d03ff8c146765fe79444bb86a06e2a8e337e929",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-16.png",
+      "sha256": "f55e5b0a2ad4efe289955e8aa6178f028052f8d1bba730eb8513367ad4f053b6",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-18.png",
+      "sha256": "e69fa74cef8a5c15a74e5e6aec7d4a5e35f0c0f9396bbd08cd81a7268371f18b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-19.png",
+      "sha256": "71d84a7955f1cdd4aae2adbf8495012e7a051ae2776a159b8e9f3f77ca33e024",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-22.png",
+      "sha256": "7d1f44b252decf241b96cf1d8faef9789b0bcf318a4c9c072fde2e360beb8f25",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-23.png",
+      "sha256": "65810bc80dc0beaca752a41a6c4abc2fbea4305848d1669ca19f9f3d21ca8558",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-24.png",
+      "sha256": "c2e7cf03bed42cfc29d1d3a6bf9706c7247a5186fb5185a4e27eec553323b7d8",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-26.png",
+      "sha256": "3166433acd7d30a89ccbb451597dc2ded16b72c2a6a3d3c6cb8afa6ce2dfc741",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-35.png",
+      "sha256": "ce58d7514d08e7b54294c407d85dbc440e5018b33a600fe2056377166db9a27a",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-37.png",
+      "sha256": "9ba332fec837ecd0a5ef13328623ba4cb573f9f049aed6609681aaf0a450a8a4",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-38.png",
+      "sha256": "fb3800bada7879b0d79aed7e15df6cdea54a21f9009b33120ea51ca1c19d2715",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-39.png",
+      "sha256": "0c666c3f0acdc7c2ca7c313545f02e4917a15ae16623177d614a860b7b2d48e3",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-40.png",
+      "sha256": "d9cf88b59fea4552b615afc63b22b66ee64b156fc61c0dbb3d7552a1c5f1c169",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-41.png",
+      "sha256": "be6b0257a3fa07fe591be83c38d46ecd12fa5bce1a6339107707dea2f77c20e9",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-43.png",
+      "sha256": "e7640d6fe08228acb2d9ef391b408f0241c9aa45ab7c961cf77ed7ce7dd16987",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-44.png",
+      "sha256": "8d9f37c8d147d188edb89f4ca545d004ad446b9aff37facb3d20c48d73615b1e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-46.png",
+      "sha256": "3cbd128d03bf1afba443a0c411eeb84a755156ee0f4b8e87ad156d3b38ee3894",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-47.png",
+      "sha256": "2f3c0958f1f3e39857d291c3cfb1c56ee01d1fe515f073bb3f3faa1973b737fc",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-48.png",
+      "sha256": "79ee5aeca7befe5d83042888926b51979ddf07ab4508b237aa945cbaf2d8369c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-50.png",
+      "sha256": "0a4599291a72706bff554a24f04960667c24bd1ea88fcdf0fb5728ac0c65843b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/lec14-ecf-procs/page-51.png",
+      "sha256": "b2158a440a8faa8e85534b930dc9e594218511ceefabf875ce008000e7e20178",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260625134251.png",
+      "sha256": "d40cb8d2adcaf79c4376996ab3cb6dc324c1dc1f13bf4d02fae4e1fd522b58f7",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260625143517.png",
+      "sha256": "a01f8d0b4f2f35946098baedbb5e6d019224ca0fc3bac0cfbacc58e0f20686a0",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260626012220.png",
+      "sha256": "060363e3f6e0f2b1d31603d97514c71dbdc48150d774fc9f80de80d467722bd8",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260626015409.png",
+      "sha256": "a343450b4969d8f5b7f0e02df8c6a1af622defbca6cd6e7609e8c151e841669c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260806095013.png",
+      "sha256": "cc382f513a7015b3ddb9432da41331f122c6aae2859d6dcb197770808a437d03",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260806095241.png",
+      "sha256": "58eec3d2da2c95b79000cf1e43ff5c5e4b4d968a3e1d22d9de7614bdd91c9f99",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260806111042.png",
+      "sha256": "15bfda29e0c8a8f4301f43eefd0ce3658c8ed33e188b0f9c818bbb5647f10c58",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807113940.png",
+      "sha256": "a7cae078f4657dd69b41b58987bd5bd0f6a104131441bfdb49312b6a7882ca86",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807140448.png",
+      "sha256": "6a52149e1016052cd82dd640a6ecda5d24e9d15e03d95fda8777e2ea02b537e5",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807141657.png",
+      "sha256": "2386be03edc73b63b49e8602f89c3784e82788d4a4a943440bddd59de6942e5d",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807161558.png",
+      "sha256": "ae31287e671ad2fc05ea375f1ae0431983f8bd65a982f02452fc4ed34010e3f0",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807161716.png",
+      "sha256": "d0d5eb9b67de274827c04241edce94ccecfb3d4a6e0ed9dd5ed576a213072bab",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807181625.png",
+      "sha256": "17b84015d2031a4b81c8fd2127b239ecaf534e9f1f97747213e07fff79d429a4",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807181932.png",
+      "sha256": "c6b995a97c70e5467e3eede59e9c0b1a1e5ed0d6d0f132a2a70334b5f9e84502",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807182153.png",
+      "sha256": "006aa039739c5df3ef8cdafe603a479ff1b0b81679d8840559e84ee669da8639",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807182235.png",
+      "sha256": "1c6668f4d195e988d4df04bcb353bdc60df144933ad9b1a507a2b77a74006e11",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260807214251.png",
+      "sha256": "ac36cf0903291fdde9374fd5808a1e29e0e3cabbee48e398abb417b1c733a899",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808133811.png",
+      "sha256": "5c0b72b85c007b0d5260b2bc427f6209e655bc99e7c7342d0e5f2d2c53397e07",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808134749.png",
+      "sha256": "3c2155338aa6d25444dd5c960949660185b77269d639dd175b75bab850d54ab5",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808134904.png",
+      "sha256": "8743a8c2b18f611bb1ea400f0fe629f3f7238f3d150637811075acce357dbafd",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808141825.png",
+      "sha256": "cc2d8cf749d33dc89c09152e1e1785e07ff88bdf08af020f14cc400b8d9f997f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808142329.png",
+      "sha256": "ce1b9efaf923fb04c3118d875bd3db1ada0a777d993530c3ad439ffcc7f810dc",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808153333.png",
+      "sha256": "c2e70e362c4891c43a5a4cf742dc39b6701f64f5f20093d8049ac71f87af8951",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808153412.png",
+      "sha256": "498f909535cd342e8b1ace149caec5941f79cc0ae7a6351582b79e415ee6685c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808155438.png",
+      "sha256": "2e83fe64275371daa55f133e9c473cf5a6ce5dba46d0aa4bb7fbfefdd22c420f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808155858.png",
+      "sha256": "302543ea881375e1561f4a2941a60236ad1b693921f9c7e1654ef2d79afa0337",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260808172420.png",
+      "sha256": "155560912d6524c55d5fd6a659418b8b8ff54d1483cea62d82db15613c0a6578",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20260918130634.png",
+      "sha256": "b572786df2265aef461da2acb8156bc55ad5ccd446a50c4649a9196558b7f887",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027123619.png",
+      "sha256": "83aeb60804958e3b43c76bd3f2a7123ce77a6ff81f9d90625d905fd8d342b53e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027123638.png",
+      "sha256": "f8a5c4ded38d293de43412fa11f34cef7c666f50a49c5e24775272e1557f7f50",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027124739.png",
+      "sha256": "c9d619b511e5048fe9841a7415a0a0a0e7b0b55300eaef0a7c558d5a18fad5ea",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027125759.png",
+      "sha256": "6012924a9685bc74577fa6d9060736cd3357711f7d8d86b1ae2f2fceaf218ed3",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027133510.png",
+      "sha256": "611ca65288869425779a5710b593d927db327e8a77a090b4d05ead04799640aa",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027183035.png",
+      "sha256": "0ae9dad683b112aeb76f1e2c5fa5af4ab44499fb19ae5941a76ff1e27990e8d8",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027183109.png",
+      "sha256": "0a4e06ed38ae675034a1c65ce4ded1b2453dc73fc18cbad0524cf997cc2ba13c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027183210.png",
+      "sha256": "0bc6eaeac46d51a310827efcef3b1c46a3f87f35278d1db1c0172f405142cbd9",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027185023.png",
+      "sha256": "7d1474041ac28bd54bc3bde51a1ca4de5ccd83551a021b848280e80ff3ab7817",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027185239.png",
+      "sha256": "9de6af27aaf8df2aa018d797f406dcb3512373a50d45c78e30e8f08a7a18dff5",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027185313.png",
+      "sha256": "ab835cc395fbfd7721e90c102e289ac2c2676f8782b8e056094f7f7f8389d67d",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027190536.png",
+      "sha256": "7ad7048169ab8d4c2642ef86e12ca344c08ace5d9124d4476ce235aaf6366d76",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027190852.png",
+      "sha256": "d0b15ca630e8882308e946abb11a4b528b2ff63074a812a306de30fff71004aa",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193207.png",
+      "sha256": "7307c29f528b737afb7a9b74bb43fbb345d6ae7e6649e6d0d75502d10abbb42d",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193234.png",
+      "sha256": "b82f6d5d44cf9b8d074990281686ed40274f0804c335e4d32e90c7bcd1ea45cc",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193417.png",
+      "sha256": "88038a269dfcd6995f5838f4a16e6ffc8a3e9b1c02dc42f62acff7a94a92a06c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193438.png",
+      "sha256": "ab77568efe8a3cfe9002775be8ce8cfe3ccd7296eef9be39d1b8e266afda7393",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193559.png",
+      "sha256": "64382ccf6c09756b670d508a843cdac539afd12c4a61d119a6b074e4a898dd10",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193657.png",
+      "sha256": "a0e2a67ef36a88a0ddb74041751b219a662f9be9f241e30aa67abe7910c7f370",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027193840.png",
+      "sha256": "113b547908532ded959bf1140d48a24d619a595b7bae298cd6bcf8f471f9833c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027194012.png",
+      "sha256": "32d5476888005b4e6ccfab78eeb6ebd485817a7b06302fb6903bc4ee5a1c9bdf",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027194135.png",
+      "sha256": "2547117cd81874633559f062f5532b4dc0a4bee3363ef21cd2aa456edcf75095",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027194909.png",
+      "sha256": "5678fb54b6031bc5c9aa9f77c5ac8cbfa3381c690b6f23bf8f3cda80a78d5f2f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261027200021.png",
+      "sha256": "5e54c06346dbbceb9e65fdeef557b82f99a41d7331cfa997904380a25909f28e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261029161616.png",
+      "sha256": "d8f0c4deb5dd72e748a179231c3a7f8389229932d415e42de8a55356138a24ec",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261105121903.png",
+      "sha256": "dbb7174e3b19492ef90ee85caa8af055a53e874763cc853163b666119179298a",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261105121957.png",
+      "sha256": "f217fdc0464e5f4263255e9a467fa18adc26d2c270c92bd113585af53baece6f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261105125612.png",
+      "sha256": "6da445a86f37212b7f010c76480d2f11a486fa67e33331b5ba3bb07eff2d138a",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261105140032.png",
+      "sha256": "de61d8548fd4610482c3365bcc622f2ef24faeb5cd6f3d4a05b9c2ca8252e4e1",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261106115622.png",
+      "sha256": "bfe7e6fd75df9d1709d8f9fe7c775b7f124a02b7d78b1ef92caaa63f852f5235",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261106120016.png",
+      "sha256": "381a57f8c244eb93c4f233d48e6d030dae86855507c1de7ec0f7ef13960666e7",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261106120106.png",
+      "sha256": "dd0bea9c04f493c9ffc5c27cfd93fd02c2b358fdab3e9b7d75f132de5fc8f038",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261106120718.png",
+      "sha256": "c1eb5b8785222b33f703df14f8ae68b98285783789581ed83703f1d1aaa7ea66",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107042305.png",
+      "sha256": "f67ac9d73e087ed2490012d5bed8ca833c64e7f1e6ae6ea93ae9054d2740bd71",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107042319.png",
+      "sha256": "0dd09796e557cff23cbeebece231ea72c2d022e449664829f6c4b61d45cd7510",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107050405.png",
+      "sha256": "957609c6621157ce2dbc1479e04a1d588f9ee71b4585433eb72f5c3665211cac",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107060820.png",
+      "sha256": "26d017cbbdf28018a061eb4181f9b2d14848917bcc4628e912bb068eee0773c1",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107061316.png",
+      "sha256": "d03f2907afa7cd5cfd352f4b8ad1f90518941c492f75fb754dfa4487e7310c62",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107061415.png",
+      "sha256": "b3cfabc4ee4c33a3338c1a6af31cd1137d13230a6df90b4678fa8762e6064c72",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107061539.png",
+      "sha256": "2949e46c9786136ebf5484cdb9870e213d9a7f5d59075ed0bd051b1874fa3b28",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107061817.png",
+      "sha256": "2a24e2515df640d301272483f7c6bbb61afd1910bea4d37cb738223036cd908c",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107064737.png",
+      "sha256": "74ee6654a226bb2498af5ddca651430338cc6978310926ddc4854411d8e5340a",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107143640.png",
+      "sha256": "8b1a5509cd4e1afef06295ec54d708fe30fb1701fb0baef11ce375649ffd0779",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107143937.png",
+      "sha256": "b805f4939a95de064e6c481c2cd5a2e9e9bbe7462d443a5f8749817ba127f299",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107144116.png",
+      "sha256": "8a26a0f64e9bdd3d1fcc0090d6e637098f63a3eb5cd95087aa7e5689efe54c0e",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107144722.png",
+      "sha256": "77e40ba8883b05497beda78373dc11f8b2a0639a5773d67a45b77cf6b2a570e7",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107174727.png",
+      "sha256": "9383427df78e3530645ba8a888305a778c6b5a79780fc7aa203bfacbae71605d",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107195055.png",
+      "sha256": "b1d3bbe173afa86b5c2d0be4fabc1ac53eeefb8de994b21ada55a6c9ed9a3e7f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107195322.png",
+      "sha256": "b8ee4fe459053d4931403ab5585ca927931ffb4f080124695c82b4c487b86994",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107195722.png",
+      "sha256": "c8fce89ce7c945671d5fd994734572fa78a9225304deb6ba108ee0cb0b5635df",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107195856.png",
+      "sha256": "4b31ad01e208453e5524087aae81e615d1ce1034ed9e7ad37f1796581e6bdedd",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107200040.png",
+      "sha256": "d1be5294aac0873994299453f412548e647f6324e7bd1b15d9d10481656f50ce",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261107200418.png",
+      "sha256": "07e9fdbf896d5be7e348f8aa85ba12fe24619ca98472620e302df3f577478d6f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261108031915.png",
+      "sha256": "6b6db3786623558b6a623ee1740e23b88263de6724aab3a5a8a2d887581a7dd2",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261108045900.png",
+      "sha256": "279cfb7fcca8cb70b8f0a36f6b5e1425bcc8c541ad0e560a9cb91344a8cf7f9b",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/Pasted image 20261108050842.png",
+      "sha256": "b57b309247eef29f503bae00d16b32ca611f08ea5f5f26bf02f6e449120c2151",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/pointers1.png",
+      "sha256": "5e562a07f1e5a38bb73a728d104e00bc38eeb7e7fe0e422265125aa1e887ab5f",
+      "type": "asset"
+    },
+    {
+      "path": "Attachments/pointers2.png",
+      "sha256": "96c387f8274eebeb8d5f88eaddc0a2d50d1ce0e5558fec2913eedf1dc921d49b",
+      "type": "asset"
+    },
+    {
+      "path": "index.md",
+      "sha256": "fe84864653fc1a45d4619ae017065ba228af27f42473bad9a3a0929b088241e2",
+      "type": "note",
+      "updated": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "path": "notes.md",
+      "sha256": "a0019ced4d641f9936b542d597d14049aae6f83fb54292d25640bd18d3fa9889",
+      "type": "note",
+      "updated": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "path": "topics.md",
+      "sha256": "812ebd67f9f4313c3363f0517e4189a2bd7f8e31eabe9f6228a88608b19e0182",
+      "type": "note",
+      "updated": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch1.2_sigmoid_simulating_perceptron.md",
+      "sha256": "0b9b75d95e2469d7e2f1817abfe323abf8ac0a3d8b44543c68a0bb480b3521fd",
+      "type": "note",
+      "updated": "2026-07-13T04:55:06.915Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch1.4_bitwise_representation.md",
+      "sha256": "f6919d8e685f97bb21a486c07841a383100d784d397433302218886e0812ed8d",
+      "type": "note",
+      "updated": "2026-07-13T06:14:33.097Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch1.5_gradient_descent_optimal.md",
+      "sha256": "c8f179f6db2ae11d3b572ab59b52c2579637d158a2ade4f874448d68f988006c",
+      "type": "note",
+      "updated": "2026-07-13T06:29:22.726Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch1.5_online_learning.md",
+      "sha256": "3047847b2602aed8e68574f5e6643bd90ab50362ef73753caaa751ae8c6b1c34",
+      "type": "note",
+      "updated": "2026-07-13T06:43:41.080Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch2.5_backprop_proofs.md",
+      "sha256": "2e42cd76ca2e224235bcd573e6586cbeeeedb1d84ea5251d92cab610494738c1",
+      "type": "note",
+      "updated": "2026-07-13T09:39:56.026Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch2.6_modified_backprop.md",
+      "sha256": "f2cf97e5815443a98d3317893ab5731cad2fb2fe9ed335525e7c19f95ab9f066",
+      "type": "note",
+      "updated": "2026-07-13T09:42:58.353Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch2.7_full_matrix_backprop.md",
+      "sha256": "1e269c4a058314cd9a47020cbbb760324795769725e9b3b1ce49bb5c843c8505",
+      "type": "note",
+      "updated": "2026-07-13T09:45:02.881Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.1_cross_entropy.md",
+      "sha256": "2f32c8658552f92bb9dd4f96eccc7a5cd1f0dfb48f133e5a34e095ad5734e934",
+      "type": "note",
+      "updated": "2026-07-14T09:33:14.663Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.1_softmax.md",
+      "sha256": "8db3fd7f2a0e620e1b5c332802ef77f4e4806ebc988c64742ce59daaea0aa55b",
+      "type": "note",
+      "updated": "2026-07-16T07:25:47.498Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.2_asymptotic_performance.md",
+      "sha256": "85dba4e3047efa6bba8d636584e1d46839424b9575ae51d40c343ff4ed1836a1",
+      "type": "note",
+      "updated": "2026-07-17T06:31:09.185Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.2_regularization.md",
+      "sha256": "f1bb551c753e434c5df1d47a4995eee0969df19f137c3caf714c7a92d1a0a481",
+      "type": "note",
+      "updated": "2026-07-16T08:50:25.437Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.3_early_stopping.md",
+      "sha256": "adbca95d75e856d696b6a5aaf8f4669cac1491a6cc0eb1c067b6251600e01cb5",
+      "type": "note",
+      "updated": "2026-07-17T07:30:36.032Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.3_regularization_and_weight_init.md",
+      "sha256": "e1e32da15a7e946b648467e371b9438fa4be903c633ee0925c628bb0d5c21a58",
+      "type": "note",
+      "updated": "2026-07-17T06:50:56.429Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.3_weight_initialization.md",
+      "sha256": "1708a5d9d7e3b8e5404cf3c51ede2fde583187063cb032298f5bca6a38fe58ea",
+      "type": "note",
+      "updated": "2026-07-17T06:44:45.832Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.6_hessian_momentum.md",
+      "sha256": "8772faccd28268a5b1989225a94f8a1da155e93459f0c2923c01d81168b60ccb",
+      "type": "note",
+      "updated": "2026-07-17T08:24:35.263Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch3.6_relu.md",
+      "sha256": "18c1fd8441e3564dfadcd0aa471102617f4a93a1a56b412495efc95cebdbc46f",
+      "type": "note",
+      "updated": "2026-07-17T08:21:11.852Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch4.2_universality.md",
+      "sha256": "c88c994bf1aad7caee6b06463e39349f51bf8683b4c64aca10008a722e9bc273",
+      "type": "note",
+      "updated": "2026-07-20T07:48:34.275Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch4.3_multiple_inputs.md",
+      "sha256": "8ccd21e60ce8ef262100a15591726edcccdd5ead783f81f75e1590c226d9f07d",
+      "type": "note",
+      "updated": "2026-07-20T08:09:11.403Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch4.3_single_hidden_layer.md",
+      "sha256": "8b769afe929de43c2e36df719187d30a32b473d4ebf3af17eb37659adae611f4",
+      "type": "note",
+      "updated": "2026-07-20T08:13:35.060Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch4.5_fixing_step_function.md",
+      "sha256": "87a3d606759efa2ad030bb8285b9ea9cf735ad3b9a6f1d11247341653f447222",
+      "type": "note",
+      "updated": "2026-07-20T08:52:15.604Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch5.2_gradient_instability.md",
+      "sha256": "43d6c5f3222a0a61f42dc7046cad042345fbd99997aea083e97fac0b8585bcbd",
+      "type": "note",
+      "updated": "2026-07-20T09:50:27.858Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch6.1_conv_backprop.md",
+      "sha256": "9fbc39d3e127f8f48820d24bfafd2aa4e80f570c2757d5c61dad4f92728e44b0",
+      "type": "note",
+      "updated": "2026-07-21T03:28:27.816Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch6.2_conv_anti_overfitting.md",
+      "sha256": "3611e4a0eb703fa82274f42c312f6981f94dcc11c91c080b3d9f1cd1af7b9789",
+      "type": "note",
+      "updated": "2026-07-21T03:40:42.138Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch6.2_data_augmentation.md",
+      "sha256": "a0a664d7876751951a09ad162deddd9ca0efae5a3d7b2c1eda25635d891d5350",
+      "type": "note",
+      "updated": "2026-07-21T03:36:02.610Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch6.2_omit_fc.md",
+      "sha256": "fd0d2a64336b0e069c6fd814c4b6eb63abf12e534919a825aa59b22968214711",
+      "type": "note",
+      "updated": "2026-07-21T03:11:35.742Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/ch6.2_relu_advantages.md",
+      "sha256": "1db669758efe0e231259b18c3ebf9f1213678436a6756e07973dfeff4700e106",
+      "type": "note",
+      "updated": "2026-07-21T03:33:37.005Z"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch01_bitwise_network.png",
+      "sha256": "31171514513d40043c9cd8e37e75feedbbee0010e9ae53ede22a3e0167372169",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch01_bitwise_representation.png",
+      "sha256": "d7d00ef20ccc72e53091007f81c65c56512f3ad07c213444d84670125f8b3873",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch01_gradient_descent_exercise.png",
+      "sha256": "225798948318acbac2df0dd7c9f8ca19e0333f688b8af2d2033bcf0578d203e4",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch01_online_learning_exercise.png",
+      "sha256": "0f02d7b9fda770474f6002c8945a5541d1b1a14134b15049c6013bef18080230",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch02_full_matrix_backprop_exercise.png",
+      "sha256": "85af8bbdf2bb6ee9b517e7ddd8842b47308a24fc95c0b5a4dac79b80fb55cff7",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch02_modified_neuron_exercise.png",
+      "sha256": "9f8ad3c6889624030fb70352330b85302134febf6630dca21c8add66927b2785",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_cross_entropy_exercises_1.png",
+      "sha256": "0fa89f251eddcc8d232819346e7044e269da0280141775ee8bbe8e0caee106c2",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_cross_entropy_exercises_2.png",
+      "sha256": "aa3290ef76b479709f441788d28dddadc8844d89bf08f146f024b7f332cbd209",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_early_stopping_exercise.png",
+      "sha256": "e17dc35a0c823f8b5c55995aeaf945c0ead3e89786391d6e3edaf0e0b303c19d",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_regularization_weight_init_exercise.png",
+      "sha256": "61e86299d39a430ca6c6bb46671ea9256074e57a60c779ed654edd54b118278d",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_softmax_exercises_1.png",
+      "sha256": "51c1c3e1c1582cf92bec796848790b3ee573ae71c613d08795b6a89855cd6143",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_softmax_exercises_2.png",
+      "sha256": "d6a227e737c0dc62222a813f489bd7a2cbac74ceeabcfe02fa9453e65a0d3056",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch03_weight_init_exercise.png",
+      "sha256": "692c5e5f3c0a7609eb755bb8b294a3269493433285bf037d6ae04b4e33c05ee5",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch04_single_hidden_layer_exercise.png",
+      "sha256": "2cba6e0c4072b5a7af9c0b8f19d2de281776599fed883a201b40b27ef52ad255",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch05_vanishing_gradient_exercises_1.png",
+      "sha256": "a61d43f99ad5fe40715567b43cfc712402b50ff9490b81299fdab8c7f909b469",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch05_vanishing_gradient_exercises_2.png",
+      "sha256": "ebea0e24c3d1850f74f74073bc1583ddbe607cc0e94c897628a13baf737e7145",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch06_conv_backprop_exercise.png",
+      "sha256": "3d8d81397ade015abd7dabb46e5840ba2bf1378ecdd4831f103d4e509a783790",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch06_conv_only_exercise.png",
+      "sha256": "ece73c00d5ccb483d27dda3399cdf70e7f66537707820ab636f2aa8c9b88bfac",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/nndl/image/ch06_data_augmentation_exercise.png",
+      "sha256": "b22fdfc42d3e95236b229408497abbbcac934f1f986d16bf0879ae3d234f1fc6",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/ai/吴恩达/1.机器学习.md",
+      "sha256": "fe7903b26ae0a42ff0198fe4a2916e866d911d264f28aec28cef0aafbe92777d",
+      "type": "note",
+      "updated": "2026-10-29T11:45:22.889Z"
+    },
+    {
+      "path": "学习笔记/ai/吴恩达/2.深度学习.md",
+      "sha256": "ca10380a9fe07d01fda25673684bfd06a8040355b4a62c578d18238114cbadfa",
+      "type": "note",
+      "updated": "2026-11-04T23:58:00.148Z"
+    },
+    {
+      "path": "学习笔记/ai/吴恩达/3.深度学习part2.md",
+      "sha256": "13c99a0397001ce4b07729ed74ee4f8eef0135d9197f9b276ab4b0a5688cb651",
+      "type": "note",
+      "updated": "2026-11-05T06:04:20.503Z"
+    },
+    {
+      "path": "学习笔记/ai/吴恩达/4.深度学习part3.md",
+      "sha256": "65495bd746758d9378a963da9a07d296cc83b26d19bf5f0d31b91016a4a1c7dd",
+      "type": "note",
+      "updated": "2026-11-08T05:47:13.577Z"
+    },
+    {
+      "path": "学习笔记/ai/吴恩达/5.无监督学习.md",
+      "sha256": "733abe43ba2e8445e4112bff99f69060bd99898de8c045c7889931c3e42bb66d",
+      "type": "note",
+      "updated": "2026-11-09T00:15:21.111Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/01-更简单的CUDA入门.md",
+      "sha256": "fb3138f0d52450c9a837836425529d936a2fc8ff26aa3328d8d0325e920675d7",
+      "type": "note",
+      "updated": "2026-07-22T20:07:12.360Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/01-hello-world与线程层级.md",
+      "sha256": "f44b0966a9e1f66091991f7d265eb60ac788ce9fd3299b1d0edc6ca5fa26e8a2",
+      "type": "note",
+      "updated": "2026-07-29T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/02-检查线程索引与维度.md",
+      "sha256": "975335fe30360a52dbb7767355e7f454cef18daa8a85c4ea69c29d4e1fd784d1",
+      "type": "note",
+      "updated": "2026-07-29T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/03-显存分配与浮点误差.md",
+      "sha256": "4eb5a47c925d86583744901154bbe1bb36116d8923c2dad0663de871d5bb242c",
+      "type": "note",
+      "updated": "2026-07-29T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/04-函数限定符与kernel限制.md",
+      "sha256": "4986781f739c52b35ab89c8d10981cf987d1fe2435f0c0bd696dcdfadcd1c3ad",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/05-CPU计时方法.md",
+      "sha256": "62c4c018486a2c513ad2177a7cc9a844b6b8fceead910af652b6ad852f61853b",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/06-CUDA性能分析工具.md",
+      "sha256": "b6db73561e34d1232b28ac212d2b8bd46575dfb2939539813551a7ae2ed5ab6d",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/07-设备信息查询.md",
+      "sha256": "84c5b196424cba2af0b5b556b3b43d015ce5a4466771b7620994d19f1a337147",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/08-CUDA执行模型概述.md",
+      "sha256": "1bc142ade0f7b6ab4435f75e5c2a0adb009d3c2772fae3fbb9d39e0ef70860fb",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/09-线程束执行本质与Warp-Divergence.md",
+      "sha256": "cbd1a68661ae36f3741e0abdb014a24e95279ef5e842db53eb13b0fd42d9e2e6",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/10-资源分配与延迟隐藏与占用率.md",
+      "sha256": "1712a1d182dd879e0ab06f81848e3534055da6af1fd0f0823e8b609d7fc085fc",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/11-并行性表现与性能指标.md",
+      "sha256": "cdf65c0f8ff81105926a23264d17aa21b9d1d365d5cae900739ec2868509a144",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/12-展开循环与并行归约.md",
+      "sha256": "b9e13697cb232fe44753490e30ca3ba905342f22813a9bff787930dd87393392",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/13-归约优化-展开循环与Warp展开.md",
+      "sha256": "7a514c7272ae0b12635334a0da8d612630b8c5d96cb1d13d2adf46ca11922a6f",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/14-动态并行.md",
+      "sha256": "405618b7457b4354e4d3174c56a02c425f1a8929d2b5a7b8ef90dc4bd939b89a",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/cuda/cuda_freshman/15-CUDA内存模型概述.md",
+      "sha256": "5eaf910fa11ad0ea2e358d344e771786dcbc94b7eda32b330e9a2f2bdf300b6d",
+      "type": "note",
+      "updated": "2026-07-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloBundles/00-HelloBundles学习索引.md",
+      "sha256": "4ed775e95bbfeb1715ce478e8a6ca80eb2efceb7acc22397a736c41a16b60a08",
+      "type": "note",
+      "updated": "2026-09-12T04:29:29.562Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloBundles/01-为什么需要Bundle.md",
+      "sha256": "16446a4d93a1123caa15030dafe0ac70a876f3a0ce6772bec942039f120875f8",
+      "type": "note",
+      "updated": "2026-09-12T02:21:53.759Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloBundles/02-Bundle命令分配器.md",
+      "sha256": "6ce9cc1226ba2e161b2a67b82d7c47a67d4e67df6d1b35f8cfe651ea18298b02",
+      "type": "note",
+      "updated": "2026-09-12T04:29:29.563Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloBundles/03-Bundle从录制到执行.md",
+      "sha256": "bb96ef7e9bf67ffb8a763821ab03b97b01956ece2f8fc8a0b25e1950ef17edde",
+      "type": "note",
+      "updated": "2026-09-12T04:29:29.563Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloConstBuffers/00-HelloConstBuffers学习索引.md",
+      "sha256": "75e2a708d56930b15ba2bf72aff18fa2208c67aa6acf2aca35d61223e52e0ad7",
+      "type": "note",
+      "updated": "2026-09-16T08:53:16.645Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloConstBuffers/01-为什么需要常量缓冲.md",
+      "sha256": "8409affa982b8de6f632ddb2902fba62a7a7a2a8571787111d7a93a8505e3871",
+      "type": "note",
+      "updated": "2026-09-16T08:53:16.646Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloConstBuffers/02-常量缓冲从创建到逐帧更新.md",
+      "sha256": "22fedb0d219f404c1210758c33ca5748643f283a6f77919a2dfb737328a73c72",
+      "type": "note",
+      "updated": "2026-09-16T08:53:16.647Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/00-HelloTriangle学习索引.md",
+      "sha256": "166a5e984a1f8191c6af2e42de5543669b0ea306727592ce5f25dd5eea69c1ae",
+      "type": "note",
+      "updated": "2026-09-11T18:03:43.412Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/01-顶点与三角形.md",
+      "sha256": "cb884b2191da9af164e072b1de312b34a445ed95ba06eb46f08470373a3b92ca",
+      "type": "note",
+      "updated": "2026-09-11T15:04:35.829Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/02-顶点缓冲区.md",
+      "sha256": "8b8915c7deae076cb767f6c85e0cf60a3cee7a67fd880e08a886822fff9ec01c",
+      "type": "note",
+      "updated": "2026-09-11T15:38:25.386Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/03-顶点缓冲区视图.md",
+      "sha256": "8ff39de988415a9d74e980bb3fab5fe317c00bc48261d9f263a15012fb6bde6d",
+      "type": "note",
+      "updated": "2026-09-11T15:47:39.897Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/04-顶点着色器.md",
+      "sha256": "f2073b990c1e920fb11015e1e490052c3b2f9b0e206804990ce07ce9c82fd7eb",
+      "type": "note",
+      "updated": "2026-09-11T16:01:11.046Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/05-像素着色器.md",
+      "sha256": "a4a25ca2c26dc94b9a7eb396105a0cb1b7190cdb67c4295f62204751e8ce5957",
+      "type": "note",
+      "updated": "2026-09-11T17:05:00.086Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/06-输入布局.md",
+      "sha256": "45abbbf2c3b631dfb6c91be6695e221628901e5249b75e4e08d4c729706849a8",
+      "type": "note",
+      "updated": "2026-09-11T17:16:26.857Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/07-着色器加载与图形管线状态.md",
+      "sha256": "72524a03fc5488f12f6152f681f769913bf64ddff8eebe2631f32029aecd5d46",
+      "type": "note",
+      "updated": "2026-09-11T17:16:26.859Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/08-根签名.md",
+      "sha256": "63250ab952c91c7e004c722d867905fc924127eb9fff58099ae938df1c31a963",
+      "type": "note",
+      "updated": "2026-09-11T17:33:14.903Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/09-HLSL语法与GLSL对照.md",
+      "sha256": "4fa17366ee744d9da21fc3bcaaa754a56834f05f95ccbf307633be1625daffed",
+      "type": "note",
+      "updated": "2026-09-11T17:39:50.600Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/10-视口与裁剪矩形.md",
+      "sha256": "be16c16213e07a9f361a0b61ca8cd190cfc30518423c7114bab7b8c86586dc42",
+      "type": "note",
+      "updated": "2026-09-11T18:03:43.413Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/11-绑定状态并绘制.md",
+      "sha256": "16a7ed173f22273180ce84f16cbc68eefe1093d1762107e93d1f565673b20da7",
+      "type": "note",
+      "updated": "2026-09-11T18:03:43.413Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/12-HelloTriangle整体流程.md",
+      "sha256": "1aa76a35daedafd1cace6934460c200f9f2f0ad590577e2c2e31172a253c00d1",
+      "type": "note",
+      "updated": "2026-09-11T18:27:47.440Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/assets/hello-triangle-flow-dark.htm",
+      "sha256": "90bc05db20284e05f69bbd6b68c7a50b64236468a95cfe6ea644b5c6a42ca6b7",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloTriangle/assets/hello-triangle-flow-dark.svg",
+      "sha256": "fa94965f3bc2ab38ae0a4ede497763713f8406c6786f1649beb72fb6502ac799",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/00-HelloWindow学习索引.md",
+      "sha256": "6fad59d2e03d5045d4846e19348d227c8c7c703a3157f74341b71a70ae2cce04",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/01-HelloWindow初始化总览.md",
+      "sha256": "50051955dba9531ee60920a846cfb97f3ce6483e8c56e92063a2e66a9a66da9a",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/02-DXGI、Adapter与Device.md",
+      "sha256": "44d018b6e3a568d6028d28623f4e4cb251756777d7a03d369eb65c4786307671",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/03-Command Queue与GPU提交模型.md",
+      "sha256": "589661c2901291162f18575b1ba1277a011760da3400b9374f39bc42ca46fb7b",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/04-Swap Chain与双缓冲.md",
+      "sha256": "0f6d0f40213b08137380c139fc1c254352f5b5ae68228e7bd9914450e6b51d9f",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/05-Resource、View与Descriptor Heap.md",
+      "sha256": "4695133f86009c9a0fc7c2615ff64162668d9c80ce2aa2a3902c9be1ccb6157e",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/06-Command Allocator.md",
+      "sha256": "6a35aa1ffe7ec0803e5ccfefee9fc7ac9af633360b0624b25bbff2bc4b3028ac",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/07-Command List的创建与状态.md",
+      "sha256": "b9706e2abc4924c841ca28603d05e7bd198829844cff82816e9bbf967c31717d",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/08-Fence与GPU进度.md",
+      "sha256": "1ca5f66e445f48a6010b67309844a4d7d2538f3cc30f43a0a1623dabb56c1021",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/09-Windows Event与CPU等待.md",
+      "sha256": "f6e0e7a7b807c256b1abc73e1606e3716cab43aba8d507283f4d0bfee1d1cbf3",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/10-OnUpdate与OnRender帧入口.md",
+      "sha256": "83e31bc1dcd0038359dd91067a8bee5d39de2d02bc549cc7e5891c85afda95ab",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/11-重置Command Allocator与Command List.md",
+      "sha256": "7daaf8e869d41bea8fcf5f90990b1770f18fefa277d2a920a70023e96f0a655a",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/12-Resource Barrier与资源状态.md",
+      "sha256": "384a8c5f0d4144f01d21d8109832743dcafc1fdba2ab3ac60508438695e6fd3d",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/13-选择RTV、清屏与结束录制.md",
+      "sha256": "fde6a1d784c504076ef825164d29f98cd323d105e0c33648f8c3e4d123f56853",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/14-提交、呈现与WaitForPreviousFrame.md",
+      "sha256": "65c1c85698fb7070cf6873d60c6de6cb73596dbef70c0e5ad77e1ec02aca81f7",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/15-OnDestroy与资源生命周期.md",
+      "sha256": "5c57f3e7fc9ea30da215dba62ecea3c50285bc8243ae07df5ed4eb0a8540b12f",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/16-HelloWindow整体流程与思维链路.md",
+      "sha256": "f51ed7ea90d47f3130043fee2a66840611ac7b8696bedb437e9c5f0a98562eee",
+      "type": "note",
+      "updated": "2026-09-11T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/assets/hello-window-flow-dark.htm",
+      "sha256": "31c0394f48e18ad85196e5ecb14889c4c967241a5f4a6c6bd17f6a43680fbc8e",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/directx_sample/HelloWorld/HelloWindow/assets/hello-window-flow-dark.svg",
+      "sha256": "b3f70c4f344a1ff584e52fc8eb10f938197c5003aed0124666270151f7b56ebf",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/games202/lecture3 Real-time Shadows 1.md",
+      "sha256": "30eaf8fac60b864f7f7086e97643db05e7e4ccf9feaab641e1258ec6b4ee01e4",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.019Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/lecture4 Real-time Shadows 2.md",
+      "sha256": "757649cfaf2c2c561a25ee7b6be6c0e53ab4881e0fdc20e893de771c3a178c90",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.023Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/lecture5 Real-time Environment Mapping 1.md",
+      "sha256": "0fd033b0a6a81ce2bcbc7208b468d690f28ff15ecad843806ffff5c1822ea5e2",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.039Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/lecture6 Real-time Environment Mapping 2.md",
+      "sha256": "f9ac0e3cf64a81e4fc0cc33f81ea275a284a49bf3525701c72018221427e12e6",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.052Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/lecture7  Real-time GLobal Illumination 1.md",
+      "sha256": "2c327b1ec5861cdd5eaffc8d8fc07829450dc0a38ebd0fc389ec4c4cf5537dac",
+      "type": "note",
+      "updated": "2026-08-08T10:25:51.838Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/tolearnlist.md",
+      "sha256": "04febd704d4f7d9f1929bfe7fb6f93495e3e5f9c3abe238b35c5187a875e8fd6",
+      "type": "note",
+      "updated": "2026-06-25T19:06:21.261Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/01-APV原理主线.md",
+      "sha256": "5b790440fbee70df4daeb78bbda0b38b99919a347443b0946bedcb254e79c7a8",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.938Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/02-从光探针到APV.md",
+      "sha256": "2c32eef0dbf2ed4ffbbc948e7cf397eaeb7cc7f272937dde8659db075e97d484",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.091Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/03-砖块与自适应细分.md",
+      "sha256": "9ae119f440f88562be5b48756c3aa3e15c824556b37d27cd86288a7dec5a6ac9",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.105Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/04-烘焙-探针里存什么.md",
+      "sha256": "7bca9fc39d1bbbdc172ab29bcfe1fdb08073e38bcabfb8e5564198b92bae68d9",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.117Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/05-运行时查询-插值与SH求值.md",
+      "sha256": "4ace83501033666da80786e312fbc75fad495d8adf8e1ad91f4b1549d094affd",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.131Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/06-漏光与修补.md",
+      "sha256": "65aeccc75d7e6f131c6253010f003da1db19e78a6fea04c32cc2fb18ddca39e3",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.148Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/07-天空遮蔽与光照场景.md",
+      "sha256": "55cab0cbb7d48ddd8ef49cb411de7f6cbbef52bfbdfef52f4560ddadf2d2950c",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.957Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/apv/08-实现管线与GI赛道对照.md",
+      "sha256": "4d3f4570c6f409c2a204781d3a2f5d670073693c891c7532b5897559098a2644",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.963Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/01-IBL原理主线.md",
+      "sha256": "898bc090842a4dbeeb22fc2a5e0d7a82b40fa8824c30b5cf76b0abd1469a643c",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.338Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/02-环境贴图作为光源.md",
+      "sha256": "7a2e711d3c118f271c51f23a732666819ee9bb31e80c6767614070013970e7ee",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.349Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/03-漫反射-辐照度图.md",
+      "sha256": "9d01de027d67f176ff0e897d6c857fe713516215c89ede6700e759bec86a036e",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.220Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/04-拆分近似与三个条件.md",
+      "sha256": "2996869cb115a5887738809400f95c1a1e9275bc1a24619e3128ac286f0e0b00",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.079Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/05-预滤波环境贴图.md",
+      "sha256": "e37b56c23bd46449331bdaa3795278b16b25c18aa24e35d21e47de87eb5e3f9b",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.066Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/06-BRDF查找表.md",
+      "sha256": "4992a543c5d63ea2de5fd86712d095b24fd24af78e2b373ded99cc2209a9cb09",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.092Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/07-实现管线.md",
+      "sha256": "418fe748fc096ebcb64ebc575c83ec5bfeb64674836198ba0d2d688f58f27c40",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.379Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibl/08-局限与PRT对照.md",
+      "sha256": "82d54f913bf39c4a6dd7dc3bfd13056c1cb5acefa3d26e80e2d8c8635d36fc03",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.387Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/01-IBR起步总述.md",
+      "sha256": "92ad296443b02421f923e451031423f264de5c7c53b0a179c2f27ca52edc41f1",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.984Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/02-渲染谱.md",
+      "sha256": "62e8679940525c3be929a74635c9c65aad632adb8e0c6e2458fdf50bc0ba2ccd",
+      "type": "note",
+      "updated": "2026-09-16T07:24:02.721Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/03-固定视角渲染.md",
+      "sha256": "b5c21acf7404d78ac9a637324856fddc396f772687c9e64193e0a6eb4ceda167",
+      "type": "note",
+      "updated": "2026-09-16T07:29:08.142Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/04-天空盒.md",
+      "sha256": "b550ded94a05900e52cc708174bdfe18f56ff6944c5d026b1488a2eaf1b1169d",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.311Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/05-光场渲染.md",
+      "sha256": "c598bcb3b24a6bed84b50d28e4df4c0fe7ba56fb0d36f4be65c3c8a7af5ad7b0",
+      "type": "note",
+      "updated": "2026-09-16T07:25:27.883Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/06-精灵与层.md",
+      "sha256": "c02661ffd3fee23cbf44ac0922fef634ab6d5dd2c34ad30392a8ebf7cc67b151",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.004Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/07-公告板.md",
+      "sha256": "d25fdab3d59f03f776ae413a6a3ff9feebea47e4f2297d6ec0f1dbdd09dc5557",
+      "type": "note",
+      "updated": "2026-09-16T07:25:57.234Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/08-粒子系统.md",
+      "sha256": "f4286a967dd122b884498af95bc1cb2cb2ec114f5f3e3adb2c7a5bdd28e697ec",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.027Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/09-替代物.md",
+      "sha256": "9ef7853ad2c43d07fd46b76b3e43dc3cc3b58d0ede7aa270d79ceeca00a013db",
+      "type": "note",
+      "updated": "2026-09-16T07:26:27.223Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/10-公告板云.md",
+      "sha256": "3c42b0a4d6638cb4e86543d72d329b76eed02f2ea8e636a1268f7e74da5f7f97",
+      "type": "note",
+      "updated": "2026-09-16T07:26:27.232Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/11-图像处理.md",
+      "sha256": "4d46fce9929cd60db66d6f972388639ba220d30644a0f8f7860323bd81726e87",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.325Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/12-颜色校正.md",
+      "sha256": "0b006bce9e7a6143693f652d00ed439dc63d9fbfa5f8f14e74413763a13c833f",
+      "type": "note",
+      "updated": "2026-09-16T07:26:57.736Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/13-色调映射.md",
+      "sha256": "e5cfae7a2fe535657e634f05e557bbf8abbfea92250f3da1d9fdf00889cb3fbf",
+      "type": "note",
+      "updated": "2026-09-16T07:27:33.107Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/14-镜头眩光与泛光.md",
+      "sha256": "fcca6dbc3975987eb91f1982924025f407341bbac5c57e516a73c71e901bc802",
+      "type": "note",
+      "updated": "2026-09-16T07:27:33.121Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/15-景深.md",
+      "sha256": "53886635bcf52d8f873bee8b710c3fd7911e7aea039fa0111c70a2ea675ba136",
+      "type": "note",
+      "updated": "2026-09-16T07:28:01.154Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/16-运动模糊.md",
+      "sha256": "2d1f011229d5d3f51521c4719b824a584a5fb0e3b50668925bb648bbbf2041e8",
+      "type": "note",
+      "updated": "2026-09-16T07:29:08.157Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ibr/17-体渲染.md",
+      "sha256": "1f563d257a8c043533d4e3c620637321c611cb2475373f75fa0ada8bc382bf72",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.051Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/01-LPV原理主线.md",
+      "sha256": "897f7c51b1ae778e929ab56e058182f9f619b260504faeded2cef96539495c15",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.498Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/02-RSM-反射阴影贴图.md",
+      "sha256": "4b47399c7334d5ce21cc13e9c2eb617098841c670dddcbb483125733dbb4311c",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.492Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/03-注入-从VPL到格子场.md",
+      "sha256": "5407779de4dc70ad663f567fcd902c8ecba67f97a50840374c50061b6c1396db",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.373Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/04-传播-光在格子间流动.md",
+      "sha256": "b298615dbd3cd02190656ba17a2e4ef9ab161cad1a01b3c6a25467301cf4d6f7",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.389Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/05-渲染查询-从场中读光.md",
+      "sha256": "89bb500692d89bd81dfec9baa7d1d1faf23c246bef7e4e6fb635a57ec772a2f5",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.402Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/06-实现管线-每帧四步.md",
+      "sha256": "9793286054db730681f73002e5ca1162a16ea1b255ba0c9b83ca254076168119",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.415Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/07-问题与修补.md",
+      "sha256": "37ac4d01ffae4d23029236b80ee4c19fbe78dac7e3e61759d568810109c95d02",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.431Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/lpv/08-动态GI赛道与对照.md",
+      "sha256": "a340d2c5ea696689e47777febe1bfc92b4f0eb559c5f6cf45e0007acbeed57dd",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.446Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/01-LTC原理主线.md",
+      "sha256": "310eeae8b2fce3b32f27dcd957f516a120ea68fd4d9cc048ed73ff7866e0baad",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.458Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/02-面积光的难题.md",
+      "sha256": "f46c16a8e8443afc63aadb2df5fe92b050e83b3f19570ad3293c2524b2a6d149",
+      "type": "note",
+      "updated": "2026-09-10T10:40:24.892Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/03-闭式积分的钥匙-clamped-cosine.md",
+      "sha256": "75ebdae40620ab75db9a2cf2625966ed60a9f5316f5591dd8871209c2d0913cc",
+      "type": "note",
+      "updated": "2026-09-10T10:42:06.461Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/04-线性变换的魔法.md",
+      "sha256": "55f87d0ef63be6af9c02e6d0c0fc17f04c3a92a160da046e16f63ae8b0993bab",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.474Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/05-拟合M与运行时求值.md",
+      "sha256": "d7553eb5ec299f7eed306d7ed1de8fdc7309b2be15ac467f10862dee5f49f083",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.492Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ltc/06-边界与三部曲收官.md",
+      "sha256": "cf318e51e252009de72c2e0b744bcedf56f9388e142dc2d2bcb9885316778a30",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.509Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/01-PRT原理主线.md",
+      "sha256": "70be71e416275897479dfe6b7a26c66d39c8574a63f05fdc301a3c8dda683374",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.400Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/02-环境光阴影的困境.md",
+      "sha256": "1fc0e8133bbd3e0e6947e089534be3bca9a623c28e8e3a93c43b6e71765dffba",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.106Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/03-函数即向量-基函数与投影.md",
+      "sha256": "e1c8574c880ba6e707f6830bf88453c5a5bba3047db9b7a06aafcf5162a8ba63",
+      "type": "note",
+      "updated": "2026-09-10T07:38:47.328Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/04-球谐函数.md",
+      "sha256": "84a08a9a314332cb2336479db9726d9ff26fe131e4c22424b99266aeeb0fa1c1",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.120Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/05-漫反射PRT-从积分到点乘.md",
+      "sha256": "66dd152e318d54b2a120517a65fb2ee76006af721f83c78ecdb6a8a49ad7a9d8",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.147Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/06-光泽PRT-传输矩阵.md",
+      "sha256": "5f172cff9074956fdfac87b8f0d6d4e1afa1e0e642c32805076407166d1b11c4",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.133Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/07-实现管线-预计算与运行时.md",
+      "sha256": "15536bb51881cbdd0d06ab20b4da8c41cf1d5ab9dce4707578e0c9ffd7076b4b",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.448Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/prt/08-局限边界与思想延伸.md",
+      "sha256": "579728cbbfecd5b2654162e1e02bccd25cedb766c3aebd640f16aa0b8c623074",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.463Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/01-ReSTIR原理主线.md",
+      "sha256": "82d96ab8fdd1e3929fffed795edc1dcf3b5da900c5dcda7c4a1141d3b8e2922e",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.521Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/02-多光的采样困境.md",
+      "sha256": "c9ca50e718dcf32ff1b480c9f44ec5ca937e7f0b624807c1cceafce7ac106e67",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.524Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/03-RIS-重采样重要性采样.md",
+      "sha256": "1fe1a3efa9d090f4efa33b0792b944e2cc8f0c736a6f5a046020e13c2af98d44",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.547Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/04-水库采样WRS.md",
+      "sha256": "4ccc8127c60660b6eb45328a206d4f292f6e289e4d3b3f0fd86e536e5a26587b",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.559Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/05-时空复用.md",
+      "sha256": "5e7b0d85ca700a838c90a984ec48340cefe734bcc9d796811626c4aed591e9dd",
+      "type": "note",
+      "updated": "2026-09-22T03:40:26.410Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/06-偏置与GRIS.md",
+      "sha256": "74608b508abce2e00a42a6d08bd4fc6c4ee1ce7c1157118649315d497a78609f",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.573Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/07-ReSTIR-GI与PT.md",
+      "sha256": "8de34b4abdf9d4f04d47f8ffe6e879b515a22dc6700db65f3f045cceb15e65cb",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.658Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/restir/08-实现与赛道收官.md",
+      "sha256": "10522ddd91477c203237e859c0b7f84d3a3464bcde9316dbbd63447a2bb4d34c",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.579Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/01-屏幕空间方法原理主线.md",
+      "sha256": "1ae6a779108a9fa61d502d651a1d618d60be1978736db4522e59b19f54dcfc07",
+      "type": "note",
+      "updated": "2026-09-10T10:32:15.731Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/02-AO的物理-遮蔽积分.md",
+      "sha256": "072e89ee2168a399925179a6ac1ed44c4738017d8680198e2dc616a46c045318",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.686Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/03-SSAO-深度场半球采样.md",
+      "sha256": "8c6a62a17c3a94d01dcdf02d5c82ce9b2742c7909f22006f5c82bf84886e0626",
+      "type": "note",
+      "updated": "2026-09-10T10:34:03.887Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/04-SSDO-采样的两种命运.md",
+      "sha256": "3492d621f15444e61cc877d2e1ab5577cb877f1af89d1e6de374ff966e652741",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.703Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/05-SSR-屏幕空间光线步进.md",
+      "sha256": "eb84738f64cc6e5517af5ff384676914516532c384e96de39ee3990338debe8c",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.718Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/06-SSR进阶-层级追踪与粗糙.md",
+      "sha256": "8edb1c3411ea6a84d1d25534e881d4744ac6148dce4f2b6603d2988f558aed53",
+      "type": "note",
+      "updated": "2026-10-26T11:04:06.505Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/07-屏幕空间的共同缺陷.md",
+      "sha256": "b36a33f9ae720cd9b988a31e31bf6b9e0be83fe7037d24373cc8da08aa436e79",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.744Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ss/08-屏幕空间对照与GI全景.md",
+      "sha256": "76a68eaf8a5cef90495a78dc0d68e1bdbd666733dafff157ec877f9f09249fbb",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.755Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/01-SSGI原理主线.md",
+      "sha256": "6af875bd6ccef7ef26b2979a87a21a5eaf645d3c1149d348f06be4eee0f4db76",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.131Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/02-从三兄弟到SSGI.md",
+      "sha256": "e885d1673d1e06d0f0aa50930a63f2c3f1c5bdad71f18d5adb7db28fc8462ad7",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.790Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/03-辐射缓存-上一帧的画面.md",
+      "sha256": "3d2adb2a0628f97b204be64a01250e7080a5cda1729948f0329a433a96d35115",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.806Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/04-半球采样与屏幕步进.md",
+      "sha256": "104a7647af4e30415f1c6e859685627b7aa6783b3a42b2e2f592f6fb9d4a4892",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.063Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/05-重建-时空降噪.md",
+      "sha256": "5efda716924f9e252df347820f8df73cc9cbdbe8c85fd297136689857e9c7d7f",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.832Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/06-反馈循环-多弹射的诞生.md",
+      "sha256": "411b682c76749eec7cd4d65608e9d06b328d5603f048218a37eb4ddb36d1df81",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.075Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/07-缺陷与混合管线.md",
+      "sha256": "a9aa84a3efcd313a8736483eb1a8dd7217d0f21ff714f694e586849410b86805",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.093Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/ssgi/08-实现管线与赛道收官.md",
+      "sha256": "f75b56f35f4753a377ccbea4e837fcede038615948427ee366effd718464e9b3",
+      "type": "note",
+      "updated": "2026-10-26T11:05:19.125Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/01-VXGI原理主线.md",
+      "sha256": "a30149da1d349155d58dc35d70a7e0cabefd9ccb72a6a82f4d100faf3f5ddbfc",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.888Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/02-体素化-把场景变成格点.md",
+      "sha256": "cb7ead7a231550cbe7b1a16076d801edec636692f3a14eb4a1dc7a0b7d66755f",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.904Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/03-光照注入与体素mip链.md",
+      "sha256": "e30a5a25c2938c5a58d0c19214360420ecf6567d28a8345b0ef154983acc8dab",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.915Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/04-锥形追踪-核心查询原语.md",
+      "sha256": "7e44ba68d2d2786c854d1f1fad287b3eab2264e75c8b07e49ae47fb340a21d2f",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.931Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/05-漫反射锥组与镜面锥.md",
+      "sha256": "1fb5562d81f17e0bb4718db01f70f2c4248e9759c62484b9d1a66629bcb4002a",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.946Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/06-实现管线.md",
+      "sha256": "43a414953db0be7935907bab4f408435b361801a04731b77afc0e264d8585e37",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.959Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/07-问题与边界.md",
+      "sha256": "e96ea394101823ccfef4e481c5c103d475138b0b00b1ec6fa7a7fd6959bb2377",
+      "type": "note",
+      "updated": "2026-09-10T10:15:39.581Z"
+    },
+    {
+      "path": "学习笔记/cg/games202/专题/vxgi/08-四法对照与收官.md",
+      "sha256": "c47da6c93f05abec0925d2f3b8eed112e719f10677e1264237929e1bb2a37236",
+      "type": "note",
+      "updated": "2026-10-26T11:03:33.974Z"
+    },
+    {
+      "path": "学习笔记/cg/GI组work/work1/multi-camera-injection-unity-unreal.md",
+      "sha256": "7801b340844a060393fdb8838208288955dc229a2a22e781c8bae8cc1fd664c4",
+      "type": "note",
+      "updated": "2026-07-07T08:15:41.066Z"
+    },
+    {
+      "path": "学习笔记/cg/GI组work/work1/multi-camera-injection-unity-unreal/解读.md",
+      "sha256": "1a7caad97786509d60de9333a20f1fc9b6aa1eca329e59700fa421f8f546a882",
+      "type": "note",
+      "updated": "2026-07-07T08:24:37.249Z"
+    },
+    {
+      "path": "学习笔记/cg/GI组work/work1/技术选型文档.md",
+      "sha256": "e6d22a09eda7443011ddc07555fb6a80ffa58bfa8fca248930f8f9324641b9b1",
+      "type": "note",
+      "updated": "2026-07-07T08:47:51.351Z"
+    },
+    {
+      "path": "学习笔记/cg/GI组work/work1/目标游戏调研报告.md",
+      "sha256": "f72448fc81b8b85077d025afdb69dfbf4d195c6d931f2c75e21c11febce3fb41",
+      "type": "note",
+      "updated": "2026-07-07T08:53:27.680Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/Bloom 泛光知识点详解.md",
+      "sha256": "ab128447c508d6bea96e5ec4e6a9c8bc6a6aa60fe9955183f1424e955a6ddb04",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/Deferred 延迟渲染知识点详解.md",
+      "sha256": "e01a8d438b5918a95ec9e94c1baa4f1ff6062aa2cd94e5066e8be3d131370a2d",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/HDR 高动态范围知识点详解.md",
+      "sha256": "9c9984f12897e6cd8a237997617f928d7de321bea947226fa4469b87551e7b5e",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/Shadow Map 阴影映射知识点详解.md",
+      "sha256": "1730a131c50b9902f3a91e95efe90592686c87999e0b6a1141fba08a780e189b",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/SSAO 屏幕空间环境光遮蔽知识点详解.md",
+      "sha256": "38e83aba4f92d6b7a75f9c706ffb025afca77bb06fc500c00da30ba30ce1a6dc",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/伽马校正知识点详解.md",
+      "sha256": "f86e4f77f0a27242fc6eb92e5e93156171b45583ee8cffce7a3bc6bf977ae1ec",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced Lighting/法线贴图与视差映射知识点详解.md",
+      "sha256": "2b8b58a8fee7386e2d0b779f21c5a4e34f027eef4bf775452e0ce718e1a213aa",
+      "type": "note",
+      "updated": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-Cubemap-方向采样.png",
+      "sha256": "828f689d9f6528c54fbbc9b815a122b82d24e930e8764eb927874784c75e856f",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-MSAA-采样点.png",
+      "sha256": "9d7c963c1a00b04c26afdfab8e0f76bd1eaa68d07a8b3f4bce3097747fffe641",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-模板测试-描边.png",
+      "sha256": "359ce6cda67ea072ad741ee71cdee9eae0fc14defca4f63b8e5d840fc3701420",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-深度测试-Always.png",
+      "sha256": "c07aec4a63b436bb21bb9fdbbae4cd54fa538edcf6ce581ffb526f71d8373bf2",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-深度测试-Less.png",
+      "sha256": "0fe3f220560664e65e4a39ec24f026c5d0e91126bef1d577b51298f8d8267567",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/assets/LearnOpenGL-面剔除-正背面.png",
+      "sha256": "864df4c0c029daad740273dacfee940cbc5efaa14b9e63c827ea588f0f9ff2f3",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/Blending 混合知识点详解.md",
+      "sha256": "02af669764f421e6567f043491ea5cdadae6a30c38c3a57f2ced558595d52109",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/Cubemap 与环境映射知识点详解.md",
+      "sha256": "d085f423a0193e9cb98d604276c7d29e6cd35e571585b2513d79173a4310b5c1",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/Framebuffer 帧缓冲知识点详解.md",
+      "sha256": "3b32dc70550a8c6d8eb4544cd5e96bf1eb3b5f9a6b23d257bfe23fe3a42c2ab0",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/UBO 统一缓冲对象知识点详解.md",
+      "sha256": "cee336fcbf4774d143d2f0b5fb70dfeafba458a2bea0c399566662db160da115",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/几何着色器知识点详解.md",
+      "sha256": "b0b89e1a2c7aa82ba18b27251b273c03ddaa73ef363d584eab48f9c45372281d",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/实例化知识点详解.md",
+      "sha256": "a76046b963b13ba65d69bd202a9b9e82b33f3aec2f9b3e2d0bb3606f5348ef47",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/抗锯齿与 MSAA 知识点详解.md",
+      "sha256": "f03ae8d2c04ef1dba81aa5112ed7074f7e7555850f6716fcf7f860340bb324e7",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/深度测试与模板测试知识点详解.md",
+      "sha256": "39d6114d2e292a072e7038d6b9c74dde2b9041e6713389466623b3138034aeff",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/Advanced OpenGL/面剔除知识点详解.md",
+      "sha256": "8f5b34343ea1975cf030af6f3553f6f741f366064292c45c3e89d3049500ce2c",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/PBR/IBL 漫反射辐照度知识点详解.md",
+      "sha256": "fd1f648b3e9afdbe00c06eb7fbbb2e0e1dad9d98f1477516576296bc0be165db",
+      "type": "note",
+      "updated": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/PBR/IBL 镜面反射知识点详解.md",
+      "sha256": "f114f5a8d8ccce6a211566badf0e7821cce8e7c3ff4ad1841c93759d8e589cb2",
+      "type": "note",
+      "updated": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/PBR/PBR 理论与直接光照知识点详解.md",
+      "sha256": "f33e43043850e3625849f8445b736f5fb9603f4290081fcfab7c13358bd55131",
+      "type": "note",
+      "updated": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/基础类/Model 与 Mesh 类知识点详解.md",
+      "sha256": "a32a41cb448582ae588d7e64813ba43056cdda6ccc9852bbd9361ce8c11882de",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/LearnOpengl/基础类/Shader 类知识点详解.md",
+      "sha256": "e4e2867c9483e94fe04a0429a22f957e9f1c4eb0b63c100df16e0d96be9839f4",
+      "type": "note",
+      "updated": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/01-全书原理主线.md",
+      "sha256": "43103b7679eb6a64d367ff1665cc53a0412b0242520890972de9b4c7c3ac7236",
+      "type": "note",
+      "updated": "2026-09-10T01:04:25.918Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/02-简单蒙特卡洛与分层采样.md",
+      "sha256": "31a66b9f92a2a552eff0bf4fd5657b764affd6d7b7ccf42c96567778e4c572f5",
+      "type": "note",
+      "updated": "2026-09-09T05:50:59.226Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/03-一维蒙特卡洛积分与重要性采样.md",
+      "sha256": "8aed7a5908b3fc6cf95264b91c2dfd5498f1b8aa07fd006a41b41ce1d7abcceb",
+      "type": "note",
+      "updated": "2026-09-09T22:08:11.688Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/04-球面方向积分与均匀采样.md",
+      "sha256": "67f3bdad59944a200a546d3eed66c093fd3b7cab4b41ace29dd038b6bfeb6212",
+      "type": "note",
+      "updated": "2026-09-09T09:56:23.321Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/05-光线散射与散射PDF.md",
+      "sha256": "1e60e80408b9bf805bfe48a2883409cd126f2cfd9786960b9133d1014b27896e",
+      "type": "note",
+      "updated": "2026-09-09T05:50:59.229Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/06-重要性采样实验.md",
+      "sha256": "2b96eef2879d3bcab7301cdf934b7dfcfc42e5c5ebb3e1e3995164d1eee6c730",
+      "type": "note",
+      "updated": "2026-09-09T09:56:23.323Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/07-随机方向生成.md",
+      "sha256": "cbff72790cf6cc11412530af1ab587e890704b2f7f799b208447e037449ff152",
+      "type": "note",
+      "updated": "2026-09-09T09:56:23.324Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/08-正交归一基ONB.md",
+      "sha256": "4bf01096257d90e29317cbc1de977aeb2dafca528d76c9c2acd480b712001842",
+      "type": "note",
+      "updated": "2026-09-09T05:56:58.067Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/09-直接采样光源.md",
+      "sha256": "394994724c5282188b1de317750a12e28d78e30c0ac1b78ba6c52a75c8a09b18",
+      "type": "note",
+      "updated": "2026-09-09T05:56:58.067Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/10-混合密度.md",
+      "sha256": "e63a668bee3c734645202871d43d253629717717af87bde486dd1d9ae5a29810",
+      "type": "note",
+      "updated": "2026-09-09T07:10:27.325Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/11-架构决策.md",
+      "sha256": "612e42607cbb2c243753a14e67611d0fef170df19b68477bfe76ceaa49c9cca5",
+      "type": "note",
+      "updated": "2026-09-09T07:12:19.808Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/12-PDF管理重构.md",
+      "sha256": "526a0f5926738bb698fbd2c1656d59716625b131a596fc22f2b1bcc0a0e5c254",
+      "type": "note",
+      "updated": "2026-09-09T07:15:29.201Z"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/assets/rest-life-principles.htm",
+      "sha256": "87a2ca78b927816f469ca3cc2db667cfe9182f3f8d6a983f4a2c630f18c4ee47",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/rt in one weekend/rest_life/assets/rest-life-principles.svg",
+      "sha256": "914c44025e1072042926a57fbc6842138e93312f2b49c4153fbe71d97327322a",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/00-系统总览.md",
+      "sha256": "d39274e6658b1d1f6e1fe11072421f9a9b0d94d444d5c1a550d6543a9421dfcd",
+      "type": "note",
+      "updated": "2026-09-21T03:03:02.635Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/01-全局光照基础.md",
+      "sha256": "09ee2b3dcd25f24531d2f1fa8e5fceee5b913700ea17676b4223263ddf15d166",
+      "type": "note",
+      "updated": "2026-09-20T09:44:49.775Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/02-球谐函数SH.md",
+      "sha256": "a4509309f8539ada5cd1ab4f680fed6fad81db6248a72a94af900f79440ed6cf",
+      "type": "note",
+      "updated": "2026-09-20T06:32:48.011Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/03-八面体映射与方向采样.md",
+      "sha256": "5aadd9c3c591b9dfb2787d261f2112d5aa8554ff617eebd3c5075cce97db3064",
+      "type": "note",
+      "updated": "2026-09-20T05:52:48.451Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/04-SDF与球体步进.md",
+      "sha256": "06bc44aa86443084d1fffc40da424f6a51618ec9e174205d5ebf9341ee2675a0",
+      "type": "note",
+      "updated": "2026-09-20T05:52:57.767Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/05-Hi-Z与屏幕步进.md",
+      "sha256": "59ccb3675479b9136e48d53a5a18c69b41109199334cd531324a580ed9a88b5e",
+      "type": "note",
+      "updated": "2026-09-20T05:53:07.424Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/06-时域累积与重投影.md",
+      "sha256": "d411dc6c408ffc45b61fcf049ed2efc983bbae55110de793025e757c4101fcc0",
+      "type": "note",
+      "updated": "2026-09-20T06:01:38.189Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/01-背景知识/07-实时GI技术谱系.md",
+      "sha256": "ee4e1a73e3f3bedf26b8b007e04ad9bdf7ee0c500736fe59cd99d835128c35df",
+      "type": "note",
+      "updated": "2026-09-20T06:01:54.835Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/02-代码方言/01-Oceanus-DSL速成.md",
+      "sha256": "6595485329fc7b22567c974bc7d62780e0a8dec9626aff3ef0eb70ccb9934caa",
+      "type": "note",
+      "updated": "2026-09-20T09:12:24.292Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/02-代码方言/02-模块目录与文件地图.md",
+      "sha256": "acd56ef2ba22075a7148927c57b5cb5498f5de7ed9b33f517b1677a8db8cb434",
+      "type": "note",
+      "updated": "2026-09-20T09:22:48.715Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/01-总体架构与更新流程.md",
+      "sha256": "10bfc1fd80d50a71048aa1855da75e1db1c4b7d2853fdeb56bc25b436d1d8bf5",
+      "type": "note",
+      "updated": "2026-09-21T03:01:15.168Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/02-面片系统GIFacet.md",
+      "sha256": "6a6ddecd7cceceb3b86b994d9f41a937af0531e734f9e3bede451c48a27d941a",
+      "type": "note",
+      "updated": "2026-09-22T03:36:43.234Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/03-级联距离场GISDFExt.md",
+      "sha256": "b244b3aa510f6c390e74aecba1556d46d05c0ed0627f893f57eb9c0f84aea273",
+      "type": "note",
+      "updated": "2026-09-20T06:33:35.703Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/04-模型距离场GISDF.md",
+      "sha256": "3ce3a8b1c83c4960d8550a98a652681ce7f3262533c9e7c52e0ab6d73aa871b2",
+      "type": "note",
+      "updated": "2026-09-20T06:53:40.257Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/05-面片光照GILighting.md",
+      "sha256": "d5d30700ef4183ace820fab047160849a66415d10b23afc21743ffbcca102fb1",
+      "type": "note",
+      "updated": "2026-09-22T03:36:59.257Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/03-世界层/06-数据构建GIDataBuilder.md",
+      "sha256": "965410e279549cf6ae8fb6a054611ee879006e9d6ea3f3dc271402611ed4fe12",
+      "type": "note",
+      "updated": "2026-09-20T06:53:49.002Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/01-总体流程.md",
+      "sha256": "64529933c5427c75e4aeec601cc34f62a47b866addd96681df6e501efe8a5605",
+      "type": "note",
+      "updated": "2026-09-22T03:38:19.665Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/02-采样块与射线发射.md",
+      "sha256": "a03ccfc32271207762c1395e394d50bbd3d1712501a085e90fcb2db040f39064",
+      "type": "note",
+      "updated": "2026-09-22T03:39:17.094Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/03-六级查询与流压缩.md",
+      "sha256": "3acf7548190a88fbc257c3d11fbd27fb8665d1f9813dcc1d8e1650e444af4f10",
+      "type": "note",
+      "updated": "2026-09-22T03:33:50.538Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/04-QuadTraceSH主流程.md",
+      "sha256": "93b140782e23de6682a2c6179c82db7f76f731471757c10169f4de7aeae611ad",
+      "type": "note",
+      "updated": "2026-09-22T03:35:14.138Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/05-弯法线GISampleBentNormal.md",
+      "sha256": "d5c4b6f9610aa58f831d9710a40842136325a188fe976fa60932823cc3dac056",
+      "type": "note",
+      "updated": "2026-09-20T10:02:47.502Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/06-历史混合与重投影.md",
+      "sha256": "89136dbc9b68e4d8550f00346e250a3f35e591ad2f4df29c1a24aacf157dfabc",
+      "type": "note",
+      "updated": "2026-09-20T09:09:32.667Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/07-屏幕空间镜面追踪.md",
+      "sha256": "f007dd989f9600b9bcf8eb1e8c58a44cfa6ff3d02d371747bac08df1947ca5ab",
+      "type": "note",
+      "updated": "2026-09-22T03:35:40.400Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/04-屏幕层/08-方向采样与重要性采样.md",
+      "sha256": "5ae40a7a9be32f96ed38e58d28ca56bb662c76dcc5fce8e63f84a300401566d1",
+      "type": "note",
+      "updated": "2026-09-20T09:13:07.335Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/05-集成与工程/01-TuanjieGIManager与帧调度.md",
+      "sha256": "4e2c91a434100b4b347a380be02f44cbf3968a9f06ef9c1ffa70f5aa681af7c5",
+      "type": "note",
+      "updated": "2026-09-20T10:06:42.980Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/05-集成与工程/02-管线接入URP与HDRP.md",
+      "sha256": "ac1e742b1d74da9e4758b3afa5a55424177ffda5c4186167404abba1d0f05d61",
+      "type": "note",
+      "updated": "2026-09-21T03:01:30.908Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/05-集成与工程/03-硬件光追后端.md",
+      "sha256": "6f2434255f7a0f80eaf528a344e98254fd0688c334f9b0bbee246457d96e1459",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.879Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/05-集成与工程/04-增量更新与事件机制.md",
+      "sha256": "cd01552a516d36b0e8675a7de588117aa25c680b2df3ad82f5d52ee9ac22455a",
+      "type": "note",
+      "updated": "2026-09-20T06:53:49.013Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/01-GIOption参数字典.md",
+      "sha256": "40f7a9814f567ca5adf2ee00a79dfd0c2316af1f82224ddd4353cc04753351ce",
+      "type": "note",
+      "updated": "2026-09-20T10:06:42.975Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/02-常量与魔法数字表.md",
+      "sha256": "086f047a8887483933b178cdacb148476bffbd20cfbbdde28bfa43df14e79e13",
+      "type": "note",
+      "updated": "2026-09-20T09:51:04.969Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/03-FAQ.md",
+      "sha256": "85d074c2fa6ed0ee1359f871f00e71a8bf668b2abfeed2565d67f0d34c4aa24a",
+      "type": "note",
+      "updated": "2026-09-20T10:05:14.936Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/04-未解之处.md",
+      "sha256": "8ec6601a8f36c6eadcb859aa87f74b0de8acb837a9fd11d1d13247284140c0c6",
+      "type": "note",
+      "updated": "2026-09-22T03:39:47.350Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/05-GPU资源与数据布局总表.md",
+      "sha256": "736265d3348bb2a41b96e67543b43807ed507ec90647fb44ccea99d503bdc6da",
+      "type": "note",
+      "updated": "2026-09-20T06:52:54.753Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/06-参考/06-调试可视化指南.md",
+      "sha256": "b87162214390aa270523fbfb179034317c8dc3d2ab878d7f1255dc467b54df86",
+      "type": "note",
+      "updated": "2026-09-20T06:53:04.700Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI_AGENTUSE/README.md",
+      "sha256": "eb2f85f0efdca0c2051c51abfe7db33ba79423633507ded5a097ef58c64b930f",
+      "type": "note",
+      "updated": "2026-09-22T03:40:38.353Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI代码/01-级联距离场.md",
+      "sha256": "c75985938d4a4e376bfd6e39fb93da348e42d4f2225855dd0224034f3b10c061",
+      "type": "note",
+      "updated": "2026-09-18T09:35:04.635Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI代码/README.md",
+      "sha256": "ad0ff46fbbccf0375810e12f0fec69365f21c4cd343dff8875a7ee05b7368f4d",
+      "type": "note",
+      "updated": "2026-09-18T09:28:46.107Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/00-全景/01-TuanjieGI是什么.md",
+      "sha256": "d2fa440e9855b5b015ae22b4edbcb4bb3f97bf37b5a4b2de0104f5614644d281",
+      "type": "note",
+      "updated": "2026-09-17T10:31:10.036Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/00-全景/02-一帧的旅程-图.png",
+      "sha256": "aef06b1786d156c2c181632e2fef58bab085da7a52b9514aae81be0abb875ade",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/00-全景/02-一帧的旅程.md",
+      "sha256": "1b726750d99ee7b25eacbfbaa614fb7ecfd4de0452c590d81258a1525bf5897b",
+      "type": "note",
+      "updated": "2026-09-17T10:50:08.279Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/01-数学基础/01-球谐函数SH.md",
+      "sha256": "df4ff952bebb4c190cafc73930d3e9ace5ae6280b2780e2e22f7300ca51e4770",
+      "type": "note",
+      "updated": "2026-09-17T11:00:32.480Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/01-数学基础/02-八面体映射与方向采样.md",
+      "sha256": "9368d0a03fb5ee2709dff3c6203eabbd06a86d320f04723887469ae1946afaa0",
+      "type": "note",
+      "updated": "2026-10-26T11:21:01.158Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/01-数学基础/03-SDF与球体步进.md",
+      "sha256": "eb3772c43faddc3b8f8560ed18950d97920ccd468aff6e56f00a226dd46d24e7",
+      "type": "note",
+      "updated": "2026-09-18T05:25:19.164Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/02-世界表示/01-面片与表面光场.md",
+      "sha256": "3997877dccca16fae10e3c55e407ea4c1ad5018e4ab44d72e8f56c987465e677",
+      "type": "note",
+      "updated": "2026-09-18T06:00:23.533Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/02-世界表示/02-分层距离场.md",
+      "sha256": "4ab984a1d937b1323194535e904cc2ea507b6145bff56022536927991d080d3e",
+      "type": "note",
+      "updated": "2026-09-18T09:28:41.805Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/02-世界表示/03-面片与距离场的生成.md",
+      "sha256": "cec42c5fd7980e96885e0f258548fe21f96c44d34cee799498974c4df68e803e",
+      "type": "note",
+      "updated": "2026-09-18T06:39:35.116Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/03-核心算法/01-屏幕采样块.md",
+      "sha256": "3ebedf73e06506ed7a3af72302b1f4603dc69c484a6b53a2873da43d8352b652",
+      "type": "note",
+      "updated": "2026-09-18T06:44:10.131Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/03-核心算法/02-射线的六级查询.md",
+      "sha256": "c7c479486e0f2166dda812982c0a902f419c01e981259be20bd34f36eca5630b",
+      "type": "note",
+      "updated": "2026-09-18T07:13:04.413Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/03-核心算法/03-面片光照与多级反弹.md",
+      "sha256": "b42520b440830ec65a94c1ba419003c96f560d40a4f805abcdb63159f1dbc7d9",
+      "type": "note",
+      "updated": "2026-09-18T07:26:28.764Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/03-核心算法/04-从采样块到像素-图.png",
+      "sha256": "4f15539e8714a57234b37fe15e731615650d02bf31216f91fc08677642a92144",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/03-核心算法/04-从采样块到像素.md",
+      "sha256": "ca8ae589d0f2453ecfd2855abf5acdb5a5909769966324295397b77b5ab33d06",
+      "type": "note",
+      "updated": "2026-09-18T08:15:02.195Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/04-工程与集成/01-增量与事件的设计思想.md",
+      "sha256": "dda5116f4b55e33742214a575b088690d090b85f5d560c32ed71e442c3df47c7",
+      "type": "note",
+      "updated": "2026-09-17T10:39:28.382Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/04-工程与集成/02-接进画面与时间稳定性.md",
+      "sha256": "7e4adc7746000259a7a73d0c3a058e5fe8e02c85cd046b70fa02bafdf0a5c58b",
+      "type": "note",
+      "updated": "2026-09-17T10:36:08.107Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/04-工程与集成/03-调试可视化与调优.md",
+      "sha256": "b64f28b2a30b40f97a8608479cc0153f08c608c6d9cc90e431baf8205adccd54",
+      "type": "note",
+      "updated": "2026-09-17T10:36:08.115Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/README.md",
+      "sha256": "a5ba99801e8a7b5ca7a0a8643391b8bf6f68dbd048a66fa82b382cdb659abb19",
+      "type": "note",
+      "updated": "2026-09-18T09:04:03.950Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/拾遗/01-烘焙GI与LightProbe.md",
+      "sha256": "db5ed9ecff36e52e2d3317a6d3d8a0ad5005e5999264794a6bf0a71454f50914",
+      "type": "note",
+      "updated": "2026-10-26T11:05:18.928Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/拾遗/02-LightProbe.md",
+      "sha256": "9dcbcbe69f56f38ac908d1cbf8cf357e36846851a3b7935b5e44ea5e0d664d47",
+      "type": "note",
+      "updated": "2026-09-17T10:50:08.314Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/GI原理/拾遗/03-Hi-Z深度金字塔与屏幕步进.md",
+      "sha256": "4baa27c730ad3ebb1d8335682d3ca3126bf8f9c4fb7ec4606e5bcac83cfee539",
+      "type": "note",
+      "updated": "2026-09-18T07:10:34.138Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/00-导读与全景/00-如何使用本书.md",
+      "sha256": "1aae61d8b8f7fe49f4543afb1dbac162293218dface0321b5cec9a886e04cd81",
+      "type": "note",
+      "updated": "2026-09-10T10:24:17.448Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/00-导读与全景/01-团结引擎渲染系统全景.md",
+      "sha256": "a07a4cd1c5b865b7753188a58e37507e0a8b46a9605e61b2773ab80c83b3c9b3",
+      "type": "note",
+      "updated": "2026-09-10T10:26:43.569Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/00-导读与全景/02-一帧画面的旅程总览.md",
+      "sha256": "29f8d6171d982120ac03ee714b6384531c13540698640206bc5f7306da86f9f6",
+      "type": "note",
+      "updated": "2026-09-10T10:28:16.348Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/README.md",
+      "sha256": "fad07dcc011e72cf52955b9ce740b04e81985da7f8c71cc090e9c0fdf89e0477",
+      "type": "note",
+      "updated": "2026-09-10T12:15:09.801Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第01章-渲染数学基础/01-向量与点积叉积.md",
+      "sha256": "ba2ae3c82a8bcc3b1a5bbec5a2bc33019588b2835ad68ed058867accf099f1af",
+      "type": "note",
+      "updated": "2026-09-10T10:29:32.349Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第01章-渲染数学基础/02-矩阵与坐标变换.md",
+      "sha256": "2ef6b9e68c843b2c8b9bb163f2133ad410eb76513cbb15dfb839cfe11fff6714",
+      "type": "note",
+      "updated": "2026-09-10T10:30:26.322Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第01章-渲染数学基础/03-投影从3D到2D.md",
+      "sha256": "637dfd2c7bc6b09cdd262ce7f25daca29c15f5e44ca6b1e276276f62701a3631",
+      "type": "note",
+      "updated": "2026-09-10T10:31:08.996Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第01章-渲染数学基础/04-辐射度量学与色彩.md",
+      "sha256": "896fd9b6fba7bdac99b184242ee2758726dd5d2530dec0ed5dd0a908ec6023ff",
+      "type": "note",
+      "updated": "2026-09-10T10:31:49.668Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第02章-GPU图形管线原理/01-图形管线总览与顶点处理.md",
+      "sha256": "7adf4ee85c3dd8a24c88a0fae2d00edf63faa386733a6949d8f0cffdda1bb823",
+      "type": "note",
+      "updated": "2026-09-10T10:32:18.578Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第02章-GPU图形管线原理/02-光栅化与重心插值.md",
+      "sha256": "b5b9db546ebcc063991a2d00f1b93aaabbbe91f3b4fc5227c8462c4a6e10b895",
+      "type": "note",
+      "updated": "2026-09-10T10:33:02.211Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第02章-GPU图形管线原理/03-像素着色与输出合并.md",
+      "sha256": "0eb2e1e05893ddaeafaf9afb962aa898495c0b871d8982cf7cd14a562a7890b7",
+      "type": "note",
+      "updated": "2026-09-10T10:33:36.074Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第02章-GPU图形管线原理/04-纹理采样与Mipmap.md",
+      "sha256": "046c79ba4b880b952691c3212b2eb5cbd34bfef85db8b57d9e9b724054cd8a43",
+      "type": "note",
+      "updated": "2026-09-10T12:14:53.069Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第02章-GPU图形管线原理/05-深度与模板进阶.md",
+      "sha256": "5199d89755209c9ac2ccccf512a5b4e0c1158d2269dfed722614356a4a79b6ad",
+      "type": "note",
+      "updated": "2026-09-10T10:34:41.935Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第03章-引擎架构：从场景到GfxDevice/01-渲染核心层与Renderer组件.md",
+      "sha256": "b1b126ffcb77f384c72480e22c73ad114a22dcde3919c1520a178f69746a5fec",
+      "type": "note",
+      "updated": "2026-09-10T12:01:46.619Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第03章-引擎架构：从场景到GfxDevice/02-GfxDevice图形API抽象层.md",
+      "sha256": "54fcd502b86b870f6d027496c3d4c3abbf92a94036e501e0509fc57c356efd4b",
+      "type": "note",
+      "updated": "2026-09-10T12:02:06.627Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第03章-引擎架构：从场景到GfxDevice/03-多线程渲染与命令流.md",
+      "sha256": "304baddc64756d4b60c62a344ff86b8583a9e78e2fcf7af180b06eceeb49178b",
+      "type": "note",
+      "updated": "2026-09-10T12:02:24.035Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第03章-引擎架构：从场景到GfxDevice/04-现代API对比与平台后端图鉴.md",
+      "sha256": "bb5db2b1511e654fc052c1bb11ecef2848013d623efee147da1e7d7d4f19dba4",
+      "type": "note",
+      "updated": "2026-09-10T12:02:43.387Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第04章-剔除与提交/01-包围盒与视锥体剔除.md",
+      "sha256": "893a5ccaaf314831f044cf5f26db7a6106ed2d2970299e7a46f168782f5b2005",
+      "type": "note",
+      "updated": "2026-09-10T12:03:10.321Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第04章-剔除与提交/02-遮挡剔除.md",
+      "sha256": "f57b0163d79cb6df4e287442d099afc28af84db070d0972fe7dc68dd1e300ef4",
+      "type": "note",
+      "updated": "2026-09-10T12:03:26.214Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第04章-剔除与提交/03-Layer与渲染队列.md",
+      "sha256": "c7a545d63c6f4c4dbad76a934f2878cccb0d8a73a4d018dc4dd5ba6246678ac4",
+      "type": "note",
+      "updated": "2026-09-10T12:03:40.096Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第04章-剔除与提交/04-DrawCall与批处理概览.md",
+      "sha256": "36bc0c50f8cd124375f65d5eadd2bea79f660b8b2c813b6024bcf7a45c9ba965",
+      "type": "note",
+      "updated": "2026-09-10T12:03:57.846Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第05章-材质与Shader系统/01-Shader材质Pass数据流.md",
+      "sha256": "9d7cc9a9f432a016e1d3c87683f65c800762be10b0341af7fc5a2566a3fabbdd",
+      "type": "note",
+      "updated": "2026-09-10T12:04:21.551Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第05章-材质与Shader系统/02-着色语言与编译.md",
+      "sha256": "dea6d4a6a08f27230a55e2c36f1448d7f95afaf88d55df71275c1fd4922c724b",
+      "type": "note",
+      "updated": "2026-09-10T12:04:37.373Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第05章-材质与Shader系统/03-变体系统与剔除.md",
+      "sha256": "3dfba040a19767102a3d0894c14dc79609df4f0080d54a50774719ee9fbb26fb",
+      "type": "note",
+      "updated": "2026-09-10T12:04:56.492Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第05章-材质与Shader系统/04-SRP Batcher与合批兼容性.md",
+      "sha256": "4b125bb3acba183ec7501984c4607c7191ce2128a1ee7f40dd8f6c6ffe841aa8",
+      "type": "note",
+      "updated": "2026-09-10T12:05:12.723Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第06章-光照与PBR/01-光源类型与光照组织.md",
+      "sha256": "0f1bb8463bb63c5498f30b57586391d168ce2d9479ff63e6dfbe72c9bed2425e",
+      "type": "note",
+      "updated": "2026-09-10T12:05:28.541Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第06章-光照与PBR/02-从Lambert到Blinn-Phong.md",
+      "sha256": "98380caf89ddbfe2331fd0ea45c268c155470fe1ab678908b05acf23662d1273",
+      "type": "note",
+      "updated": "2026-09-10T12:05:45.477Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第06章-光照与PBR/03-微表面理论与BRDF.md",
+      "sha256": "180d81ed4b9a47b1d445f21bc8c229ba07e81500cd9f0e6773da68a9df4c991d",
+      "type": "note",
+      "updated": "2026-09-10T12:06:07.535Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第06章-光照与PBR/04-金属度粗糙度工作流与法线贴图.md",
+      "sha256": "08cb178d9d4a9c9d82df74955fa95bb91ac85c9d9522042b98de37489a95cbc8",
+      "type": "note",
+      "updated": "2026-09-10T12:06:25.805Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第06章-光照与PBR/05-环境光与IBL.md",
+      "sha256": "4bb88e638c30a6bbe3c6bb1d6ada56e373f1b49e29430b3e01575cb55bb41f9b",
+      "type": "note",
+      "updated": "2026-09-10T12:06:42.380Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第07章-阴影/01-阴影映射ShadowMap原理.md",
+      "sha256": "01973f7c11d066ed610eec2488945c6dde402b72800824a994bb2dd572224ff5",
+      "type": "note",
+      "updated": "2026-09-10T12:06:57.874Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第07章-阴影/02-级联阴影CSM.md",
+      "sha256": "44877aae44b09c68621124e03af5921dcc993425152497b7b534cd76f655bb72",
+      "type": "note",
+      "updated": "2026-09-10T12:07:11.051Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第07章-阴影/03-软阴影与工程问题.md",
+      "sha256": "8d8fe331e93025a0a6b418a9cfab58a156fb7c374af8d91a3cc8042430a90b18",
+      "type": "note",
+      "updated": "2026-09-10T12:07:22.619Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第07章-阴影/04-接触阴影与替代方案.md",
+      "sha256": "1d24eebf6b0630e1af2d3c095cf39a13e9477d27ea6f861fdbbed37019c708cc",
+      "type": "note",
+      "updated": "2026-09-10T12:07:34.667Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第08章-渲染路径/01-前向渲染.md",
+      "sha256": "61a5b8b07e39c4323ca84934c6c1bab240cd3936776c1b635a3b9589cb9566d6",
+      "type": "note",
+      "updated": "2026-09-10T12:07:46.913Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第08章-渲染路径/02-延迟渲染与GBuffer.md",
+      "sha256": "a9c8b5783d990bf8c047daa75f2647b6912b35a5786a91e7fc468856575d9699",
+      "type": "note",
+      "updated": "2026-09-10T12:08:03.377Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第08章-渲染路径/03-前向+与光的分块.md",
+      "sha256": "162e4dfbcef02fe68fd50221e82e250e4f83d9755b89c9e32e3c16ad47b91ecd",
+      "type": "note",
+      "updated": "2026-09-10T12:14:58.038Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第08章-渲染路径/04-管线选型对比.md",
+      "sha256": "46798f95f8592657220b16e60b35f291ca512af902e603a96322fba970e839e9",
+      "type": "note",
+      "updated": "2026-09-10T12:08:37.708Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第09章-SRP可编程渲染管线/01-SRP架构与ScriptableRenderContext.md",
+      "sha256": "bd7d782d751207c1d8e3840e2ab8bbe8e850f79c66fd37496b7b8189e8f69350",
+      "type": "note",
+      "updated": "2026-09-10T12:09:14.345Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第09章-SRP可编程渲染管线/02-URP管线流程详解.md",
+      "sha256": "55a3b32138cbd48ddf814698a13058ef0ea507a20a01e6ba4113b19a74d9162d",
+      "type": "note",
+      "updated": "2026-09-10T12:09:50.210Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第09章-SRP可编程渲染管线/03-HDRP管线流程详解.md",
+      "sha256": "734e98f7625e49612ec01a4a71ee2e6b144cadc2c9d3c75844ddc79e5fe5cb0f",
+      "type": "note",
+      "updated": "2026-09-10T12:10:08.612Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第09章-SRP可编程渲染管线/04-ShaderGraph原理.md",
+      "sha256": "4b9577154810797961f5774a5a79c0e43e85cfd72bfa7521ff5b5261d65ec9b4",
+      "type": "note",
+      "updated": "2026-09-10T12:10:27.424Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第10章-全局光照/01-全局光照概念与间接光.md",
+      "sha256": "051e3bc5b0b2ca5b7cd1347c194ffb09a2fa7daf0bdf14564d3ee34da471fbc7",
+      "type": "note",
+      "updated": "2026-09-10T12:10:46.596Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第10章-全局光照/02-烘焙Lightmap原理.md",
+      "sha256": "bdea6212f0a0278637687860e60d2eeb03b89e4702619b58824f0af471aef9ec",
+      "type": "note",
+      "updated": "2026-09-10T12:11:35.101Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第10章-全局光照/03-Lightmap采样与ShadowMask.md",
+      "sha256": "b4acd8c98caeb991be97c18d4c36f2c46f142a988ceb5b13430bb4c229b62dab",
+      "type": "note",
+      "updated": "2026-09-10T12:11:53.481Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第10章-全局光照/04-LightProbe与ReflectionProbe.md",
+      "sha256": "e95a6dfc6a75f21dcf8e177740ec4e4926843c5249baf30d134c3615f9beb292",
+      "type": "note",
+      "updated": "2026-09-10T12:12:13.035Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第10章-全局光照/05-实时GI与TuanjieGI.md",
+      "sha256": "3cf28971790382d3adfca1a9db32eded387319d7f3f1916fd3df40f1b4ed7222",
+      "type": "note",
+      "updated": "2026-09-10T12:12:34.486Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第11章-后处理/01-后处理栈与全屏Pass.md",
+      "sha256": "07769797688f50af2befd07a08b2ea1755e01276c3199b75a691b8c085209db4",
+      "type": "note",
+      "updated": "2026-09-10T12:12:48.013Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第11章-后处理/02-Bloom与ToneMapping.md",
+      "sha256": "cebd0811e63df8a6eceff08bf45885a57e8255964265d5dcb7b3f8cba485b83c",
+      "type": "note",
+      "updated": "2026-09-10T12:13:02.870Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第11章-后处理/03-抗锯齿MSAA-FXAA-TAA.md",
+      "sha256": "6b73b25c39316d74a64ecd9cfb7b1c5b6c0c0aaf347830399eae4ff7e6a76b46",
+      "type": "note",
+      "updated": "2026-09-10T12:13:19.136Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第11章-后处理/04-景深运动模糊与SSR.md",
+      "sha256": "8efae696a2553ad928df435c774b5aa4ca0265540080260e2dfe33889e362c4f",
+      "type": "note",
+      "updated": "2026-09-10T12:13:31.271Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第12章-GPU优化与高级专题/01-GPU Instancing深入.md",
+      "sha256": "6a869b65eb368724167dbc4aba4532bc68a9e11e81b592cb4c406550bace48ba",
+      "type": "note",
+      "updated": "2026-09-10T12:13:46.440Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第12章-GPU优化与高级专题/02-Compute与GPU Driven.md",
+      "sha256": "2c1b972037ce3033338b6d7fd853fe23cb04a00d8edb1b2845b1e746d5cbaaff",
+      "type": "note",
+      "updated": "2026-09-10T12:14:02.136Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第12章-GPU优化与高级专题/03-粒子与VFXGraph渲染.md",
+      "sha256": "fc3dd686045e72c813bc335f0dcc49db011dc7c99785b00f3e5e36585fd55570",
+      "type": "note",
+      "updated": "2026-09-10T12:14:53.083Z"
+    },
+    {
+      "path": "学习笔记/cg/tuanjie引擎/总览/第12章-GPU优化与高级专题/04-渲染性能分析与工具.md",
+      "sha256": "80dee593891255af335f845e07fae8ed9215668ad462fe9a1f12ab670ee3bbd0",
+      "type": "note",
+      "updated": "2026-09-10T12:14:31.017Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/GBuffer 知识点详解.md",
+      "sha256": "f1fd79f1bac9368b3fe75d91d7766a8464a8af55c4c3a1ab5f2345b9e626b798",
+      "type": "note",
+      "updated": "2026-07-09T10:28:20.262Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/SDF 与级联 SDF 知识点详解.md",
+      "sha256": "a677f2a277421c2911065f63e1354886134e4b82e4c507d9fd586ae4a0eb513c",
+      "type": "note",
+      "updated": "2026-08-26T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/SDF-图2-级联SDF.svg",
+      "sha256": "17ed4d31adff1613d68474166174de689ae34452fc19dfae80ef233689a5dace",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/SDF-图3-三级加速链路.svg",
+      "sha256": "eead507e7bba3b0311b0cd2914c6a6eddc82f3edac64cc59d02341f2ad51f0a1",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/SDF-图4-追踪器回退.svg",
+      "sha256": "f383969cf840dfa5af77125add1a71f034ac8a64e1d261f23e44a45d357d3335",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/SSAO 与 SSR 知识点详解.md",
+      "sha256": "2ada3f917b19028d890a6f34f11ff37afc8e9770875308d5667b7c430ec312ee",
+      "type": "note",
+      "updated": "2026-07-09T10:28:50.390Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/TAA 时序抗锯齿与运动向量知识点详解.md",
+      "sha256": "5462824e88645707efa7e7e82d98ff100e39a4637be039ed24ced832f0ff1168",
+      "type": "note",
+      "updated": "2026-07-10T02:10:50.256Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/球谐-图1-阶数金字塔.svg",
+      "sha256": "3dc4f114160454967a862d360af9e4fd2a454a2717e7c5e4b1f2c9659f44ed35",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/球谐-图2-编码存储解码.svg",
+      "sha256": "ffe84ec42ced6b21d986317afa676babb77823ccf97682b356a44b970b4f1254",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/球谐-图3-TuanjieGI管线.svg",
+      "sha256": "5a6ecc0c46fc3c4fa2ecd5377887ebc18588c15ec4dfd8901220de72ec2381ac",
+      "type": "asset"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/clip/球谐函数知识点详解.md",
+      "sha256": "12c7a92578e5af6222cf5302f2d021d8c7d4b00ec41ad84750b0a77caeeb9b48",
+      "type": "note",
+      "updated": "2026-08-26T04:45:42.918Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/Phase 0 — 地基检查与补课.md",
+      "sha256": "6820f83d88e9a5a8eae7fd5078bb4e3e9e2c1fb59777183548240cf4f81907ed",
+      "type": "note",
+      "updated": "2026-07-07T08:12:26.099Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/TuanjieGI 学习路线图.md",
+      "sha256": "9a15053135719581e9aace4f3725e48a911d9613f59e933c1e1368074cfb85d8",
+      "type": "note",
+      "updated": "2026-07-07T08:12:44.895Z"
+    },
+    {
+      "path": "学习笔记/cg/unityGI代码学习/TuanjieGI 模块总览.md",
+      "sha256": "857434c77b856a6488e82d40e77250cdba93bc6fdcf43076d39af1033d6eb1f2",
+      "type": "note",
+      "updated": "2026-07-07T08:03:50.544Z"
+    },
+    {
+      "path": "学习笔记/cg/经典算法实现/00 前期准备.md",
+      "sha256": "ef18dda5811922c64603aaf3783603d8e52fbef43861346ba49856e898389c35",
+      "type": "note",
+      "updated": "2026-08-09T11:56:49.747Z"
+    },
+    {
+      "path": "学习笔记/cg/经典算法实现/01 框架.md",
+      "sha256": "3646eedf3c4cbf7475b7486d54b21dcabee5b578a3ce878350f022c7625c2393",
+      "type": "note",
+      "updated": "2026-08-09T11:59:42.711Z"
+    },
+    {
+      "path": "学习笔记/cg/经典算法实现/roadmap.md",
+      "sha256": "0106a103342164ea5ce8da2aaa6482194fd93f18dcb6c856193952a08147c58f",
+      "type": "note",
+      "updated": "2026-10-26T11:03:50.536Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/01-光栅图像与Gamma校正.md",
+      "sha256": "c7d896c858ce56e574f3201219a08a7f02396850a74c0a30013f4a85252b5cce",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/02-射线与多边形求交.md",
+      "sha256": "02bfe196e44bc27c63e1662af02cc1f5e7b4273c8f6eead68125a50daf6286ba",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/03-特征值对角化与奇异值分解.md",
+      "sha256": "3706493be2023950013b450110cab5e49815031abb066fd0046b8c7779ceea67",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/04-正交矩阵与对称矩阵.md",
+      "sha256": "b9033f7e1468a48992c12561256f9815eaedb0d1964d361e4aad44e6d24cfc49",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/05-观察变换的矩阵链.md",
+      "sha256": "408a1d79197808ed7e4426d9b3377e7b479b6fea6cf662734f7ce7763264bbe0",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/06-光栅化：线段与三角形.md",
+      "sha256": "f74b6da592aeadffcb7901211004595352fed3629d5c0d6fe4441860075eeecd",
+      "type": "note",
+      "updated": "2026-08-03T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap10.md",
+      "sha256": "8a0e882eb298e3c0761eed09eb13f165ea756e6041236e17e4061a702010f72c",
+      "type": "note",
+      "updated": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap11.md",
+      "sha256": "9f9acdf87114367a5e5aca87474dd24cf7061da29dcfb1b1a24c2e371ff44abe",
+      "type": "note",
+      "updated": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap12.md",
+      "sha256": "cbeef368cb52e83dded54af0c2401d5d6608aa02ffb2674008f0558717b236e9",
+      "type": "note",
+      "updated": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap13.md",
+      "sha256": "d44f1964be4ddfe57cfef009f8da91860f3166bfb08dc51dd3467b8d46cb4d5d",
+      "type": "note",
+      "updated": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap15.md",
+      "sha256": "6ffacb3d5ed06dd7f1588d56fd8826f091d911f0e28d0b993570cd3eb098da8d",
+      "type": "note",
+      "updated": "2026-08-10T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/chap/chap22.md",
+      "sha256": "ec2f5e268ae3e77e669d15ed08d4b4834d0de8e371d73665c44648b3678bc320",
+      "type": "note",
+      "updated": "2026-08-10T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/04-hw.md",
+      "sha256": "310bef320d9fd7d71ef025ba729e5d3c04027a6999f4e4e33fbd693b12d65650",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/05-hw.md",
+      "sha256": "00063cfc550b5caab4f023b4cac41ee60ee07103f4b11baf58d000d9ef4bf97b",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/06-hw.md",
+      "sha256": "0d0700398d4e968b056e545dfef29861d843136644f1ded4fec0229d5cafd0e2",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/07-hw.md",
+      "sha256": "4e3e9191edf3eb46826df58362cc337897302a6d6aa74be37dffebbbff2bdfc8",
+      "type": "note",
+      "updated": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/08-hw.md",
+      "sha256": "d80f49b3524ce2e034f0b93537d5215eaba52d48119add4611e72637de955cfc",
+      "type": "note",
+      "updated": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/09-hw.md",
+      "sha256": "d90879d82c32058acbd70392340fb62eb4b55333ff936d455354720eff0551f8",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/10-hw.md",
+      "sha256": "eddb43feb81f412f3b161be9885c97a2fd006a4e60a3305ad07dee6eddd16075",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/11-hw.md",
+      "sha256": "b59f5f025976d23b005be91e320a04446b7128827c2e29c61517a468fa01da5a",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/practice/12-hw.md",
+      "sha256": "c306a4cf18b03b453d6f0cbf878ff114da84f1b98c561e83e140fc7ca8a98b3a",
+      "type": "note",
+      "updated": "2026-08-05T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/cg/虎书/todo.md",
+      "sha256": "ddf8c79c30c396f59dee5d965b60d356a2b06804dc11a6bd241c300036815012",
+      "type": "note",
+      "updated": "2026-08-04T03:08:08.968Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/153.寻找旋转排序数组中的最小值.md",
+      "sha256": "93684af39e66e080debab7999b76c2862185bc0595d4471453aec80fa1435042",
+      "type": "note",
+      "updated": "2026-09-04T07:31:47.965Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/33.搜索旋转排序数组.md",
+      "sha256": "b65452916b4c309afb1e1e772a33ac5d0470c65c2d81b072260304ea437fa8e7",
+      "type": "note",
+      "updated": "2026-09-04T07:30:42.207Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/34.在排序数组中查找元素的第一个和最后一个位置.md",
+      "sha256": "7f1408c6d5000a375c37b7d523cd02a1c8469211b84e108b2b49d1421abdab04",
+      "type": "note",
+      "updated": "2026-09-04T07:30:42.205Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/35.搜索插入位置.md",
+      "sha256": "c5f3e6ed8556bf53ebe5426fbb7581879d69e8c344d490e6d32461c4ba231370",
+      "type": "note",
+      "updated": "2026-09-04T07:30:42.205Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/4.寻找两个正序数组的中位数.md",
+      "sha256": "fc58b4c35a3926e236a4a7cb091349d053f70cf2617f43fa913c07fbfbc1a676",
+      "type": "note",
+      "updated": "2026-09-04T09:30:57.370Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二分查找/74.搜索二维矩阵.md",
+      "sha256": "1f8c24d269d7d93fe1d520a50917810f3525abffcb803620568cd1f71aa6a102",
+      "type": "note",
+      "updated": "2026-09-04T07:31:47.965Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/101.对称二叉树.md",
+      "sha256": "c5dcd12fd597e4e313b5e39567fa3ea224bc84ba067b17bc0a663d8241e53cb9",
+      "type": "note",
+      "updated": "2026-09-09T01:23:40.726Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/102.二叉树的层序遍历.md",
+      "sha256": "6cedea105e3b734b78c2bc8a2ea2b6803eeddb420be8ea6a87c4cff3169885dc",
+      "type": "note",
+      "updated": "2026-09-09T01:23:40.729Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/104.二叉树的最大深度.md",
+      "sha256": "ad874ded21665a2a542333833e748188cc7234dea982fd80543f84b74e575d35",
+      "type": "note",
+      "updated": "2026-09-09T01:23:40.731Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/105.从前序与中序遍历序列构造二叉树.md",
+      "sha256": "6f82060600dcbe48e5da5aeaec2808bf8acd90a8b4c531abceac1e6dc16ac125",
+      "type": "note",
+      "updated": "2026-09-09T01:23:40.733Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/108.将有序数组转换为二叉搜索树.md",
+      "sha256": "cddca54a70320e8f8d9a9e573ec7b58bb9aaf9291e938bb5f97f4ba417520428",
+      "type": "note",
+      "updated": "2026-09-09T01:25:36.730Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/114.二叉树展开为链表.md",
+      "sha256": "083f1ded215c2eb48f14b43d1367c5ddc4491ae9235dec16655b4460ccbf0d33",
+      "type": "note",
+      "updated": "2026-09-09T01:25:36.731Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/124.二叉树中的最大路径和.md",
+      "sha256": "4a2c663b3df5267f37a59a0949f5155ec3e35734e05554eeaea11555fc7a6f2f",
+      "type": "note",
+      "updated": "2026-09-09T01:25:36.732Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/199.二叉树的右视图.md",
+      "sha256": "a16e508c525a5c1c470f70c22471f08d2bd61d50c634900741e80b350bcb7dc4",
+      "type": "note",
+      "updated": "2026-09-09T01:25:36.734Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/226.翻转二叉树.md",
+      "sha256": "d441d38a3c77d0e3bea64e05ae9e1c45a4cf86a8337e979d7c7a4e77b8c7e74c",
+      "type": "note",
+      "updated": "2026-09-09T01:25:36.735Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/230.二叉搜索树中第-k-小的元素.md",
+      "sha256": "5114e015f4985ccb18849fcd8b8f4bbddce02cbcb7869b1d85d8e7a1be0095a2",
+      "type": "note",
+      "updated": "2026-09-09T01:27:37.515Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/236.二叉树的最近公共祖先.md",
+      "sha256": "cdd3323cdd1e934eff4ab272bd27ae8d96ad6967516e1f0f878a73aa687797b7",
+      "type": "note",
+      "updated": "2026-09-09T01:27:37.515Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/437.路径总和-iii.md",
+      "sha256": "9416185f7b4a11723827e257df7eb09f690d22c4507e7e54d0f5eb8396fd7a1a",
+      "type": "note",
+      "updated": "2026-09-09T01:27:37.518Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/543.二叉树的直径.md",
+      "sha256": "6c70ee766d93b60122afd0f712cb51aee6a783836014632878a55b5350fbb97b",
+      "type": "note",
+      "updated": "2026-09-09T01:27:37.519Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/94.二叉树的中序遍历.md",
+      "sha256": "398cf4ea1ff71e49e6e4c8e475bb2e1e9407b2c30a0457cb28bb9aa46c5bc32e",
+      "type": "note",
+      "updated": "2026-09-09T01:23:40.724Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/二叉树/98.验证二叉搜索树.md",
+      "sha256": "2e292f3a62403da95cc04b01d277d5ae5734633a1157d07138ec289961eca02d",
+      "type": "note",
+      "updated": "2026-09-09T01:27:37.520Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/118.杨辉三角.md",
+      "sha256": "d4e6a9a71127d9e25226dbb8a479c7a53f0f0f0e6d7ad6e61eba8052c3b9a333",
+      "type": "note",
+      "updated": "2026-08-30T20:07:48.738Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/139.单词拆分.md",
+      "sha256": "3b6e108ddc700cb09a687baf2a1c4dd72b4c9c53a1eada925b77974581d2cc9c",
+      "type": "note",
+      "updated": "2026-08-30T20:07:48.749Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/152.乘积最大子数组.md",
+      "sha256": "e50742c53e02a1da0dc19cc50fa2a9066d82ae5a36e79f39f990d542d8da71df",
+      "type": "note",
+      "updated": "2026-08-30T20:34:54.489Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/198.打家劫舍.md",
+      "sha256": "b92e5b8511bb746392b9c395394f3670b3972e2c7e63c74869152f56a148b70a",
+      "type": "note",
+      "updated": "2026-08-30T20:34:54.490Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/279.完全平方数.md",
+      "sha256": "1a4037826e57b3d55f32df6d53765d1c3e9cf60b49e847df298f594245e25191",
+      "type": "note",
+      "updated": "2026-08-30T20:34:54.491Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/300.最长递增子序列.md",
+      "sha256": "2de1545a165b3bf595ebcab8aadda7f6cf7c50a6843281df1d75542c1562b363",
+      "type": "note",
+      "updated": "2026-08-30T21:02:29.553Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/32.最长有效括号.md",
+      "sha256": "88a0fb6c72f3237c87605dc2e9962d163c0ccc51cfb5c3fbde922bc07923525c",
+      "type": "note",
+      "updated": "2026-08-30T19:43:18.366Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/322.零钱兑换.md",
+      "sha256": "c696a23bb47c2afbe848373f04e1691013a1f689a6f35fe521f85fbf616959e8",
+      "type": "note",
+      "updated": "2026-08-30T20:54:25.281Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/416.分割等和子集.md",
+      "sha256": "8734afcc39d08e7b2fd392da271b7ae14252543b97b6f8ff3ea506b046b9d0d4",
+      "type": "note",
+      "updated": "2026-08-30T20:54:25.282Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/动态规划/70.爬楼梯.md",
+      "sha256": "7463d657a0a8da3788320f2404fa1025d9584e115718ffe132567fab512ae825",
+      "type": "note",
+      "updated": "2026-08-30T20:07:48.736Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/131.分割回文串.md",
+      "sha256": "b8fb2a5334245e059941e91c0ac96468e05c91b863453dfeba8e1b69c5423111",
+      "type": "note",
+      "updated": "2026-09-09T01:31:15.465Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/17.电话号码的字母组合.md",
+      "sha256": "f72cd4793f92baf38e4caa041a00ffd08f989cd5003fc6ef663e4aa4ac474664",
+      "type": "note",
+      "updated": "2026-09-09T01:29:19.818Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/22.括号生成.md",
+      "sha256": "8187ed877c7874886befa6f110d814c77737c1b7d21e2c81694b00ceacb977e3",
+      "type": "note",
+      "updated": "2026-09-09T01:29:19.819Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/39.组合总和.md",
+      "sha256": "c6686c303ee1c189757dd19aa82e28df60f6528eb9faccdcf6419820ab346006",
+      "type": "note",
+      "updated": "2026-09-09T01:29:19.821Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/46.全排列.md",
+      "sha256": "68a1975c4a547bf49e2177b369b6c3a92b873eb462bf8bf7826cb084684ccecd",
+      "type": "note",
+      "updated": "2026-09-09T01:29:19.823Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/51.n-皇后.md",
+      "sha256": "251f399a8dc297305e8e8556a354f9ae113a595ef816c7c97a65d871de167475",
+      "type": "note",
+      "updated": "2026-09-09T01:31:15.458Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/78.子集.md",
+      "sha256": "8be4fab1449fe5f8a13c9f6a46d1f4997a6ee8f9ef4d68a6cc3de198cbbcbdc3",
+      "type": "note",
+      "updated": "2026-09-09T01:31:15.459Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/回溯/79.单词搜索.md",
+      "sha256": "093711d0f69bb1f6b635059385991dc1ac677424809a7ad3bf8736da02351264",
+      "type": "note",
+      "updated": "2026-09-09T01:31:15.463Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/栈/155.最小栈.md",
+      "sha256": "032174f3a4a96e33135d4be93a50321137518c3910b6757b84bb486a527c87eb",
+      "type": "note",
+      "updated": "2026-08-31T08:00:49.161Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/栈/20.有效的括号.md",
+      "sha256": "278bee320166e0de3538396fdd66b3e749e6b314511a97e979a4320f9e0a7123",
+      "type": "note",
+      "updated": "2026-08-31T08:00:49.160Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/栈/394.字符串解码.md",
+      "sha256": "145bb31a51be9230aba862ebf8cb8c8bedc1a159a911707043ca4208a502ff43",
+      "type": "note",
+      "updated": "2026-08-31T08:00:49.162Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/栈/739.每日温度.md",
+      "sha256": "b6ffbc15d3cf1d0ac2ea78e4cda92850f7ed02a6801e96347c6acf5d474adc80",
+      "type": "note",
+      "updated": "2026-08-31T08:00:49.174Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/栈/84.柱状图中最大的矩形.md",
+      "sha256": "f60d61a78dda50a3b61e26607738ff3f863c31424fd2cc7b4c6c05200b3ec512",
+      "type": "note",
+      "updated": "2026-09-04T05:49:40.752Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/矩阵/240.搜索二维矩阵-ii.md",
+      "sha256": "ba233e026eb552b46647abb01cbb20fb5e3c721a548d998323f458a0fe78e6fe",
+      "type": "note",
+      "updated": "2026-08-31T07:22:57.552Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/矩阵/48.旋转图像.md",
+      "sha256": "12774b2ae2d3d591249c9c9736474997201bd21d395b72deb54627bd93cd1194",
+      "type": "note",
+      "updated": "2026-08-31T07:22:57.538Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/矩阵/54.螺旋矩阵.md",
+      "sha256": "30e46adab4b45c1201a9f4687ed875c666d82221f377d58c40eb850ca63a1302",
+      "type": "note",
+      "updated": "2026-08-31T07:22:57.538Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/矩阵/73.矩阵置零.md",
+      "sha256": "b22c792202cebe138cb8dcaad31946eb9e757677a214320ca4bd5ab9f94562d7",
+      "type": "note",
+      "updated": "2026-08-31T07:22:57.551Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/138.随机链表的复制.md",
+      "sha256": "4786ff0c3026b108c14425033f48b67a45a844a6edcc310da62a8c37671bcb02",
+      "type": "note",
+      "updated": "2026-08-30T23:01:49.295Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/141.环形链表.md",
+      "sha256": "252f1ac4d303f62724328ed3f9eed1cac82e55028567e8f1d29c1d06388e095e",
+      "type": "note",
+      "updated": "2026-08-30T23:01:49.296Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/142.环形链表-ii.md",
+      "sha256": "59cb723d13d738239c39a82b2eda8550b258ce0a6ee7c8db2ea55fbd19937f7b",
+      "type": "note",
+      "updated": "2026-08-30T23:07:13.448Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/146.lru-缓存.md",
+      "sha256": "9de48af6ac6ec286e9f94c1af573073b8bb1979edeb269ae56d9de0bf16ba835",
+      "type": "note",
+      "updated": "2026-08-30T23:01:49.298Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/148.排序链表.md",
+      "sha256": "fffdc39ca93ebe64f76f413ebff0a8156f4d4b4036616771aac7922e78411005",
+      "type": "note",
+      "updated": "2026-08-30T23:03:38.388Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/160.相交链表.md",
+      "sha256": "3714d8f52a18e17fdf626ced17eb81ef98450addc71be37f5f9be1d38f8b43cf",
+      "type": "note",
+      "updated": "2026-08-30T23:03:38.388Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/19.删除链表的倒数第-n-个结点.md",
+      "sha256": "ee0d601e807e859dedbeff3f96dba923dba1276043643e7b3255034eff1862a0",
+      "type": "note",
+      "updated": "2026-08-30T22:20:16.321Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/2.两数相加.md",
+      "sha256": "5925e599de2eb10171c8d66dc98b5f6eb1bb17d2584768edc95e225ab99f5077",
+      "type": "note",
+      "updated": "2026-08-30T22:14:29.475Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/206.反转链表.md",
+      "sha256": "967a8c7c847e861f57e349169de6cc252fcb6d7b07b597d66f3664c8a68d2264",
+      "type": "note",
+      "updated": "2026-08-30T23:03:38.389Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/21.合并两个有序链表.md",
+      "sha256": "f92a7ac5f4a03debec80b166ac6b50e3e9bf6d622ba0dad6c93d1d091ee4e76d",
+      "type": "note",
+      "updated": "2026-08-30T23:37:45.884Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/23.合并-k-个升序链表.md",
+      "sha256": "4b7e039d03a8719b5fb9941c35e2467c928cad7579a420f0cdc2ed45188f71e5",
+      "type": "note",
+      "updated": "2026-08-30T22:14:29.505Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/234.回文链表.md",
+      "sha256": "c2f141cd630e17fc85edaeecd5636a910530fb5718f2aea1699ccf2f570674da",
+      "type": "note",
+      "updated": "2026-08-30T23:03:38.390Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/24.两两交换链表中的节点.md",
+      "sha256": "b1928a196fc195a1650e602539eaa6c5b8c8867c94aba386804356e07ec403f2",
+      "type": "note",
+      "updated": "2026-08-30T22:52:59.548Z"
+    },
+    {
+      "path": "学习笔记/算法/hot100/链表/25.k-个一组翻转链表.md",
+      "sha256": "f48dcb821e35ec09ece75b8916dfe1340917911d218fc9cd0b5a3d1b071fe3b4",
+      "type": "note",
+      "updated": "2026-08-30T22:14:29.508Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/3dgs/3DGS世界模拟Lab资料汇总.md",
+      "sha256": "cecf367181c11d8c18dd60998571497881f7222b1986d4eec5009f197789773c",
+      "type": "note",
+      "updated": "2026-09-22T08:10:52.399Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec10 Program Optimization.md",
+      "sha256": "88f7b4105ed5c59242a6affa1f11b2fd6d288fa1857d5a41ec658cf795eb2e1e",
+      "type": "note",
+      "updated": "2026-10-27T12:12:22.418Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec11 The Memory Hierarchy.md",
+      "sha256": "3b137ae2dbab604993e04b01d28a551ebed32550909d23139f27d6784e20fde2",
+      "type": "note",
+      "updated": "2026-11-07T07:03:31.310Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec12 Cache Memories.md",
+      "sha256": "9e3b8b02762e4ee16e5cd79d9ac177db225e3fa4910d19d23c0274ee192561b9",
+      "type": "note",
+      "updated": "2026-11-07T20:23:00.124Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec13 Linking.md",
+      "sha256": "6f2c59600066107c362eae51c3165f6801174a2d4a1537f6d2735bddfced153c",
+      "type": "note",
+      "updated": "2026-11-09T02:17:02.698Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec14 Exceptional Control Flow - Exceptions and Processes.md",
+      "sha256": "1cc41646a51d1cfdf901b5de024c051184e554bb2b87a78c40d0dcf34dce29af",
+      "type": "note",
+      "updated": "2026-11-09T02:16:15.728Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/csapp/lec9 Machine-Level Programming V - Advanced Topics.md",
+      "sha256": "9c79cab33570d98829bc2826379a34c4bdb46848a99ff4130461ac2bd7eb5e72",
+      "type": "note",
+      "updated": "2026-10-07T00:52:50.542Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/00-preface.md",
+      "sha256": "b888ee03970f3284d6da4ce7043facfea204d276796316f306174f4976f6b695",
+      "type": "note",
+      "updated": "2026-09-22T06:23:29.463Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/01-intro.md",
+      "sha256": "3dca830455cc6cd3adc1d08d75e34758d7fed152d5a4d74cb43751fe3b5f1ed9",
+      "type": "note",
+      "updated": "2026-10-26T11:23:23.512Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/02-usability.md",
+      "sha256": "9cd94207700ef20acce9d4adc86141c92af2c51c5c6d26d3bc6a71d0b90c11c4",
+      "type": "note",
+      "updated": "2026-09-22T09:47:58.176Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/03-runtime.md",
+      "sha256": "b44470852a60d84d8050986e10f52b7c85130dbd401235d98452de44364a9ccd",
+      "type": "note",
+      "updated": "2026-09-23T18:11:47.097Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/04-containers.md",
+      "sha256": "6e2e5ad748d4271c7b2d981599bd980d50354e75c8f372ed3acd8bddd5a881ba",
+      "type": "note",
+      "updated": "2026-09-23T18:12:10.606Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/05-pointers.md",
+      "sha256": "499cb7b16b3c55454b44a08d57a3d9f64e7f995b2f32b58c8963106afee73187",
+      "type": "note",
+      "updated": "2026-10-26T11:23:23.524Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/06-regex.md",
+      "sha256": "2d41153bd5aa0f994a8e1c47c2b223deb3cc1b71991e0aca035f487772ba8854",
+      "type": "note",
+      "updated": "2026-09-26T15:31:44.555Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/07-thread.md",
+      "sha256": "6d8ce0195f6cd2834c817b15812d09a09305bad8fc45b01a3b7c6ac72c00146c",
+      "type": "note",
+      "updated": "2026-09-26T15:33:10.313Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/08-filesystem.md",
+      "sha256": "3f156d2486923e15764c01fb594721ad6b193148ecab1ee12535178b1164c6f3",
+      "type": "note",
+      "updated": "2026-09-23T18:12:52.563Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/09-others.md",
+      "sha256": "67cafff7f295010ef05e101c8793a9907e5e7542d503131b4469285c7d669dbb",
+      "type": "note",
+      "updated": "2026-09-23T18:12:50.710Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/10-cpp20.md",
+      "sha256": "8dff63734bc315d8cc9b134cfbead79e01212e11c6f1ee6b434d2e34e2110267",
+      "type": "note",
+      "updated": "2026-09-23T18:12:41.298Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/11-cpp23.md",
+      "sha256": "587393a11343cb88ff5d746821a32f706a130fafe92b8c7d4890642f94705149",
+      "type": "note",
+      "updated": "2026-09-26T15:36:47.311Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/12-cpp26.md",
+      "sha256": "7cf12a6f329f413f4e35fa2929bbd0c55659445e82b1c0e16fb45229ef86ab05",
+      "type": "note",
+      "updated": "2026-09-27T09:15:09.275Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/appendix1.md",
+      "sha256": "dbebb0ec952db985025ee74fa2c6598bc17ce5292f5ef2c599a089c0c0b405d3",
+      "type": "note",
+      "updated": "2026-09-26T15:34:25.302Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/appendix2.md",
+      "sha256": "491eb6397e23a44aa9d818e534bf4cad1b7e299951d540f239c746948e653e7c",
+      "type": "note",
+      "updated": "2026-09-26T15:36:31.739Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/appendix3.md",
+      "sha256": "8a1784e51e79770e3b365954964543e4f8fcb678c8032b21989314ce4cdb315e",
+      "type": "note",
+      "updated": "2026-09-26T15:36:37.107Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/modern cpp tutorial/原文/toc.md",
+      "sha256": "f23fd1c01007fce17db350ba2a6377c71d78e09a9aeaa2817d27a1f14c9bcafa",
+      "type": "note",
+      "updated": "2026-09-22T06:23:29.456Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/01-引论.md",
+      "sha256": "c910077c05bed6da2160ccff11b15713b50f87e341cef671dde212414b6dbc03",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/02-高级语言及其语法描述.md",
+      "sha256": "367ad1ac8298051c1104453b52e34cdf161d9c2c0afeec97b7523f9f2f55f434",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/03-词法分析.md",
+      "sha256": "784981daf5636563d91fb63f6e24cf1065c5abdcce461ee2735a5c8fba7f4b1b",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/04-语法分析-自上而下.md",
+      "sha256": "99021f15cc4954b2c2afe3551a41aa203588afa1572a10d696a4a5227bd3eff9",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/05-语法分析-自下而上.md",
+      "sha256": "ba63a0d0040aa93d33381ca27a174ba5e3da5455debe5e07391d66302e562a18",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/06-语义分析和中间代码.md",
+      "sha256": "9bb120b35ebd6b4bb834f9a9e358b7bc81906be4e030743e53ca016c6e5a3e8e",
+      "type": "note",
+      "updated": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/07-符号表与运行时存储.md",
+      "sha256": "05215b30f00974cbddfe5259e964de6c27adb21f9e14b5c7ee9543bdf7242d46",
+      "type": "note",
+      "updated": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/08-优化.md",
+      "sha256": "94b6bdae31666582f31cfaf34173dea93c1f32db3974b36e856b3ea89deda095",
+      "type": "note",
+      "updated": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/09-目标代码生成.md",
+      "sha256": "49d0f40e6a58d40c62308bf0004a9dc8d032cf027a3a35b5e80a9d553566821c",
+      "type": "note",
+      "updated": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/exam/2021-2022-B.md",
+      "sha256": "a892cffbffd94b4dea178c5d17f1dceb19b318db016e136565bd9201889b0757",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/exam/2022-2023-A.md",
+      "sha256": "7c29e01f8aa99dabba218c5c6f5f439a84588a60502048f1881e6a1bb20deb72",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第10章.md",
+      "sha256": "b77e9fbe14350351288a57401b8e03f7ab79b00e7cce1d28957157a1a77b248d",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第2章.md",
+      "sha256": "638a6d8abaf406e290dd963dec599ee2198d8810bcaf9f865f7acc7f59fb7fa6",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第3章.md",
+      "sha256": "69b670f0dabe5d79f96277dd3bee480e21d287679e9378842f4e8a221f4da105",
+      "type": "note",
+      "updated": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第4章.md",
+      "sha256": "2863684439270bd1dcaa021f2148b810ab7d8d8c4a9dd2db43515a88d9090fb9",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第5章.md",
+      "sha256": "bf04327fd93ad666d44792a30ce8ec06e9ce8c80402aa43e7c2f7667eedb6d41",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第7章.md",
+      "sha256": "a0f1abeab44791e776c2fcec26fa8621b415cbe738902a6b52aa2cf69e90bce8",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "path": "学习笔记/计算机基础/编译原理/作业/第9章.md",
+      "sha256": "8a8c63f83ceaa36bdac271b596fd493a39154c666a7059badca8d4156f8cce89",
+      "type": "note",
+      "updated": "2026-07-01T00:00:00.000Z"
+    }
+  ]
+}
