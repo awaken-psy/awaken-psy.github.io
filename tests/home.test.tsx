@@ -3,7 +3,7 @@
 import test from "node:test"
 import assert from "node:assert/strict"
 import { render } from "preact-render-to-string"
-import { Home } from "../site/components"
+import { AwakenFrame, Home } from "../site/components"
 import type { QuartzComponentProps } from "../quartz/components/types"
 import site from "../site.config.mjs"
 import { readNote } from "../scripts/lib/vault.mjs"
@@ -40,10 +40,43 @@ test("首页文案、四类入口与五条稳定的最近更新", () => {
   const first = render(<Home {...input} />)
   assert.match(first, /倘若重新穿越时光河流/)
   assert.match(first, /计算机基础/)
+  assert.doesNotMatch(first, /沿着专题阅读|class="topic-grid"/)
+  assert.match(first, /<span>01<\/span>探索笔记/)
+  assert.match(first, /<span>02<\/span>最近更新/)
   assert.equal((first.match(/class="note-row internal"/gu) ?? []).length, 5)
   assert.ok(first.indexOf("笔记6") < first.indexOf("笔记5"))
   assert.doesNotMatch(first, /笔记7/)
   assert.equal(render(<Home {...input} />), first)
+})
+
+test("顶部导航按首页、专题、笔记、关于排列", () => {
+  const html = render(
+    AwakenFrame.render({
+      componentData: {
+        ...props([]),
+        fileData: { slug: "topics", frontmatter: { kind: "topics" } },
+        tree: { type: "root", children: [] },
+      } as QuartzComponentProps,
+      header: [],
+      beforeBody: [],
+      pageBody: () => <article />,
+      afterBody: [],
+      left: [],
+      right: [],
+    }),
+  )
+  const navigation = html.match(
+    /<nav class="site-navigation"[^>]*>(.*?)<\/nav>/u,
+  )?.[1]
+  assert.ok(navigation)
+  assert.deepEqual(
+    [...navigation.matchAll(/>(首页|专题|笔记|关于)<\/a>/gu)].map(
+      (match) => match[1],
+    ),
+    ["首页", "专题", "笔记", "关于"],
+  )
+  assert.match(navigation, /aria-current="page">专题<\/a>/)
+  assert.match(html, /class="topic-grid"/)
 })
 
 test("空精选省略，已隐藏精选排除，最多展示六篇", () => {
@@ -75,6 +108,8 @@ test("空精选省略，已隐藏精选排除，最多展示六篇", () => {
     )
     assert.doesNotMatch(featured, /笔记2|笔记7/)
     assert.match(featured, /笔记6/)
+    assert.match(html, /<span>02<\/span>精选笔记/)
+    assert.match(html, /<span>03<\/span>最近更新/)
   } finally {
     site.featuredNotes.splice(0, site.featuredNotes.length, ...original)
   }

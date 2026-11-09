@@ -198,17 +198,9 @@ export function Home(props: QuartzComponentProps) {
           ))}
         </div>
       </section>
-      <section class="home-section">
-        <SectionTitle
-          number="02"
-          title="沿着专题阅读"
-          href={link(props, "topics.md")}
-        />
-        <TopicList {...props} />
-      </section>
       {featured.length > 0 && (
         <section class="home-section">
-          <SectionTitle number="03" title="精选笔记" />
+          <SectionTitle number="02" title="精选笔记" />
           <div class="note-list">
             {featured.map((file) => (
               <a
@@ -224,7 +216,7 @@ export function Home(props: QuartzComponentProps) {
       )}
       <section class="home-section recent-section">
         <SectionTitle
-          number={featured.length > 0 ? "04" : "03"}
+          number={featured.length > 0 ? "03" : "02"}
           title="最近更新"
           href={link(props, "notes.md")}
         />
@@ -309,8 +301,8 @@ export const AwakenFrame: PageFrame = {
           <nav class="site-navigation" aria-label="主要导航">
             {[
               ["index", "首页"],
-              ["notes", "笔记"],
               ["topics", "专题"],
+              ["notes", "笔记"],
               ["about", "关于"],
             ].map(([slug, label]) => (
               <a
