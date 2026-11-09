@@ -20,7 +20,7 @@
 
 ### 1. 固定 Quartz 5 的可重复版本
 
-采用 Quartz 作为静态生成器，以官方 `v5` 默认分支当前的 `8be3806431d33b9edaafcfc34a9520333399bf1e` 提交作为首次实现基线，该提交的包版本为 `5.0.0`。使用 Node.js 24、npm 锁文件和 Quartz 插件锁文件固定构建输入。安装后先用代表性笔记完成语法、搜索和 Pages 路径验证，再添加定制页面。
+采用 Quartz 作为静态生成器，以官方 `v5` 默认分支当前的 `8be3806431d33b9edaafcfc34a9520333399bf1e` 提交作为首次实现基线，该提交的包版本为 `5.0.0`。使用 Node.js 24，npm 与 npm 分发的 Quartz 插件统一通过 package-lock.json 固定构建输入。安装后先用代表性笔记完成语法、搜索和 Pages 路径验证，再添加定制页面。
 
 核对时官方文档已面向 Quartz 5，GitHub 的 `releases/latest` 仍指向较早的 v4 发布。版本选择以已核对的源提交为准。评估发布标签入口时发现其版本信息与当前默认分支有差异，固定源提交能够明确复现所用 API 和插件接口。[官方源码包信息](https://github.com/jackyzha0/quartz/blob/8be3806431d33b9edaafcfc34a9520333399bf1e/package.json)
 
