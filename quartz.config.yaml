@@ -102,6 +102,9 @@ plugins:
       priority: 20
     enabled: true
   - source: "@quartz-community/content-meta"
+    options:
+      showReadingTime: false
+      showComma: false
     layout:
       position: beforeBody
       priority: 20
@@ -111,7 +114,7 @@ plugins:
       position: beforeBody
       priority: 10
       condition: not-index
-    enabled: true
+    enabled: false
 layout:
   byPageType:
     "404":

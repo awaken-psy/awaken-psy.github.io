@@ -11,6 +11,7 @@ import {
 } from "../quartz/util/path"
 import site from "../site.config.mjs"
 import { htmlToJsx } from "../quartz/util/jsx"
+import type { Root } from "hast"
 
 function link(props: QuartzComponentProps, target: string) {
   return resolveRelative(
@@ -410,9 +411,13 @@ export const AwakenFrame: PageFrame = {
   }) {
     const kind = props.fileData.frontmatter?.kind
     const home = kind === "home"
-    const hasHeading = (
-      props.tree as { children?: { type: string; tagName?: string }[] }
-    ).children?.some((node) => node.type === "element" && node.tagName === "h1")
+    const tree = props.tree as Root
+    const heading = tree.children?.find(
+      (node) => node.type === "element" && node.tagName === "h1",
+    )
+    const bodyTree = heading
+      ? { ...tree, children: tree.children.filter((node) => node !== heading) }
+      : tree
     const current = String(props.fileData.slug ?? "index")
     const topic = current.endsWith("/index")
       ? topicDomains(props)
@@ -491,20 +496,24 @@ export const AwakenFrame: PageFrame = {
               </nav>
             </aside>
             <main class="site-document" id="main-content">
-              <div class="document-meta">
-                {beforeBody.map((Component) => (
-                  <Component {...props} />
-                ))}
-              </div>
-              {!hasHeading && (
-                <h1 class="document-title">
-                  {topic?.title ?? props.fileData.frontmatter?.title}
-                </h1>
-              )}
+              <header class="document-heading">
+                {heading ? (
+                  htmlToJsx(props.fileData.filePath!, heading)
+                ) : (
+                  <h1 class="document-title">
+                    {topic?.title ?? props.fileData.frontmatter?.title}
+                  </h1>
+                )}
+                <div class="document-meta">
+                  {beforeBody.map((Component) => (
+                    <Component {...props} />
+                  ))}
+                </div>
+              </header>
               {topic ? (
-                <TopicNotes {...props} folder={topic.path} />
+                <TopicNotes {...props} tree={bodyTree} folder={topic.path} />
               ) : (
-                <Content {...props} />
+                <Content {...props} tree={bodyTree} />
               )}
               <div class="document-after">
                 {afterBody.map((Component) => (

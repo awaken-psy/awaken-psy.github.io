@@ -558,6 +558,7 @@ html:has(.is-reading) {
   min-width: 0;
 }
 .site-document article h1,
+.document-heading h1,
 .document-title {
   font-size: 32px;
   font-weight: 600;
@@ -839,15 +840,23 @@ html:has(.is-reading) {
 .site-rail-right .backlinks a:hover {
   color: var(--site-accent);
 }
+.document-heading {
+  margin-bottom: 24px;
+}
+.document-heading h1 {
+  margin: 0;
+}
 .document-meta {
   font-size: 13px;
   color: var(--site-muted);
+  margin-top: 10px;
+}
+.document-meta:empty {
+  display: none;
 }
 .document-meta p {
-  margin-top: 8px;
-}
-.document-meta .breadcrumb-container {
-  margin-top: 0;
+  margin: 0;
+  color: var(--site-muted);
 }
 .document-after {
   margin-top: 36px;
@@ -1078,6 +1087,7 @@ html:has(.is-reading) {
     line-height: 1.75;
   }
   .site-document article h1,
+  .document-heading h1,
   .document-title {
     font-size: 28px;
     line-height: 1.428571;
@@ -1086,9 +1096,6 @@ html:has(.is-reading) {
     font-size: 24px;
     line-height: 1.333333;
     font-weight: 600;
-  }
-  .document-meta .breadcrumb-container {
-    flex-wrap: wrap;
   }
 }
 @media (prefers-reduced-motion: reduce) {
