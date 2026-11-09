@@ -128,11 +128,13 @@ test(
   },
 )
 
-test("部署工作流受构建成功状态约束", async () => {
+test("部署工作流受构建成功和 master 分支约束", async () => {
   const workflow = YAML.parse(
     await fs.readFile(".github/workflows/deploy.yml", "utf8"),
   )
   assert.equal(workflow.jobs.deploy.needs, "build")
+  assert.equal(workflow.jobs.deploy.if, "github.ref == 'refs/heads/master'")
+  assert.deepEqual(workflow.on.push.branches, ["master"])
   const commands = workflow.jobs.build.steps
     .map((step) => step.run)
     .filter(Boolean)
